@@ -1,0 +1,4 @@
+/* To debug css code, run that code in chrome and open chrome more tools using three dots above right top corner and in "More tools" section, select "Developer tools"
+option. By using Elements and Console sections in that we debug */
+
+/* In Css inline css has more priority, then after that internal css and after that external css has lowest priority. */
