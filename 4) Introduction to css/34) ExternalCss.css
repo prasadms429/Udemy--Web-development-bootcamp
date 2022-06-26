@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="CSS/styles.css">  /* In external css we create one separate folder and 
+                                inside it we create css file and link that to all other files such htmal files and to other using this link, to give style */
+
+h1,h3     /* to give color to headers, I wrote this external css file */
+{
+  color: #66BFBF;
+}
