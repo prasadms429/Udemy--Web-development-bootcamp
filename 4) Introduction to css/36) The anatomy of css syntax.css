@@ -1,0 +1,19 @@
+// CSS syntax
+selector { property:value; }
+who?     { what?   :How? ; }
+h1       { color   :red;   }  // For example
+
+
+// Link external css file using this in index.html
+<link rel="stylesheet" href="css/styles.css">
+
+
+// In external css file:
+h1{
+  font-size: 200px;   // Arrange properties in alphabatical order, i.e easy to track
+  color: red;
+}
+
+img{
+  background: red;
+}
