@@ -1,0 +1,12 @@
+<img class="bacon" src="https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/118/bacon_1f953.png" alt="bacon-img">   // class selector is used to differentiate images.
+<img class="broccoli" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/broccoli_1f966.png" alt="Broccoli-img">
+
+
+// In external css file
+.bacon{   // This is for specific image.
+  background: green;
+}
+
+.broccoli{
+  background: red;
+}
