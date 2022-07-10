@@ -1,0 +1,6 @@
+// First create 'My Site' Folder, Inside create index.html file and css folder, inside it create styles.css file.
+//Link that external css file to index.html
+// Go to "favicon.cc" website, there create your wish favicon and download it in same folder of "My Site", that I'm working.
+
+// In index.html
+<link rel="icon" href="favicon.ico">    // This code links our favicon to our website.
