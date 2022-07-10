@@ -1,0 +1,21 @@
+// In index.html
+<h1  id="heading">I Love Bacon</h1> /* In css 'id' is specific for single tag or element and same id cannot be used for other tags or elements, 
+ where as in class selector we can use same class name for group of tags or elements to give common functionality to selected elements. */
+
+<img class="broccoli circular" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/broccoli_1f966.png" alt="Broccoli-img"> /* class can 
+include two different classes inside one class declaration, for example this line of code includes broccoli and circular. */
+
+
+// In style.css
+img:hover{
+  background: gold;   // hover keeps the original color but when touch the image, it toggles the color with this specified color.
+}
+
+/*****************************ID SELECTORS***************************/
+#heading{
+  color:blue;       // ID selector overwrites the tags and gives its functionality.
+}
+
+// if class and tags are mentioned for same functionality then class overwrites tags.
+// if id selector and tags are mentioned for same functionality then 'id' overwrites tags.
+// if id selector and class selector are mentioned for same funcionality then 'id' overwrites class.
