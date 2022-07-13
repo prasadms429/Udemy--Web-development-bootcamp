@@ -1,0 +1,34 @@
+// In index.html
+<body>
+    <div class="top-container">
+      <h1>I'm Prasad M S</h1>
+      <p>a programmer</p>
+    </div>
+
+    <div class="middle-container">
+
+    </div>
+
+    <div class="bottom-container">
+
+    </div>
+
+  </body>
+
+
+// In styles.css
+.top-container{
+  background-color: #E4F9F5;
+}
+
+.middle-container{      // This is selecting by class.
+  height:200px;         // It creates box of 200*200, of red color.
+  width:200px;
+  background-color:red;
+}
+
+.bottom-container{
+  height:200px;
+  width:200px;
+  background-color:blue;
+}
