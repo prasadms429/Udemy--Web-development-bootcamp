@@ -19,3 +19,8 @@ img:hover{
 // if class and tags are mentioned for same functionality then class overwrites tags.
 // if id selector and tags are mentioned for same functionality then 'id' overwrites tags.
 // if id selector and class selector are mentioned for same funcionality then 'id' overwrites class.
+
+/*****************************CLASS SELECTORS***************************/
+.broccoli{
+ height:100px;
+ }
