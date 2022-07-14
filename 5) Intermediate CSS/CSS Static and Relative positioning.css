@@ -1,0 +1,44 @@
+// Static positioning is the default positioning by html, given to website.
+// Relative positioning is for giving manual position for inline and block elements.
+
+
+// In codepen.io
+// In html
+<body>
+  <div class="red">
+    
+  </div>
+  <div class="blue">
+    
+  </div>
+  <div class="yellow">
+    
+  </div>
+</body>
+
+
+//In CSS
+.red{
+  height:100px;
+  width:100px;
+  background-color:red;
+  display:inline-block;    // To display all boxes in single line and to change their size.
+  position:relative;      // To move red box anywhere, using 'corner', we use this line of code.
+  left:200px;         // 'corner' includes right, left, top and bottom. If we specify 'right' then box moves left, If we specify 'left' then box moves right,
+}                     // If we specify 'top' then box moves bottom, If we specify 'bottom' then box moves top.
+.blue{
+  height:100px;
+  width:100px;
+  background-color:blue;
+  display:inline-block;
+  position:relative;
+  right:100px;
+}
+.yellow{
+  height:100px;
+  width:100px;
+  background-color:yellow;
+  display:inline-block;
+  position:relative;
+  right:100px;
+}
