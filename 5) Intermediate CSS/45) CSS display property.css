@@ -1,0 +1,57 @@
+Display properties :-
+Block - It blocks full Horizontal space of screen, we cant insert or write any other thing in that area, if a Block is specified. But it can be resizeable.
+Inline  - Inline removes entire space occupying, It cannot be resizable.
+Inline-block - It removes full space occupying horizontally and it is sizable.
+None  - It deletes the function that is defined.
+
+Common Block Elements:-
+Paragraphs (<p>)
+Headers (<h1> through <h6>)
+Divisions (<div>)
+Lists and list items (<ol>,<ul>, and <li>)
+Forms (<form>)
+
+
+// To underline specific word in block elements, we use span
+// In index.html
+<body>
+    <div class="top-container">
+      <img src="images/cloud.png" alt="cloud image">
+      <h1>I'm Prasad M S</h1>
+      <p>a <span class="pro">pro</span>grammer</p>  // Like this
+      <img src="images/cloud.png" alt="cloud image">
+      <img src="images/mountain.png" alt="mountain image">
+    </div>
+
+  </body>
+
+//In styles.css
+.pro{
+  text-decoration: underline;
+}
+
+
+// In codepen.io
+// HTML
+<p>Hello</p>
+<p class="second-p">World</p>
+<span>Hello world</span>    // span is Inline Keyword and it can creates words of all span in single line
+<span>Hello world</span>
+<span>Hello world</span>
+
+// CSS
+p{
+  background-color:red;
+  width:100px;
+  display:inline-block;   // Paragraph is usually Block element, but its property is modified using this line of code. 'inline-block' includes properties of both inline and block.
+}
+span{
+  //display:block;  // span is usually 'inline' element, but its property is modified using this line of code.
+  background-color: blue;
+  width:100px;  // Usually it wont affect the size, because in 'inline' element we cant change size.
+}
+.second-p{
+  //display:none;   // To hide the information of particular class, we use this. 
+  visibility:hidden;  // It also performs operation same as 'none' and It can be used to hide any quiz answers.
+}
+
