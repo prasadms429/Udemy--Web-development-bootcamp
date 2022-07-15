@@ -1,0 +1,65 @@
+// The Absolute positioning is opposite to Relative positioning. In this we mention corners, it moves according to body. If we mention left:20px then it moves left from left margin.
+// If we mention right, then it moves from right margin. If we mention top, then it moves from top margin of body. If we mention bottom, then it moves from bottom margin.
+
+// In codepen.io
+// In html
+<body>
+  <div class="container">   // Nested div, In this container class acts as parent to red class.
+    <div class="red">
+    
+    </div>
+  </div>
+  
+  <div class="blue">
+    
+  </div>
+  <div class="yellow">
+    
+  </div>
+  
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+</body>
+
+
+// In css
+.container{
+  height:300px;
+  width:300px;
+  background-color:grey;
+}
+body{
+  margin:0px;   // To remove box space from margin, we use this.
+}
+.red{
+  height:100px;
+  width:100px;
+  background-color:red;
+  position:absolute;
+  //top:200px;
+  left:200px;
+}                     
+.blue{
+  height:100px;
+  width:100px;
+  background-color:blue;
+  position:absolute;
+  left:100px;
+  top:0;
+}
+.yellow{
+  height:100px;
+  width:100px;
+  background-color:yellow;
+  position:fixed;   // If we mention position as fixed, then this box is fixed and moves along with scroll bar, as we scroll down. It is manily used in applications such as navigation bar.
+  top:0;
+}
