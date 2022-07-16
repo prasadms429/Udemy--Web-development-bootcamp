@@ -1,0 +1,34 @@
+// Go to website 'CSS Fonts' there we can se San-serif, Serif. Serief is usually used as defualt by our browser.
+// Serif looks stylish.
+
+// Go to website 'CSS Web Safe Fonts' there we can find different font styles.
+
+// In website ' cssfontstack.com ' , we can find popular font styles universally used by Windows and Mac operating system.
+// Arial is the popular font style, i.e, most used.
+
+// Go to website 'fonts.google.com', in that we can add font style link to our website, i.e, embeded and if some operating system doesnt have that font style installed, then it can be used as alternative. By adding link, it works in all operating system.
+
+
+// In index.html
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">   // In 'fonts.google.com' after searching required font style and pressing on that, we should press 'select' option that is present on the screen with different font sizes, that adds link.
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   // These are the link of different font styles of our choice.
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+
+// In styles.css
+body{
+  //font-family: Helvetica Neue, Helvetica, Arial, sans-serif;    // It selects font style 'Helevetica Neue'. If it not installed in our operating system, then it goes to other option that is mentioned as alternative to it, as in code that is 'Helvetica', if this is also not present then it goes to Arial, and fianlly followed by sans-serif. 
+  font-family: 'Merriweather', serif;   // It is mentioned below the selected link in 'fonts.google.com'. To mention which font style for which part of website.
+}
+h1
+{
+  font-family: 'Sacramento', cursive; // It is handwritten cursive type.
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+}
