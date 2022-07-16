@@ -1,0 +1,39 @@
+// index.html
+<body>
+    <div class="top-container">
+      <img class="top-cloud" src="images/cloud.png" alt="cloud image">    // mentiion class name for cloud 1 and 2, To position them.
+      <img class="bottom-cloud" src="images/cloud.png" alt="cloud image">
+    </div>
+</body>
+
+
+// styles.css
+body{
+  text-align: center;   // To align texts to center.
+  margin: 0;  // If we dont specify it, then there is little gap between body and margin in left and right of body, we can notice that if we give background-color to body.
+}
+
+h1
+{
+  //width: 10%;
+  //margin: 0 auto 0 auto;    // If we specify width, then text align specified dont work. So, we specify margin as this. In this first '0' specifies top, then next 'auto' refers to left, then next '0' specifies bottom, then next auto specifies right.
+  margin-top: 0;  // margin-top, specifies gap between top cloud and h1.
+}
+
+.top-container{
+  background-color: #E4F9F5;
+  position: relative;   // To move clouds anywhere, relative of position of blocks, inside top-container, we use this.
+  padding-top: 100px;   // To give space from top, by moving all other parts below it to further down according to padding specified.
+}
+
+.top-cloud{
+  position: absolute;   // To move cloud, anywhere with respect to other inline and block elements, we use this, by specifying dimensions, as below.
+  right: 300px;
+  top:50px;
+}
+
+.bottom-cloud{
+  position: absolute;
+  left:300px;
+  bottom: 300px;
+}
