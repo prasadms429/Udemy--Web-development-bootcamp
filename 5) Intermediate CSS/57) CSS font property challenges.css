@@ -1,0 +1,18 @@
+h1
+{
+  color: #66BFBF;
+  line-height: 2;   // To set distance between h1 text and other texts and images. It sets line distance.
+}
+
+h2{
+  color: #66BFBF;
+  font-weight: normal;    // It displays text in normal width of text in a normal view.
+}
+
+h3{
+  color: #11999E;
+}
+
+a{                      // anchor tags.
+  color: #11999E;
+}
