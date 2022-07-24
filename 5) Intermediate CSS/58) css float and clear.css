@@ -1,0 +1,43 @@
+// In index.html
+<div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="skill-img" src="images/programming.png" alt="">
+          <h3>Design & development</h3>
+          <p class="code-skill-description">I started learnig to code, when I was in college. After that I self learnt web development and machine learning.</p>
+        </div>
+        <div class="skill-row">
+          <img class="pizza-img" src="images/pizza.png" alt="">
+          <h3>Pizza Challenge</h3>
+          <p class="pizza-skill-description">But my best skill is actually in eating pizza. Sandwich and French fries are my favourite snacks.</p>
+        </div>
+<div>
+
+
+// In styles.css
+.skill-row{
+  width: 50%;   // To make skill-row only 50% width of screen.
+  margin:100px auto 100px auto;   // To give space between heading texts and image in top and bottom we use 100px and 'auto' align the skill-row at the centre from left and right.
+  text-align: left;   // To make skill text align left.
+  line-height: 2;   // To double the space between text lines in skill row.
+}
+
+.skill-img{
+  width:25%;    // To resize the width of image.
+  float: left;  // To float the text to the left, around the image.
+  margin-right: 30px; // It gives space to right from image to texts.
+}
+
+.pizza-img{
+  width: 25%;
+  float: right; // To float the text to the right, around the image.
+  margin-left: 30px;  // It gives space to left from image to texts.
+}
+
+.code-skill-description{    // It is the class name of paragraph.
+  clear:left;   // To remove specific text that is float around the image, we use this. It is opposite to float. It clears the float property.
+}
+
+.pizza-skill-description{
+  clear:right;
+}
