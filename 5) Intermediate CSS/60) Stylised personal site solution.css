@@ -1,0 +1,89 @@
+a:hover{             // If anchor tag text is initally displayed in one color on our website, If we hover(move) over it then it turns to other color, using this code.
+  color: #EAF6F6;
+}
+
+p{
+  line-height: 2;   // To double the space between all lines in paragraphs.
+}
+
+.middle-container{
+  margin: 100px 0;    // To give space between profile picture and top-container, we use this. It gives space at the top and bottom of middle container margin of 100px and 0px at the left and right.
+
+}
+
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 50px 0 20px;   // Initially there is margin set by web browser of 16px at top and bottom. So, background color doesnt enable to all of the bottom-conatainer. So, we increase padding, top 50px, left and right 0px, bottom 20px.
+}
+
+.intro{
+  width:30%;    // To display the text only in 30% of screen.
+  margin: auto; // To move texts to middle.
+}
+
+.footer-link{
+  color: #11999E;
+}
+
+.copy-right{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;    // To give space between footer-link and copy right. top and bottom of 20px, right and left of 0px.
+}
+
+hr{
+  border: dotted 6px #EAF6F6;   // To get dotted horizontal row with dotts width of 6px, with color specified in hex code.
+  border-bottom: none;    // Initially it displays two dotted horizontal row, one above the other. So, we can remove it using this line of code.
+  width: 4%;              // It displays dotts only 4% of width screen.
+  margin: 100px auto;     // To give space above and below the dotts. 100px at top and bottom. Auto to centre the dotts.
+}
+
+.contact-message{
+  width:40%;          // To display contact message only in 40% width of screen.
+  margin:30px auto 60px;    // Gives space of 30px at top, Remains centre at left and right, and 60px at bottom.
+}
+
+
+
+// Go to "https://css3buttongenerator.com/" website, where we can generate as we needed. After specifying button specification, copy code below that and paste into style sheet.
+/*
+You can style your button however you like. Alternatively to achieve the look in the specification. You need to:
+
+Change the text to "Contact Me"
+
+Change the border-radius to 8
+
+Start gradient colour: #11cdd4
+
+End gradient colour: #11999e
+
+Hover start colour: #30e3cb
+
+Hover end colour: #2bc4ad
+*/
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
