@@ -1,0 +1,13 @@
+// open Codeply v2 on google, and click setting icon their in framework section type "bootstrap" and select latest version of bootstrap and simply close the all pop-ups.
+<button class="btn btn-primary">Hello world</button>    // btn means button. "btn-primary" is bootstrap code that gives simple back-ground color and other functionality.
+<button class="btn btn-dark">Hello world</button>     // "btn-dark" turns button into black color.
+<button class="btn btn-outline-dark">Hello world</button>   // "btn-outline-dark", it turns button color into white background but when we hover over it turn into black.
+<button class="btn btn-lg btn-outline-dark">Hello world</button>  // "btn-lg" is to button large size.
+
+<div class="navbar bg-dark">        // It initially creates navbar with white background so we cant recognize it, to give navbar a color we use "bg-dark" it turns navbar background color into black.
+    <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" height=35>   // To add image. height reduces image size.
+    <button class="btn btn-primary">Hello world</button>
+</div>
+
+
+// Go to "https://getbootstrap.com/" there click on download and download "compiled CSS and JS", to see inbuilt bootstrap code in it.
