@@ -1,0 +1,3 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">  // Include this link in html file, to automatically download bootstrap into our browser through "CDN" ( connection delivery network ).
+// CDN includes multiple hosting of bootstrap in various servers.
+// Go to "https://getbootstrap.com/", there click on "Read the docs", after that Go to "Introduction" tab, there find "CDN" link of css. copy that link and paste in our index.html
