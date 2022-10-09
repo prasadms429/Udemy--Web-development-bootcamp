@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  // To display navbar items horizontally we use "navbar-expand-lg". Where lg means large, it displays accroding size of screen. Different color can be refered using "BUTTONS" section of above link.
     <a class="navbar-brand" href="">tindog</a>             // To include Brand in Higlighted way, we use this.
-    <ul class="navbar-nav">                                // "navebar-nav" has predefined properties in bootstrap css file.
+    <ul class="navbar-nav ms-auto">                        // "navebar-nav" has predefined properties in bootstrap css file. To give space between Brand and nav-items we use ms-auto ( m - for classes that set margin. s - (start) for classes that set margin-left or padding-left in LTR, margin-right or padding-right in RTL. auto - for classes that set the margin to auto. For more info go to SPACING in UTILITIES of above link. )
         <li class="nav-item">                              // "nav-item" has predefined properties in bootstrap css file.
             <a class="nav-link" href="">Contact</a>        // To give link properties to Contact we use "nav-link"
         </li>
