@@ -1,7 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="">Contact</a>
+// https://getbootstrap.com/docs/5.2/components/navbar/     (Refer to this link for more info)
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">  // To display navbar items horizontally we use "navbar-expand-lg". Where lg means large, it displays accroding size of screen. Different color can be refered using "BUTTONS" section of above link.
+    <a class="navbar-brand" href="">tindog</a>             // To include Brand in Higlighted way, we use this.
+    <ul class="navbar-nav">                                // "navebar-nav" has predefined properties in bootstrap css file.
+        <li class="nav-item">                              // "nav-item" has predefined properties in bootstrap css file.
+            <a class="nav-link" href="">Contact</a>        // To give link properties to Contact we use "nav-link"
         </li>
         <li class="nav-item">
             <a class="nav-link" href="">Pricing</a>
