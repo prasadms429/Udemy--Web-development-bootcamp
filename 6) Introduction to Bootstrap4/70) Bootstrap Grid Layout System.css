@@ -1,0 +1,27 @@
+<div class="row">   // In this each column take equal space from row.
+    <div class="col" style="background-color:red; border: 1px solid;"> col </div>
+    <div class="col" style="background-color:red; border: 1px solid;"> col </div>
+</div>
+
+<div class="row"> 
+    <div class="col-6" style="background-color:green; border:1px solid;"> col6 </div>    // The display screen is 12 Unit, If we specify 6 Unit for column then it takes 50% of row size.
+    <div class="col-6" style="background-color:green; border:1px solid;"> col6 </div>
+</div>
+
+<div class="row">   
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border:1px solid;"> col-lg-3 col-md-4 col-sm-6</div>    // For large screens it display all columns in a single row, For medium screens such as tablets it display 3 columns per row and remaining columns in a next row. For small screens such as mobile phones, it displays two columns per each row.
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border:1px solid;"> col-lg-3 col-md-4 col-sm-6</div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border:1px solid;"> col-lg-3 col-md-4 col-sm-6</div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border:1px solid;"> col-lg-3 col-md-4 col-sm-6</div>
+</div>
+
+<div class="row">
+    <div class="col-lg-2 col-md-3" style="background-color:brown; border:1px solid;"> col-lg-2 col-md-3</div>   // For large screens it display all columns in a single row. For medium screens such as tablets it display 4 columns per row and remaining columns in a next row. For small screens such as mobile phones, it displays one columns per each row.
+    <div class="col-lg-2 col-md-3" style="background-color:brown; border:1px solid;"> col-lg-2 col-md-3</div>
+    <div class="col-lg-2 col-md-3" style="background-color:brown; border:1px solid;"> col-lg-2 col-md-3</div>
+    <div class="col-lg-2 col-md-3" style="background-color:brown; border:1px solid;"> col-lg-2 col-md-3</div>
+    <div class="col-lg-2 col-md-3" style="background-color:brown; border:1px solid;"> col-lg-2 col-md-3</div>
+    <div class="col-lg-2 col-md-3" style="background-color:brown; border:1px solid;"> col-lg-2 col-md-3</div>
+</div>
+
+// For more info- https://getbootstrap.com/docs/5.2/layout/grid/
