@@ -1,0 +1,12 @@
+/* In index.html */
+<head>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/25de5775d8.js" crossorigin="anonymous"></script>   // same as bootstrap, we need to include this script to get access to icons, that we use from Font Awesome. (" https://fontawesome.com/kits/25de5775d8/use?welcome=yes ")
+</head>
+
+<div>
+---
+---
+        <button type="button" class="btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i> Download</button>                  // To style button we use this. "btn-dark" means button dark. "btn-lg" = Button large. To style button use this link "https://getbootstrap.com/docs/5.2/components/buttons/"
+        <button type="button" class="btn btn-outline-light btn-lg"><i class="fa-brands fa-google-play"></i> Download</button>   // "i class...", I inlcuded from Font Awesome website, to include icons. i= italian or we can use span in that place also, but it is too long.
+</div>
