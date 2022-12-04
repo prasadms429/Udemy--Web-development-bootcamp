@@ -1,0 +1,36 @@
+// In index.html
+
+// add link for changing fonts style of head, using "https://fonts.google.com/". In this embed the fonts Ubuntu & Montserrat
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<div class="row">
+      <div class="col-lg-6">                                  // "col-lg-6" is for responsive screen, if screen size is equal or above 6 then that column takes 50% of screen. If it is less than 6 or in mobile size it takes full screen (100% of screen).
+        <h1>Meet new and interesting dogs nearby.</h1>
+        <button type="button">Download</button>
+        <button type="button">Download</button>
+      </div>
+
+      <div class="col-lg-6">
+        <img src="images/iphone6.png" alt="iphone-mockup">
+      </div>
+    </div>
+
+
+// In styles.css
+
+#title{      // "#title" for targetting "id", ".title" for targetting "class".
+  background-color: #ff4c68;
+}
+
+h1{
+  font-family: "Montserrat-Black",sans-serif;   // we can compare different font-family of Montserrat in "https://fonts.google.com/".
+  font-size: 3rem;
+  line-height: 1.5;   // This means 1.5 times the intial size of the line-height.
+}
