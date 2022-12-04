@@ -1,0 +1,32 @@
+// Codeply
+
+<div class=container style="background-color : red;">               // container is used to contain specified components of html for defining unified rule horizontally for all those tags and for padding.
+Chennai’s No 1 diet clinic with four branches in Anna Nagar, OMR, Tambaram and Porur, 
+Wootu assures a healthy weight loss. Wootu’s App tracks your daily food intake, 
+sleep pattern and water consumption. 
+You get unlimited access to our dietitians for any queries, doubts and guidance. 
+You can visit any of our clinics for assessment, consultation and review by our 
+dietitians all for free 
+</div>
+
+<div class=container-fluid style="background-color : yellow;">  // "container-fluid" uses 100% of screen.
+Chennai’s No 1 diet clinic with four branches in Anna Nagar, OMR, Tambaram and Porur, 
+Wootu assures a healthy weight loss. Wootu’s App tracks your daily food intake, 
+sleep pattern and water consumption. 
+You get unlimited access to our dietitians for any queries, doubts and guidance. 
+You can visit any of our clinics for assessment, consultation and review by our 
+dietitians all for free 
+</div>
+
+
+// In index.html
+
+<div class="container-fluid">
+---
+---
+</div>
+
+// In style.css
+.container-fluid{
+  padding: 3% 15%;  // Bottom and top from screen is 3%, Right and left from screen is 15%.
+}
