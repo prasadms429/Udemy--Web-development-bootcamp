@@ -17,7 +17,7 @@
         <button type="button">Download</button>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-6">                                  // "col-lg-6" = column large 6
         <img src="images/iphone6.png" alt="iphone-mockup">
       </div>
     </div>
@@ -32,5 +32,5 @@
 h1{
   font-family: "Montserrat-Black",sans-serif;   // we can compare different font-family of Montserrat in "https://fonts.google.com/".
   font-size: 3rem;
-  line-height: 1.5;   // This means 1.5 times the intial size of the line-height.
+  line-height: 1.5;   // This means 1.5 times the intial height of the line gap between lines.
 }
