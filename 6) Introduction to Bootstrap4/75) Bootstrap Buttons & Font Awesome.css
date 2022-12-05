@@ -8,5 +8,5 @@
 ---
 ---
         <button type="button" class="btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i> Download</button>                  // To style button we use this. "btn-dark" means button dark. "btn-lg" = Button large. To style button use this link "https://getbootstrap.com/docs/5.2/components/buttons/"
-        <button type="button" class="btn btn-outline-light btn-lg"><i class="fa-brands fa-google-play"></i> Download</button>   // "i class...", I inlcuded from Font Awesome website, to include icons. i= italian or we can use span in that place also, but it is too long.
+        <button type="button" class="btn btn-outline-light btn-lg"><i class="fa-brands fa-google-play"></i> Download</button>   // "i class...", I inlcuded it from Font Awesome website, to include icons. i= italian or we can use span in that place also, but it is too long.
 </div>
