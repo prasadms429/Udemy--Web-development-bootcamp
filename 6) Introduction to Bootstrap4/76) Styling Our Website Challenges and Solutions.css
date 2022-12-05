@@ -1,0 +1,22 @@
+// In styles.css
+body{             // To remove default font style of bootstrap, and give unified font style for all body elements.
+  font-family: "Montserrat-Black",sans-serif;
+}
+
+#title{
+  color: #fff; // "#fff" means white, this is the hexa code. "#000" means black.
+}
+
+/* Navigation Bar */
+.navbar{
+  padding: 0 0 4.5rem;  // Top=0, Right and left=0, Bottom=4.5rem. This method doesn't give default padding space for other sides and it alligns perfectly matching with other. But "padding-bottom : 4.5 rem" gives some default padding space to other sides.
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+}
+
+.nav-item{
+  padding: 0 18px;    // To give fixed space between nav-items we use px = pixel. Because, the nav-items I already made responsive, In mobile size it gives tab to show all items. 0 = Top and bottom, 18px = Right and left.
+}
