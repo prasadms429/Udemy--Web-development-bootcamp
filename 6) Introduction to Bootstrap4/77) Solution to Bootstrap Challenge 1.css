@@ -1,0 +1,56 @@
+// In index.html
+
+<!-- Features -->
+
+  <section id="features">
+    <div class="row">       // In order to get Responsiveness and Style each feature individually we use "div".
+      <div class="col-lg-4 feature-box">    // "col-lg-4" to fit 3 divisions in large screen and In mobile size each div will take 100% of screen.
+        <i class="fa-solid fa-circle-check icon fa-4x"></i>  // "icon" is custom class. "fa-4x" to increase the size of icon, higher the number, higher the size.
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+
+      <div class="col-lg-4 feature-box">    // "feature-box" is custom class.
+        <i class="fa-solid fa-bullseye icon fa-4x"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-heart icon fa-4x"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+  </section>
+
+
+// In style.css
+
+h3{
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+p{
+  color: #8f8f8f;  // grey color
+}
+
+/* Features Section */
+#features{            // For id's use '#'
+  padding: 7% 15%;    // Top and bottom = 7%, Right and left = 15 %. Always try to give Right and left double of Top and Bottom.
+}
+
+.feature-box{
+  text-align: center;   // To texts to center.
+  padding: 5%;          // all around padding is 5%. i.e, Top, Bottom, Right, Left
+}
+
+.icon{
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover{        // To change color of icon, when we hover over it.
+  color: #ff4c68;
+}
