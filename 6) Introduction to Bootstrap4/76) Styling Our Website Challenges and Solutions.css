@@ -21,7 +21,7 @@ body{             // To remove default font style of bootstrap, and give unified
 
 /* Navigation Bar */
 .navbar{
-  padding: 0 0 4.5rem;  // Top=0, Right and left=0, Bottom=4.5rem. This method doesn't give default padding space for other sides and it alligns perfectly matching with other. But "padding-bottom : 4.5 rem" gives some default padding space to other sides.
+  padding: 0 0 4.5rem;  // Top=0, Right and left=0, Bottom=4.5rem. This method doesn't give default padding space for other sides and it alligns perfectly matching with other tags. But just "padding-bottom : 4.5 rem" gives some default padding space to other sides.
 }
 
 .navbar-brand{
@@ -41,5 +41,5 @@ body{             // To remove default font style of bootstrap, and give unified
 /* Title Image */
 .title-img{
   width: 60%; // To reduce actual size of image, I have used this.
-  transform: rotate(25deg);   // To tilt or rotate image we use this.
+  transform: rotate(25deg);   // To tilt or rotate image we use this. To find this in google search, type "rotate image css"
 }
