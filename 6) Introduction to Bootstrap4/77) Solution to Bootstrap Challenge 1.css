@@ -47,10 +47,10 @@ p{
 }
 
 .icon{
-  color: #ef8172;
+  color: #ef8172;       // orange color
   margin-bottom: 1rem;
 }
 
 .icon:hover{        // To change color of icon, when we hover over it.
-  color: #ff4c68;
+  color: #ff4c68;   // light red color.
 }
