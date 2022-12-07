@@ -42,7 +42,7 @@ p{
 }
 
 .feature-box{
-  text-align: center;   // To texts to center.
+  text-align: center;   // To allign texts to center.
   padding: 5%;          // all around padding is 5%. i.e, Top, Bottom, Right, Left
 }
 
