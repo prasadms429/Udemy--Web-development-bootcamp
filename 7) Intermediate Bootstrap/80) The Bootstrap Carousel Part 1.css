@@ -1,1 +1,51 @@
+// In index.html
+  <!-- Testimonials -->
 
+  <section id="testimonials">
+
+    ...
+    <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">  // add class "testimonial-image.
+    ...
+    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+    ...
+
+  </section>
+
+<!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">    // add class "press-logo", to change features of image.
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+// In style.css
+// To differentiate pages use different color to different page in single screen. "Carousel" means slide view of screen.
+
+/* Testimonial Section */
+#testimonials{
+  padding: 7% 15%;          // Top and bottom = 7%, Right and left = 15%
+  text-align: center;
+  background-color: #ef8172;
+  color: white;
+}
+
+.testimonial-image{
+  width: 10%;              // To decrease or increase size of image we use width.
+  border-radius: 100%;    // To make image round shape from square, we use this.
+  margin: 5%;             // all around margin gap is 5%.
+}
+
+#press{                   // "#" is for id and "." is for class.
+  text-align: center;
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;  // Top=20%, Right and left = 20px, Bottom = 50px.
+}
