@@ -1,0 +1,24 @@
+// In index.html
+
+<section id="testimonials">
+  <div id="testimonial-carousel" class="carousel slide" data-ride="false">        // data-ride="false" means auto sliding(changing) of carousel screen is stopped. For additional features of carousel refer "https://getbootstrap.com/docs/5.2/components/carousel/#options", In this data-bs-ride="carousel" to activate automate slide change. data-bs-interval="1000", by this we can change speed of slide change. data-bs-pause="hover" to pause the slide change, when we hover over it.
+  <div class="carousel-inner">
+    <div class="carousel-item active">    // atlest one carousel-item should be "active".
+      <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+      <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+      <em>Pebbles, New York</em>
+    </div>
+    <div class="carousel-item">
+      <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+      <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+      <em>Beverly, Illinois</em>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">    // To activate, button slide view, "data-bs-target" and "div id" must be same.
+    <span class="carousel-control-prev-icon"></span>      // Additional info: inside span, aria-hidden="true" for visually impaired persons, when they hover specific section then their explation audio will be popout. For example, if they hover over Forward button, then audio will be emitted like "Forward button". To activate that feature we also need to include one more line after this line i.e, <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+  </section>
