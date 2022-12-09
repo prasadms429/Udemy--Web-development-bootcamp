@@ -35,7 +35,7 @@
 
 .testimonial-image{
   width: 10%;              // To decrease or increase size of image we use width.
-  border-radius: 100%;    // To make image round from square, we use this.
+  border-radius: 100%;    // To make image round shape from square, we use this.
   margin: 5%;             // all around margin gap is 5%.
 }
 
