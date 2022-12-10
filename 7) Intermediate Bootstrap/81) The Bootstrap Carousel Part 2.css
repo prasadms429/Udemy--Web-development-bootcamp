@@ -22,3 +22,16 @@
   </button>
 </div>
   </section>
+
+
+// In style.css
+#testimonials{
+
+  text-align: center;
+  background-color: #ef8172;
+  color: white;
+}
+
+.carousel-item {
+  padding: 7% 15%;    // I moved padding section from "#testimonials" to ".carousel-item" to move buttons to edge of screen and apply only padding to ".carousel-item".
+}
