@@ -1,0 +1,79 @@
+// Bootstrap Cards means alligning text inside box. For example, pricing section.
+// Refer "https://getbootstrap.com/docs/5.2/examples/" to get example code snippet for different styles. For example, pricing : "https://getbootstrap.com/docs/5.2/examples/pricing/" use ctrl+shift+I to inspect code or use Right click on specific section and use Inspect button there. Another website for same purpose "https://bootsnipp.com/search?q=login"
+
+// In index.html
+
+<!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">           // This is to apply grid system.
+    <div class="card-group">    // class="card-group" is to get box, to store information inside it. For info refer "https://getbootstrap.com/docs/5.2/components/card/#grid-cards" or "https://getbootstrap.com/docs/5.0/components/card/"
+
+      <div class="pricing-column col-lg-4 col-md-6">    // col-lg-4 col-md-6 = It displays all 3 boxes in full screen or large screen, and it displays only two boxes in i-pad screen.
+        <div class="card">            // Normally every card div contains 3 sections that are  "card-header", "card-body" and "card-tail".
+        <div class="card-header">
+            <h3>Chihuahua</h3>
+        </div>
+        <div class="card-body">
+          <h2>Free</h2>
+          <p>5 Matches Per Day</p>
+          <p>10 Messages Per Day</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-outline-dark w-100 btn-lg">Sign Up</button>    // "w-100" gives button, same size as box.
+        </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">    // col-lg-4 col-md-6 = It displays all 3 boxes in full screen or large screen, and it displays only two boxes in i-pad screen.
+        <div class="card">
+        <div class="card-header">
+            <h3>Labrador</h3>
+        </div>
+        <div class="card-body">
+          <h2>$49 / mo</h2>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-dark w-100 btn-lg">Sign Up</button>
+        </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-12">   // col-lg-4 col-md-12 = In Large screen it displays with other 3 boxex and In i-pad size it uses 100% of screen.
+        <div class="card">
+        <div class="card-header">
+            <h3>Mastiff</h3>
+        </div>
+        <div class="card-body">
+          <h2>$99 / mo</h2>
+          <p>Pirority Listing</p>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-dark w-100 btn-lg">Sign Up</button>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  </section>
+
+
+// styles.css
+
+/* Pricing Section */
+#pricing{                 
+  padding: 100px;       // To give space all around pricing section.
+}
+
+.pricing-column{
+  padding: 3% 2%;      // To give space around column sections. Top and Bottom = 3%, Right and Left = 2%.
+  text-align: center;
+}
