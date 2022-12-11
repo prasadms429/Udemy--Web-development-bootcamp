@@ -11,7 +11,7 @@
     <p>Simple and affordable price plans for your and your dog.</p>
 
     <div class="row">           // This is to apply grid system.
-    <div class="card-group">    // class="card-group" is to get box, to store information inside it. For info refer "https://getbootstrap.com/docs/5.2/components/card/#grid-cards" or "https://getbootstrap.com/docs/5.0/components/card/"
+    <div class="card-group">    // class="card-group" is to get box, to store information inside it. For more info refer "https://getbootstrap.com/docs/5.2/components/card/#grid-cards" or "https://getbootstrap.com/docs/5.0/components/card/"
 
       <div class="pricing-column col-lg-4 col-md-6">    // col-lg-4 col-md-6 = It displays all 3 boxes in full screen or large screen, and it displays only two boxes in i-pad screen.
         <div class="card">            // Normally every card div contains 3 sections that are  "card-header", "card-body" and "card-tail".
@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <div class="pricing-column col-lg-4 col-md-12">   // col-lg-4 col-md-12 = In Large screen it displays with other 3 boxex and In i-pad size it uses 100% of screen.
+      <div class="pricing-column col-lg-4 col-md-12">   // col-lg-4 col-md-12 = In Large screen it display 3 boxes and In i-pad size it uses 100% of screen, only display one box. 
         <div class="card">
         <div class="card-header">
             <h3>Mastiff</h3>
