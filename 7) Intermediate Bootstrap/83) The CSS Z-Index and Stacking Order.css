@@ -1,0 +1,62 @@
+// In codeply html section
+
+<div class="red">
+   Red 
+</div>
+<div class="yellow">
+   Yellow 
+</div>
+<div class="blue">
+    Blue
+</div>
+
+// In codeply css section
+
+div{
+    height:70px;
+    width:70px;
+    /*position:absolute;*/            // If position is absolute then only z-index will work, otherwise not.
+}
+
+.red{
+    background-color:red;
+    /*z-index:1;*/                 // "z-index:1" will display red element in front. (Top of all)
+    /*z-index:-1;*/                // "z-index:-1" will display red element in bottom of all element.
+    position:absolute;         // To individually check z-index property, I used this in red element.
+    z-index:1;
+}
+.yellow{
+    background-color:yellow;
+    top:20px;
+    left:20px;
+    /*z-index:-1;*/            // This will display above red element because, red element is also have "z-index:-1" and below blue element.
+    z-index:10;         // It will display above red element. Higher the value, higher front appearence.
+    position:relative;  // "position: static" means elements are stacked top of one another, disply 3 boxes and each element uses 100% of screen. If we use "position:absolute" then elements are one above other and only one box. 
+}
+.blue{
+    background-color:blue;
+    top:40px;
+    left:40px;
+    /*z-index:-1;*/            // This will display above yellow element. Because all other also "z-index:-1".
+}
+
+
+// In atom style.css
+
+/* Title Image */
+.title-img{
+  width: 60%;
+  transform: rotate(25deg);
+  /* position: absolute; */          // To display some part of i-phone image and hide some part iphone image by #features section.
+  /* right:30%; */              // If "position: absolute" then we can move image to right by 30%.
+}
+
+/* Features Section */
+#features{
+  padding: 7% 15%;
+  background-color: #fff;
+  /* position: relative; */        // "position: relative" takes the features section front and display it front of all other.
+  /* z-index: 1; */                //  "z-index: 1" is to display features section infront of all.
+}
+
+// For more info refer - "file:///G:/udemy%20web%20development/Stacking+Order+Flowchart+v2.1.pdf"
