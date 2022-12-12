@@ -31,7 +31,7 @@ div{
     left:20px;
     /*z-index:-1;*/            // This will display above red element because, red element is also have "z-index:-1" and below blue element.
     z-index:10;         // It will display above red element. Higher the value, higher front appearence.
-    position:relative;  // "position: static" means elements are stacked top of one another, disply 3 boxes and each element uses 100% of screen. If we use "position:absolute" then elements are one above other and only one box. 
+    position:relative;  // "position: static" means elements are stacked top of one another, disply 3 boxes and each element uses 100% of screen. If we use "position:absolute" then elements are one above other and disply only one box. 
 }
 .blue{
     background-color:blue;
@@ -54,7 +54,7 @@ div{
 /* Features Section */
 #features{
   padding: 7% 15%;
-  background-color: #fff;
+  background-color: #fff;         // #fff = white
   /* position: relative; */        // "position: relative" takes the features section front and display it front of all other.
   /* z-index: 1; */                //  "z-index: 1" is to display features section infront of all.
 }
