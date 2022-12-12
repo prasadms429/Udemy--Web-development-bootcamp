@@ -1,0 +1,51 @@
+// In codeply html
+<h1>Hello world</h1>
+
+// In codeply css
+h1{
+    font-size : 30px;
+}
+
+@media (min-width:900px){      //This will display h1 in 60px, only when screen size is 900px and above. otherthan that it will display in size of 30px. 
+    h1{
+    font-size : 60px;
+}
+}
+
+@media (max-width:900px){     //This will display h1 in 60px, only when screen size is 900px and below. otherthan that it will display in size of 30px.
+    h1{
+    font-size : 60px;
+}
+}
+
+@media (min-width:900px) and (max-width:1000px){      // Media query is to give responsiveness to website, under particular condition. In this condition font size of h1 becomes 60px only when screen size is between 900 and 1000px, otherthan that screen size h1 font size will be 30px.
+    h1{
+    font-size : 60px;
+}
+}
+
+@media print {        // This will print h1 in red color, only when we give for printing. Other media queries, "@media screen" is dependent on screen size or resolution. "@media speech" which is activated when website is in read for visually impaired person.
+   h1{
+      color: red
+   }
+   
+// Media query general syntax = "@media <type> <feature>"
+//For example:
+@media screen (min-width:900px){
+  //change something
+  
+ }
+
+
+// In atom styles.css
+
+@media (max-width : 990px) {      // To apply this features in mobile and tablet size. I used "max-width : 990px", by seeing screen resolution by pressing ctrl+shift+I. When screen size is 990px and below, only this features inside it will work.
+  #title{
+    text-align: center;
+  }
+
+  .title-img{
+    position: static;         // To get full image of iphone, withought hiding some part.
+    transform: rotate(0);     // To get stright image, withought tilting.
+  }
+}
