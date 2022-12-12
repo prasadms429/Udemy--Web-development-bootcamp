@@ -47,16 +47,16 @@ div{
 .title-img{
   width: 60%;
   transform: rotate(25deg);
-  /* position: absolute; */          // To display some part of i-phone image and hide some part iphone image by #features section.
-  /* right:30%; */              // If "position: absolute" then we can move image to right by 30%.
+  position: absolute;          // To display some part of i-phone image and hide some part iphone image by #features section.
+  right:25%;              // If "position: absolute" then we can move image to right by 25%.
 }
 
 /* Features Section */
 #features{
   padding: 7% 15%;
   background-color: #fff;         // #fff = white
-  /* position: relative; */        // "position: relative" takes the features section front and display it front of all other.
-  /* z-index: 1; */                //  "z-index: 1" is to display features section infront of all.
+  position: relative;        // "position: relative" takes the features section front and display it front of all other.
+  z-index: 1;                //  "z-index: 1" is to display features section infront of all.
 }
 
 // For more info refer - "file:///G:/udemy%20web%20development/Stacking+Order+Flowchart+v2.1.pdf"
