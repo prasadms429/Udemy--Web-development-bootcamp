@@ -1,0 +1,65 @@
+// In index.html
+<section id="title">
+...
+  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>          // By clicking "Contact" in navigation section, we directly go to "footer" section by using this href="#footer". The footer section contains Contact information through Twitter, Email etc.
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cta">Download</a>
+                </li>
+....
+</section>
+
+
+<!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="fa-brands fa-twitter social-icon"></i>
+    <i class="fa-brands fa-facebook-f social-icon"></i>
+    <i class="fa-brands fa-instagram social-icon"></i>
+    <i class="fa-solid fa-envelope social-icon"></i>
+
+    <p>© Copyright 2022 TinDog</p>
+
+  </footer>
+
+
+// In styles.css
+/* Call to Action Section */
+#cta{
+  padding: 7% 15%;
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-heading{
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;   // To give space between lines, we use this.
+}
+
+/* Footer Section */
+#footer{
+  padding: 7% 15%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.social-icon{
+  padding: 20px 10px;   // To give space between icons.
+}
