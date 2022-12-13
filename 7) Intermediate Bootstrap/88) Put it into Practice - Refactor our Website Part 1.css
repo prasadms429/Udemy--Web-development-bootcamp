@@ -6,6 +6,6 @@ h1,h2,h3{                     // These feature is same to all heading.
   font-family: "Montserrat";
 }
 
-#title .container-fluid{   // To override specific feature in specific section, we use this. This also called as Combining selectors.
+#title .container-fluid{   // To override specific feature in specific section, we use this. This also called as Heirachical selectors.
   padding: 3% 15% 7%;
 }
