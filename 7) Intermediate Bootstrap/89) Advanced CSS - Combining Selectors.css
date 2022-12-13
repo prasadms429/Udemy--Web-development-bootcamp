@@ -1,0 +1,105 @@
+// Multiple selectors
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat";
+}
+
+Selector1, Selector2{
+  
+}
+
+// Heirarchical selector
+#title .container-fluid{
+  padding: 3% 15% 7%;
+}
+
+Selector1 Selector2{
+  
+}
+
+//Examples:
+div h1 {color: red;}      // In this "div" is parent and "h1" is child. If there is space between two selectors then we read it from "Right to left".
+
+div .container-fluid
+  h1 #title
+  Hello World
+
+
+.container-fluid #title {color: red;}     // This will apply only to specific id (#title) of "container-fluid" class. Id is unique in website.
+
+div .container-fluid
+  h1 #title
+  Hello World
+
+
+.container-fluid h1 {color: red;}       // This will apply to all elements of "container-fluid" class that contains h1.
+
+div .container-fluid
+  h1 #title
+  Hello World
+
+
+//Combined Selectors
+selector1.selector2 {
+  
+}
+
+selector1#selector2 {
+  
+}
+
+h1#title {color: red;}
+
+div .container-fluid
+  h1 #title
+  Hello World
+
+
+div.container-fluid {color: red;}   // This will work, because two selectors "div" and "container-fluid" from same line. For no-space selector or For "Combined selector" it must be same.
+
+div .container-fluid
+  h1 #title
+  Hello World
+
+
+div#title {color: red;}   // This will not work, because In withought space selectors, two selectors must be from same line.
+
+div .container-fluid
+  h1 #title
+  Hello World
+
+
+// In codeplay html
+<div class="container">
+    <h1 class="title">Hello World!</h1>
+</div>
+<div class="container">
+    <h1 id="heading" class="title">Hello World</h1>
+</div>
+<div class="container-fluid">
+    <h1 class="title">Good Bye World!</h1>
+</div>
+
+//In codeply css
+/*.title{*/             //This will effect to all.
+/*    color: red;*/
+/*}*/
+
+/*.container .title{*/    // This will effect only first div.
+/*    color: red;*/
+/*}*/
+
+/*.container.title{*/     // This not effect anything. Because, No space selectors must be from same html element.
+/*    color: red;*/
+/*}*/
+
+/*h1.container.title{*/
+/*    color: red;*/
+/*}*/
+
+/*h1#heading{*/           // This will work, because the selectors from same html element.
+/*    color: red;*/
+/*}*/
+
+h1.title{                 // This will work, because the selectors from same html element.
+    color: red;
+}
