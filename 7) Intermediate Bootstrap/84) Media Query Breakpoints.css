@@ -6,13 +6,13 @@ h1{
     font-size : 30px;
 }
 
-@media (min-width:900px){      //This will display h1 in 60px, only when screen size is 900px and above. otherthan that it will display in size of 30px. 
+@media (min-width:900px){      //This will display h1 in 60px, only when screen size is 900px and above. otherthan that it will display h1 in size of 30px. 
     h1{
     font-size : 60px;
 }
 }
 
-@media (max-width:900px){     //This will display h1 in 60px, only when screen size is 900px and below. otherthan that it will display in size of 30px.
+@media (max-width:900px){     //This will display h1 in 60px, only when screen size is 900px and below. otherthan that it will display h1 in size of 30px.
     h1{
     font-size : 60px;
 }
@@ -24,7 +24,7 @@ h1{
 }
 }
 
-@media print {        // This will print h1 in red color, only when we give for printing. Other media queries, "@media screen" is dependent on screen size or resolution. "@media speech" which is activated when website is in read for visually impaired person.
+@media print {        // This will print h1 in red color, only when we give for printing. Other media queries, "@media screen" is dependent on screen size or resolution. "@media speech" which is activated when website is in read mode for visually impaired person.
    h1{
       color: red
    }
