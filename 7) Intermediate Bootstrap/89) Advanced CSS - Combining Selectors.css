@@ -31,14 +31,14 @@ div .container-fluid
   Hello World
 
 
-.container-fluid h1 {color: red;}       // This will apply to all elements of "container-fluid" class that contains h1.
+.container-fluid h1 {color: red;}       // This will apply to all elements of "container-fluid" class that is h1 element.
 
 div .container-fluid
   h1 #title
   Hello World
 
 
-//Combined Selectors
+//Combined Selectors    ( There is no space between selectors )
 selector1.selector2 {
   
 }
@@ -47,14 +47,14 @@ selector1#selector2 {
   
 }
 
-h1#title {color: red;}
+h1#title {color: red;}    // In this we read from left to right.
 
 div .container-fluid
   h1 #title
   Hello World
 
 
-div.container-fluid {color: red;}   // This will work, because two selectors "div" and "container-fluid" from same line. For no-space selector or For "Combined selector" it must be same.
+div.container-fluid {color: red;}   // This will work, because two selectors "div" and "container-fluid" from same line. For no-space selector or For "Combined selector" it must be same from same line.
 
 div .container-fluid
   h1 #title
@@ -84,11 +84,11 @@ div .container-fluid
 /*    color: red;*/
 /*}*/
 
-/*.container .title{*/    // This will effect only first div.
+/*.container .title{*/    // This will effect only first and second div.
 /*    color: red;*/
 /*}*/
 
-/*.container.title{*/     // This not effect anything. Because, No space selectors must be from same html element.
+/*.container.title{*/     // This will not effect anything. Because, No space selectors must be from same html element.
 /*    color: red;*/
 /*}*/
 
@@ -96,10 +96,10 @@ div .container-fluid
 /*    color: red;*/
 /*}*/
 
-/*h1#heading{*/           // This will work, because the selectors from same html element.
+/*h1#heading{*/           // This will work, because the selectors from same html element. Only second div becomes red.
 /*    color: red;*/
 /*}*/
 
-h1.title{                 // This will work, because the selectors from same html element.
+h1.title{                 // This will work, because the selectors from same html element. All div becomes red.
     color: red;
 }
