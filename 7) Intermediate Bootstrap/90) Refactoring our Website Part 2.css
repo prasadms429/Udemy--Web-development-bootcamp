@@ -1,0 +1,22 @@
+// In style.css
+/* Sections */
+
+.coloured-section{              // I removed common color from css elements and grouped that together under this element "coloured-section". And also created class called "coloured-section" in sections of html to target specific section.
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section{
+  background-color: #fff;
+}
+
+// The testimonial and press section has different color, So to override common color feature, we used ID.
+/* Testimonial Section */
+#testimonials{                      // ID has more precedence than class and html elements.The precedence order is ID, CLASS, HTML elements.
+  background-color: #ef8172;
+}
+
+#press{
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
