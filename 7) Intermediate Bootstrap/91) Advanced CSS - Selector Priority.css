@@ -1,0 +1,20 @@
+// In atom html
+<h1 id="heading" class="title" style="color: orange">Hello World</h1>     // Inline css has more precedence over all other.
+
+// In atom css
+h1{                         // html elements have less precedence than all.    Precedence order = html elements < Class < Id's < Inline css
+    color: red;
+    color: green;       // color green has higer precedence than previous color red. 
+}
+
+.title{
+    color: yellow;
+}
+
+#heading{
+    color: blue;
+}
+
+// Always avoid Inline css, because we cant make changes or alter feature of html elements in css stylesheet, if it contains inline css.
+
+// Also avoid usage of ID's regularly, use it only in Sections and In div for navigation purpose only. For other purposes use Class.
