@@ -15,6 +15,6 @@ h1{                         // html elements have less precedence than all.    P
     color: blue;
 }
 
-// Always avoid Inline css, because we cant make changes or alter feature of html elements in css stylesheet, if it contains inline css.
+// Always avoid Inline css, because we cant make changes or alter feature of that particular html elements  in css stylesheet, if it contains inline css.
 
 // Also avoid usage of ID's regularly, use it only in Sections and In div for navigation purpose only. For other purposes use Class.
