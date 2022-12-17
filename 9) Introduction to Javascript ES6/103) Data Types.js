@@ -4,8 +4,7 @@
 2+3
 5
 
-alert(2+3);
-undefined
+alert(2+3);           // It will give an alert of 5
 
 typeof(123);          // "typeof" is used to get datatype of specific data.
 'number'
