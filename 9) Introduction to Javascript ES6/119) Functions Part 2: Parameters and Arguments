@@ -26,7 +26,7 @@ getMilk(2);
 
 // Calculate number of bottels of milk that we get for given money.
 function getMilk(money) {
-  var numberOfBottles = Math.floor(money / 1.5);
+  var numberOfBottles = Math.floor(money / 1.5);  // To round off value, we use "Math.floor()" function. For eg: 4.9 = 4, 4.4 = 4.
   console.log("leaveHouse");
   console.log("moveRight");
   console.log("moveRight");
