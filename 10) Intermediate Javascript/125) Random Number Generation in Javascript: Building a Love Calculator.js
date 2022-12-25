@@ -6,7 +6,7 @@ console.log(n);
 
 // Code to get loveScore between two person.
 prompt("Enter your name:");
-prompt("Enter your their name:");
+prompt("Enter their name:");
 var loveScore = Math.random();
 loveScore = loveScore*100;
 loveScore = Math.floor(loveScore) + 1;
