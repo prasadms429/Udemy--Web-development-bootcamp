@@ -22,3 +22,10 @@ function fizzBuzz() {
 
     console.log(output);
 }
+
+
+// Run code and In console enter:
+fizzBuzz();
+// each time enter this value to get new values.
+fizzBuzz();
+
