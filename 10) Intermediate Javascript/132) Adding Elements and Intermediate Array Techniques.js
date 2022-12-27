@@ -1,3 +1,4 @@
+// fizzbuzz game :
 // This program prints sequence of numbers from 1. Also this Program prints "fizz", when a number is divisible by 3 and It prints "buzz", when number is divisible by 5.
 // When a number is divisible by both 3 and 5, then it prints "fizzBuzz".
 
