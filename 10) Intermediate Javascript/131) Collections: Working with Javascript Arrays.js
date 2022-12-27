@@ -1,7 +1,7 @@
 var a = "Angela";     // We can store only one data inside one variable or We can store similar group of data inside one variable, using an array.
 var b = "Jack";
 
-var guestList = ["Angela","Jack","Pam","James","Lara","Jason"];   // This is array, that stores names.
+var guestList = ["Angela","Jack","Pam","James","Lara","Jason"];   // This is an array, that stores names.
 console.log(guestList);         // It will display names.
 console.log(guestList.length);  // It will display total number of elements, inside array. That is 6 in this case.
 guestList[0];     // It will display, element at position 0. That is "Angela".
