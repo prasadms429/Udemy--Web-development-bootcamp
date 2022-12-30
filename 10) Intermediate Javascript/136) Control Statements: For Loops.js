@@ -23,7 +23,7 @@ function fizzBuzz() {
 for(i=0; i<2; i++)  { // In this "i=0" is starting point. "i<2" is ending point. "i++" is the change that we want to make (It may be i++ or i--).
   //Do something      // In for loop it first go to starting point, then checks condition for whether it is true or false. 
 }                     // If it is true then it executes code and go till flower brackets and again go to "change" that we included in for loop and executes it.
-                      // From second time it wil not go to starting point, i.e initialization i=0. rather than it strats from end condition and checks for condition and executes code, and come back for "change".
+                      // From second time it wil not go to starting point, i.e initialization i=0. rather than it starts from end condition and checks for condition and executes code, and come back for "change".
                       //  If "end" condition false, then it terminate for loop and go to next part of code.
 
 
