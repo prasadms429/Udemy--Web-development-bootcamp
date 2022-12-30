@@ -23,7 +23,7 @@ function fizzBuzz() {
 }
 
 
-// This is the program to print one song game.
+// This is the program to print song game.
 var count = 99;
 function beer() {
     while(count>0){       // while loop run untill condition becomes false.
