@@ -56,3 +56,35 @@ document.firstElementChild.lastElementChild.lastElementChild;   // This will pri
 // This is the code to change the text inside third "li", i.e "Third" to "your name".
 var third = document.firstElementChild.lastElementChild.lastElementChild.lastElementChild;
 third.innerHTML = "Prasad";
+
+
+Car object have =
+Properties:
+Color
+Number of seats
+Number of Doors
+
+Methods:	// The difference between function and Method is , Method is used for objects. While function not used for Objects.
+Break()	// We differentiate Properties and Methods by giving paranthesis to Methods, such as ().
+Drive()
+Park()
+
+// Get Property
+car.colour;			// red
+
+// Set Property
+car.numberOfDoors = 0;
+
+// Call Method
+car.drive();
+
+Button =
+//Properties
+innerHTML
+style
+firstChild
+
+//Methods
+click()
+appendChild()
+setAttribute()
