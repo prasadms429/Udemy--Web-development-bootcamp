@@ -64,7 +64,7 @@ Color
 Number of seats
 Number of Doors
 
-Methods:	// The difference between function and Method is , Method is used for objects. While function not used for Objects.
+Methods:	// The difference between function and Method is , Method is used for objects. While function is not used for Objects.
 Break()	// We differentiate Properties and Methods by giving paranthesis to Methods, such as ().
 Drive()
 Park()
