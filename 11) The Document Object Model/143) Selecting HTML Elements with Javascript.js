@@ -29,7 +29,7 @@
 
 
 // In console of chrome developer tool
-document.getElementsByTagName("li");              // getElementsByTagName() will display elements in array. It will display all list items.
+document.getElementsByTagName("li");              // getElementsByTagName() will display elements in form of array. It will display all list items.
 HTMLCollection(3) [li.list, li.list, li.list]
 
 document.getElementsByTagName("li").style.color = "purple";         // we cant set color to array, So we have to select particular element in array, to set color to it. 40 th line of code is correct format of this code.
