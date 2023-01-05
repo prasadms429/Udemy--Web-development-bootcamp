@@ -12,7 +12,7 @@ DOMTokenList ['btn', value: 'btn']
 }
 
 // In console of chrome developer tool.
-document.querySelector("button").classList.add("invisible");    // To add another extra class "invisible" to pre-existing class of element of "button".
+document.querySelector("button").classList.add("invisible");    // To add another extra class "invisible" to pre-existing class of element "button".
 undefined
 
 document.querySelector("button").classList.remove("invisible");   // To remove class from classList.
