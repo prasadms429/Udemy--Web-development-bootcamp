@@ -8,9 +8,6 @@ document.getElementById("title").innerHTML = "Good Bye";    // "innerHTML" and "
 document.getElementById("title").textContent = "Hello";
 'Hello'
 
-document.querySelector("h1").innerHTML;
-'Hello'
-
 document.querySelector("h1").innerHTML;     // If inside of html element, if there is an another html element then "innerHTML" displays text with that html element.
 '<strong>Hello</strong>'
 
