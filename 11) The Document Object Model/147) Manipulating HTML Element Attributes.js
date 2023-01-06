@@ -1,6 +1,6 @@
 // In this lesson I have learnt manipulating HTML attributes. In atom attributes are higlighted in orange color. Inside tags, other than tag name, else are attributes. For example, "<a href=​"https:​/​/​www.google.com">​Google​</a>​" in this "href" is attribute and "a" is tag name.
 
-document.querySelector("a");
+document.querySelector("a");    // "a" means anchor tag.
 <a href=​"https:​/​/​www.google.com">​Google​</a>​
 
 document.querySelector("a").attributes;                 // To get the attributes associated with anchor tag "a".
