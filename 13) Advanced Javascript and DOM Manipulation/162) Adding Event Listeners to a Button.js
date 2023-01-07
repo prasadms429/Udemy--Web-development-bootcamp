@@ -15,3 +15,5 @@ for(var i=0;i<numberOfDrumButtons;i++){     // This code is to add click propert
 // function handleClick(){
 //     alert("I got clicked");
 //   }
+
+For more info refer = "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"
