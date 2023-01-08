@@ -70,3 +70,7 @@ calculator(3,2,subtract);
 
 calculator(6,2,divide);
 3
+
+// To debug code enter this in console
+debugger;  // presss shift + Enter
+calculator(2,3,add);  // Then press Enter
