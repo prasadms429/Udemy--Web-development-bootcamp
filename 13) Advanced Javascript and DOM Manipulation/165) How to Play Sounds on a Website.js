@@ -4,7 +4,7 @@ for(var i=0;i<numberOfDrumButtons;i++){
       var audio = new Audio('sounds/tom-1.mp3');        // To play a sound, when a button is clicked. In this we created new "Audio" object and assigned it to "audio" variable. Inside of "Audio" object we give path of sound file.
       audio.play();         // The "play()" method, plays sound.
     });
-}
+} // For more info refer stack overflow or "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement".
 
 document.querySelectorAll(".drum")[i].addEventListener("click",function(){ // "this" is basically the identity of button that triggered EventListener.
     console.log(this.innerHTML);     // when, I click specific button then, text contained in that button will be logged to console.
