@@ -1,5 +1,5 @@
 // In index.js of chrome developer tool.
-var houseKeeper1 = {    // Below three lines of code is properties of houseKeeper1 variable. To create different objects of houseKepeer like houseKepeer2 and houseKepeer3, we have to write all properties and its values once again. To reduce repated code writing for objects, we create constructor as below of line  16.
+var houseKeeper1 = {    // Below three lines of code is properties of houseKeeper1 variable. To create different objects of houseKepeer like houseKepeer2 and houseKepeer3, we have to write all properties and its values once again. To reduce repated code writing for objects, we create constructor as below of line  22.
     yearOfExperience: 12,
     name: "Jane",
     cleaningRepertoire: ["bathRoom","lobby","bedRoom"]
