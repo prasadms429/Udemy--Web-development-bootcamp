@@ -44,7 +44,7 @@ VM1361:2 PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pres
 
 function anotherAddEventListner(typeOfEvent,callBack){    // This is another Event listner function, that we have created to understand "addEventListener" function.
     // Detect Event code
-    var eventThatHappened = {   // This is the object to compare event that happened. It also contains properties such as eventType, key and durationOfKeypress.
+    var eventThatHappened = {   // This is the object to compare with event that happened. It also contains properties such as eventType, key and durationOfKeypress.
         eventType : "keydown",
         key : "p",
         durationOfKeypress : 2
