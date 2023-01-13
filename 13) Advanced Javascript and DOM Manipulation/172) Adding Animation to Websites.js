@@ -28,7 +28,7 @@ document.addEventListener("keydown", function(event){
 });
 
 function buttonAnimation(currentKey){
-  var activeButton = document.querSelector("." + currentKey);   // To select key that is pressed on keyboard or button that is clicked and store it in variable.
+  var activeButton = document.querySelector("." + currentKey);   // To select key that is pressed on keyboard or button that is clicked and store it in variable.
   activeButton.classList.add("pressed");    // This is to add "pressed" class to activeButton. "pressed" is defined in css style sheet.
 
 // In google search, "timeout function javascript"
