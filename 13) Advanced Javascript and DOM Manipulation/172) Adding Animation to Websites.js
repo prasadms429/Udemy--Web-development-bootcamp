@@ -7,6 +7,7 @@ document.querySelector(".k");
 
 document.querySelector("h1").classList;
 DOMTokenList [value: '']length: 0value: ""[[Prototype]]: DOMTokenList
+
 document.querySelector("h1").classList.add("pressed");
 undefined
 
@@ -32,9 +33,9 @@ function buttonAnimation(currentKey){
   activeButton.classList.add("pressed");    // This is to add "pressed" class to activeButton. "pressed" is defined in css style sheet.
 
 // In google search, "timeout function javascript"
-  setTimeout(function(){    // This setTimeout function is to execute input function, after defined time limit. For more info refer "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout_cleartimeout".
+  setTimeout(function(){    // This setTimeout function is to execute input  alternate function, after defined time limit. For more info refer "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout_cleartimeout".
     activeButton.classList.remove("pressed");
-  },100);     // In this function will execute after 100 miliseconds. To get view of button click animation from above line of code 31 to 32 and button click animation off from line 35 to 38.
+  },100);     // In this alternate function will execute after 100 miliseconds. To get view of button click animation from above line of code 31 to 32 and button click animation off from line 35 to 38.
 }
 
 // In styles.css
