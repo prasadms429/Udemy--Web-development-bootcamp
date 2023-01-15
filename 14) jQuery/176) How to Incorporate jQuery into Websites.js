@@ -17,7 +17,7 @@
     <button>click me</button>
     <button>click me</button>
                                                                                                 // In html, code executed from top to bottom.
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>    // Always include jQuery CDN (computer domain network) before javascript source. Because, If we include it after javascript source then it dont understand what is "$" sign and all while executing javascript code. So, Always include jQuery CDN before javascript source link.
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>    // Always include jQuery CDN (computer domain network) before javascript source. Because, If we include it after javascript source then it dont understand what is "$" sign and all, while executing javascript code. So, Always include jQuery CDN before javascript source link.
     <script src="index.js" charset="utf-8"></script>        // Always, include jQuery mdn and javascript source at the end of body section. If we include these two lines of code in head section, after link then include these three lines of code as below line number 28-30, because, Javascript code is executed before jQuery CDN is loaded. So, to make sure that jQuery document is ready include those line of code from 28-30.
   </body>
 </html>
