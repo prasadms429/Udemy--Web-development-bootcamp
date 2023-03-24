@@ -34,3 +34,16 @@ $("button").click(function(){
 $("button").click(function(){
   $("h1").animate({opacity:0.5});     // "animate" means animation, the "opacity:0.5" is to reduce the displyness of the "h1" content by 50%. Inside "animate" we can give only numerical value, not text value.
 })
+
+$("button").click(function(){
+  $("h1").animate({margin:20});     // when we click on button, it sets margin of h1 to 20 pixel.
+})
+
+$("button").click(function(){
+  $("h1").animate({margin:"20%"});  // when we click on button, it sets margin of h1 to 20%.
+})
+
+// Chaining of animation
+$("button").click(function(){   // When I click on button, then first it will slideUp then slideDown and after it will reduce opacity to 50%.
+  $("h1").slideUp().slideDown().animate({opacity:0.5});
+})
