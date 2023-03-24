@@ -32,5 +32,5 @@ $("button").click(function(){
 })
 
 $("button").click(function(){
-  $("h1").animate({opacity:0.5});     // "animate" means animation, the "opacity:0.5" is to reduce the displyness of the "h1" content by 50%. Inside "animate" we can give only numerical value.
+  $("h1").animate({opacity:0.5});     // "animate" means animation, the "opacity:0.5" is to reduce the displyness of the "h1" content by 50%. Inside "animate" we can give only numerical value, not text value.
 })
