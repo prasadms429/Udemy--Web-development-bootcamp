@@ -1,0 +1,4 @@
+//To know whether hyper is configured with git bash or not, enter this command on hyper -
+echo $SHELL
+
+In response, if we get "bin/bash" then it is successful.
