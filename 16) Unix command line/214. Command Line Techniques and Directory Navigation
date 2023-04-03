@@ -10,3 +10,22 @@ cd ~
 // To navigate directly to the specific path, without giving folder name and cd, again and again.
 cd Desktop/music/
 
+// To get previously used commands, just click "Up arrow" in keyboard.
+
+// To go back, one folder before
+cd ..
+
+cd = change directory
+
+// Withought giving "cd .." If I want to go back to the one directory, then give full file path.
+
+// If we want to edit cd path or if we want to change any word in the middle of cd path then hold click on "alt" key and click on specific character that you want to edit.
+cd Desktop/music/     // If I want to change Desktop to Document, then the alt key is very helpful.
+
+// If we want to go to the begining of command then press, "ctrl + A". 
+Here cursor move to "c" in "cd Desktop/music/"
+
+// To go end of command, press "ctrl + E".
+
+// To clear entire line,
+ctrl + U   ( It removes entire line of command, that we typed on particular line. So, we can write new command there )
