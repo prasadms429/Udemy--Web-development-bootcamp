@@ -1,0 +1,15 @@
+// Operating system consist two types, i) shell, ii) Kernel.
+// Kernel is the program interface to interact with hardware.
+// Shell is Graphical User Interface ( GUI ) to interact with operating system, intact that is hardware.
+
+// We use many types of Unix systems such as LINUX, and Mac OS also use unix OS.
+// Windows use DOS Operating system.
+
+// Why we use Command line ?
+// Command line gives faster access to interact with hardware of system and gives more control than GUI.
+
+// To create new directory ( folder ), open hyper and give this
+mkdir music
+
+// To list all files inside specific path. (This command displays, hidden files also)
+ls -a
