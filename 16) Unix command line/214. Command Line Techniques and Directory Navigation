@@ -1,3 +1,12 @@
 // To list all files inside directory
 ls
 
+// To navigate inside the folder  ( We can just enter "cd Doc" then if we press Tab, then we get full name of folder automatically )
+cd Documents/
+
+// To go back to main directory, that we are previously
+cd ~
+
+// To navigate directly to the specific path, without giving folder name and cd, again and again.
+cd Desktop/music/
+
