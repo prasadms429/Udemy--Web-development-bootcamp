@@ -1,0 +1,44 @@
+// To create new folder
+mkdir Angela
+
+// To navigate inside folder
+cd Angela
+
+// To create new text file, inside that folder created above
+touch Text2.txt
+
+touch Text1.txt
+
+// To open the file, created
+start Text2.txt
+
+// The above line of command, opened file in default text editor. If we want to open that text file in a different application then give like this
+start Atom Text2.txt
+
+// To Remove (delete) created files.
+rm Text1.txt
+
+// To print current location, we are in
+pwd
+// Print working directory
+
+touch Text.txt
+
+touch Text3.txt
+
+// To list all files inside directory
+ls
+
+// To remove all files inside directory. ( Delete )
+rm *
+
+// To go back to main directory
+cd ~
+
+// To remove folder Angela. -r ( Recursive )
+rm -r Angela      
+
+// "Server fault" is website like stack over flow. This is for network administrator people.
+
+// To learn more about command line commands
+https://www.learnenough.com/command-line-tutorial
