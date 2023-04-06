@@ -1,0 +1,11 @@
+// The front end web development consist of HTML, CSS, Javascript, Bootstrap, jquery.
+// Whereas Back end development done by using Nodejs, Java, Ruby, php
+// Nodejs has framework called Express.js to reduce repetative lines of code.
+// Java has framework called Spring.
+// Ruby has framework called ruby rails.
+
+// The front end where user or client interacts with website. It's like Hotel front side, such as where customer sit.
+// The Back end is where actual business logic get implemented. It consit of Server and Database. Server stores application and Server, serves HTML, CSS, Javascript to user.  Also, Server takes data from database and executes code.
+// Database stores data such as login credentials, user information, password. It stores in form of table in a excel.
+// For example, Assume Server as Kitchen in a hotel and where food is prepared that is ordered by customer. Database is the Ingredients used for that.
+// Full stack web development consist of both front end and Backend
