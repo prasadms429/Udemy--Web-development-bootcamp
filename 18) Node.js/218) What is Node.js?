@@ -1,0 +1,4 @@
+// Node.js is javascript frame work, used for backend development.
+// Node.js is used to interact with files, Network processing and execute code in backend from server.
+// For example, If we search anything on google then it takes our request to server and executes codes there and gives response back on website. This makes website very fast.
+// The javascript executes codes on browser. Whereas, Nodejs executes codes on server and interacts directly with hardware of computer.
