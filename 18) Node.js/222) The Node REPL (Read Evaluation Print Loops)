@@ -1,0 +1,15 @@
+// REPL (Read Evaluation Print Loops) is to execute small byte size code. Like Console of chrome developer tool.
+// Type in hyper, to enter into REPL
+node
+
+// If we enter "con" and press tab two times then REPL will show all the related commands.
+
+// If we enter "console." and press tab two times, then it will show related commands.
+
+console.log("Hey there!");    // Press Enter then, it will executes that line of code.
+
+// To exit from REPL type OR press "CTRL + C" two times.
+.exit
+
+// To clear screen and remove previous commands.
+clear
