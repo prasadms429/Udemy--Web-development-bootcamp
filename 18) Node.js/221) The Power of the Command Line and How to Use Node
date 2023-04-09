@@ -1,0 +1,16 @@
+// Open hyper
+
+// To know current working directory
+pwd      
+
+// To go to specific required path
+cd "E:\Web development"
+
+mkdir intro-to-node
+
+touch index.js
+
+// Open index.js in atom application and write code inside index.js.
+
+// Previously we needed index.html file to run index.js on browser. Now we can directly index.js file in computer using node.
+node index.js
