@@ -22,10 +22,25 @@ https://www.npmjs.com/
 // Their search required pakages. Such as "superhero names".
 // Then follow step given their
 
+// In hyper
+npm install superheroes   // To install superheroes package. It will include these external pakages under dependencies of json file.
+
 // In atom
 const superheroes = require('superheroes');   // To include superheroes module in superheroes constant use this line of code.
 var mySuperHero = superheroes.random();       // It will give random superhero name
 console.log(mySuperHero);
+
+// In hyper to execute code
+node index.js
+
+// In a same way write a code to generate supervillain name
+// In hyper 
+npm install supervillains
+
+// In atom
+const supervillains = require('supervillains');
+var mySuperVillain = supervillains.random();
+console.log(mySuperVillain);
 
 // In hyper
 node index.js
