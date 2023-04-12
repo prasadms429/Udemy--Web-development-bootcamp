@@ -2,7 +2,7 @@
 // Native node modules are internal module.
 
 // In hyper
-// To initialize npm to use and creates .json file inside atom.
+// To initialize npm, to use and creates .json file inside atom.
 npm init
 // Then fill neccessary details else press enter. Such as this
 
