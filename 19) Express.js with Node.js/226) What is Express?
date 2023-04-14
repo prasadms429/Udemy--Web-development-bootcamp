@@ -1,0 +1,6 @@
+// In javascript section we used jquery to reduce repetative code and add more functionality. Same as this we use Express for Node.
+// Express.js is framework for Node.js.
+// Node.js librates javascript to interact directly with computer.
+// By using Express.js we reduce repeatative code in Node.js.
+// By using both Express.js and Node.js we are going to build server to execute server side code.
+// Atom is built using node.
