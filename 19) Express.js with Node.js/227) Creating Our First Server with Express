@@ -1,0 +1,33 @@
+// Refer express.js website
+https://expressjs.com/
+
+// In hyper
+cd "E:\Web development"
+
+mkdir my-express-server
+
+cd my-express-server
+
+touch server.js
+
+npm init
+
+atom .   // If we want to open same folder in Atom, as hyper folder location then we use this command.
+
+npm install express   // Refer above website to get guidance.
+
+
+// In atom
+const express = require('express');   // To require and incoperate 'express' to project.
+const app = express();                // The app constant is commanly used to include express module.
+
+app.listen(3000,function(){           // "listen" function listens to specific port or channel. We use call back function here because, to get to know server started to listen on port.
+  console.log("Server started on port 3000");
+});
+
+// In hyper
+node server.js
+
+// In Google browser
+http://localhost:3000/
+// It shows nothing now.
