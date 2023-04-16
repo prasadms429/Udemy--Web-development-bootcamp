@@ -27,6 +27,6 @@ app.get('/',function(req,res){
 // In hyper
 nodemon calculator.js
 
-// For more info refer this
+// For more info on send response and get request from browser refer this
 https://expressjs.com/en/5x/api.html#res.send
 (go to "API Reference")
