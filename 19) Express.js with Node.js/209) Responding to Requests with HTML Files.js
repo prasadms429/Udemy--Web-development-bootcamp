@@ -19,6 +19,7 @@ touch index.html
 </html>
 
 // In atom calculator.js
+// We can host server on any host(port), but commonly it is hosted on host 3000.
 // This is used to send full html form into our browser, when it is requested.
 app.get('/',function(req,res){
   res.sendFile(__dirname + "/index.html");    // "__dirname" gives location of current file, irrespective of whether it is hosted on cloud or it is on different computer or Remote location.
