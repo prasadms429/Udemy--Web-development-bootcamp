@@ -23,3 +23,6 @@ touch index.html
 app.get('/',function(req,res){
   res.sendFile(__dirname + "/index.html");    // "__dirname" gives location of current file, irrespective of whether it is hosted on cloud or it is on different computer or Remote location.
 });                                           // If someone else use my website then for them file location differs. So, we use this methodology.
+
+// In hyper
+nodemon calculator.js
