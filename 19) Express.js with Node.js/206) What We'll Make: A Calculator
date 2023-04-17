@@ -1,3 +1,3 @@
 // In this calculator application, we are going to use node and express to build server and give back response to the request from the browser.
-// Previously we logic of code is executed using javascript on browser, when it loads up. Now we are using server to execute our logic on backend and give quick response.
+// Previously logic of code is executed using javascript on browser, when it loads up l website. Now we are using server to execute our logic on backend and give quick response.
 // This process hides the code from user and makes website more faster and responsive and By using this method, we can directly interact with query, database, search which helps to build good website.
