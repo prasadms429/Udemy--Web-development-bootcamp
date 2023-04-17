@@ -12,7 +12,7 @@ npm install express
 const express = require('express');
 const app = express();
 
-app.get('/',function(req,res){
+app.get('/',function(req,res){ // Get request to Route and trigger the call back function when req or response is sent
   res.send("Hello world");
 });
 
