@@ -26,3 +26,6 @@ For more info-
  app.post('/',function(req,res){            // "app.post" handles any post request coming to our Route. It accepts request from browser.
   res.send("Thanks for posting that!");     // To reply to that request we send this.
 })      // Usually we use this to process the request from browser and send response.
+
+// In hyper
+nodemon calculator.js
