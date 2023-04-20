@@ -47,7 +47,10 @@ const app = express();
 app.use(bodyParser.urlencoded({extend: true})); // body-parser works with express. "urlencoded" get data as html form. "extend: true" is to get nested objects. We should include these each time in our project.
 
 app.post('/',function(req,res){
-  // console.log(req.body);                 // This will log complete body objects, i.e is form data.   
+  // console.log(req.body);                 // This will log complete body objects, i.e is form data.
+    // Output in hyper for above line of code
+    //    Server started on port 3000
+    //    { num1: '2', num2: '3', submit: '' }
   var num1 = Number(req.body.n1);           // req.body.n1 is in the form of text. To conver it into integer format we use "Number()" method. 
   var num2 = Number(req.body.n2);           // To get access to input number2 specifically, then we use this "req.body.n2".
   var result = num1 + num2;
