@@ -29,3 +29,33 @@ For more info-
 
 // In hyper
 nodemon calculator.js
+
+// In hyper
+npm install body-parser     // To get request(input) from browser to route, we should install body-parser. After installing this body-parser is added under dependencies of package.json file.
+
+// In index.html
+<form action="/" method="post">
+      <input type="text" name="n1" placeholder="First Number">      // num1 name is changed to n1.
+      <input type="text" name="n2" placeholder="Second Number">
+      <button type="submit" name="submit">Calculate</button>
+    </form>
+
+// In calculator.js
+const bodyParser = require('body-parser');      // To include(incoperate) body-parser in our project, we should require that.
+
+const app = express();
+app.use(bodyParser.urlencoded({extend: true})); // body-parser works with express. "urlencoded" get data as html form. "extend: true" is to get nested objects. We should include these each time in our project.
+
+app.post('/',function(req,res){
+  // console.log(req.body);                 // This will log complete body objects, i.e is form data.   
+  var num1 = Number(req.body.n1);           // req.body.n1 is in the form of text. To conver it into integer format we use "Number()" method. 
+  var num2 = Number(req.body.n2);           // To get access to input number2 specifically, then we use this "req.body.n2".
+  var result = num1 + num2;
+  res.send("Result of the calculation is "+result);
+})
+
+// In hyper
+nodemon calculator.js
+
+// In browser now if we click ctrl+shift+I then we are able to see only html form. We are not able to see backend code. That is the true power of server side backend development.
+// Now we have finally created one web application.
