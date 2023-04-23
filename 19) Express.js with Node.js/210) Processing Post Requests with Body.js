@@ -31,7 +31,7 @@ For more info-
 nodemon calculator.js
 
 // In hyper
-npm install body-parser     // To get request(input) from browser to route, we should install body-parser. After installing this body-parser is added under dependencies of package.json file.
+npm install body-parser     // To get request(input) from browser to route, we should install body-parser. After installing this, body-parser is added under dependencies of package.json file.
 
 // In index.html
 <form action="/" method="post">
