@@ -1,0 +1,13 @@
+// An Application Programming Interface (API) is a set of commands, functions, protocols and objects that programmers can use to create software or interact with an external system.
+
+// In some websites we can see the live weather forecast, according specific location. That weather data is taken from some other website, using their(weather website) APIs.
+
+// Tinder matches people based upon their interest, this is done using data from facebook APIs. Facebook collects data when user logins or signup, this is accesed by tinder using APIs.
+
+// APIs allows only to access specific data. Programers should not modify the functions or objects of data provider. ( There is a mutual agreement )
+// For example, In a resturant we have menu, we can order that only and we cannot take ingreindients that is used in kitchen to make that.
+// In a same way we can access temperature, weather condition, weather image and atomospheric pressure from weather app.
+
+// jquery is an API, where we use functions, objects and methods of that to build software.
+
+// From my server, I request for data to some others server using API. The others server send response to my server using API.
