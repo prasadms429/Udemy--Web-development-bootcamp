@@ -5,3 +5,18 @@ https://kanye.rest/
 https://api.kanye.rest/
 // It provides random quotes
 
+
+// Another API, with End points, Paths and Parameters.
+// This is joke api, website link is below. This is customizable joke api according to our requirement.
+https://sv443.net/jokeapi/v2/
+
+// By searching this joke api endpoint, we dont get result
+https://v2.jokeapi.dev/joke/
+// To get result we need to specify category(Path) after endpoint, like below
+https://v2.jokeapi.dev/joke/Programming
+
+// To more specify(customize) with parameters
+https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw&type=single&contains=debugging
+// Here after '?' is parameter and '&' to separate different parameters.
+
+// As a result of this we get random customized joke on browser.
