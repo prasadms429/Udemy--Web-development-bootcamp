@@ -1,0 +1,20 @@
+// Previously, we have used simple apis.
+// If our website is more monitorized then api provide may limit our threshold to access the data.
+// Now we are going to use weather api, which is going to limit our access to data. For more access we have to get subscribed. website link for that -
+https://home.openweathermap.org/
+
+// Go to "Api key" section of this website, there we can find my key to api. copy and paste it in url, inside key section, while searching through browser.
+https://home.openweathermap.org/api_keys
+
+// Go to "API" tab of that website to see different options of that api. click on API doc
+https://openweathermap.org/current
+
+// This is the api that we are going to use to predict weather by city name
+https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=e74da4a7e8e966c78c479837cd5662c0
+
+https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=e74da4a7e8e966c78c479837cd5662c0
+
+// Now we are getting default temperature in kelvin as output, to change it to celsicus, we have to add parameter as "units=metric"
+// for Fahrenheit units=imperial 
+
+6.30
