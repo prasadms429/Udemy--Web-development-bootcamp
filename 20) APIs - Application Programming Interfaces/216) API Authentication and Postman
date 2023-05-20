@@ -1,5 +1,5 @@
 // Previously, we have used simple apis.
-// If our website is more monitorized then api provide may limit our threshold to access the data.
+// If our website is more monitorized then api providers may limit our threshold to access the data.
 // Now we are going to use weather api, which is going to limit our access to data. For more access we have to get subscribed. website link for that -
 https://home.openweathermap.org/
 
