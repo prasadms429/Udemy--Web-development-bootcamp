@@ -17,4 +17,15 @@ https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=e74da4a7e8e966c78c
 // Now we are getting default temperature in kelvin as output, to change it to celsicus, we have to add parameter as "units=metric"
 // for Fahrenheit units=imperial 
 
-6.30
+// To get temperature in celcius, search the below link in the website
+https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=e74da4a7e8e966c78c479837cd5662c0&units=metric
+// The parameters position can be anywhere after '?'.
+
+// To downlod postman app
+https://www.postman.com/downloads/
+
+// postman gives tools to give parameters for the api in a easier way. Arranges the xml output into prettier way.
+
+// The output of api is xml.
+
+
