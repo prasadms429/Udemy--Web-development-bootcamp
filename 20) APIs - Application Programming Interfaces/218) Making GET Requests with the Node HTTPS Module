@@ -1,0 +1,42 @@
+// When User enter our web address on browser, the request goes to our server, then we send response to the request in form of HTML,CSS and Javascript files.
+// When client browser also request for api data, then our server send request to Someone Else's server, through API. While sending request it also send parameters and keys.
+// Then we get response from someone else's server and we incoporate that data with HTML, CSS and javascript files and forward it to user.
+
+// In hyper
+cd E:\
+cd "E:\Web development"
+MKDIR WeatherProject
+cd WeatherProject
+
+// To create two or more files together, give like this
+touch index.html app.js
+
+// To initialize npm
+npm init
+
+// To install express module
+npm i express
+
+// To run app.js file
+nodemon app.js
+
+
+// In atom, to create node app
+const express = require("express");
+
+// To initialize express and incoporate in app.
+const app = express();
+
+// When user browse home page, it routes to root and we send this response.
+app.get('/',function(req,res){
+  res.send("Server is up and running.")
+})
+
+// To listen on port 3000
+app.listen(3000,function(){
+  console.log("Server is running on port 3000.")
+})
+
+
+// On browser search
+localhost:3000
