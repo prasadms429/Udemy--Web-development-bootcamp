@@ -1,0 +1,9 @@
+// JSON stands for JavaScript Object Notation
+// We get output of an API in JSON format. We can also get output api in XML and HTML format.
+// JSON format is easy to read.
+// When we send data in json format, it takes less space to send(json format data into single line while sending). Then after receving json, we can structure it to Javascript object Notation.
+// Javascrit object and json format are almost similar, except Javascript uses datatype "VAR" at the begining and json uses quotation for name of the object, key(To mention it as string, so easy to send and identify)
+
+// "JSON Viewer Pro" is one chrome extension to view JSON in pretier way. It can be in tree, chart or json input format.
+// We can copy path of the objects inside there like this, weather[0].icon
+// Here it is selecting first array element of weather object, in that it is selecting icon key (Finally it gives icon value)
