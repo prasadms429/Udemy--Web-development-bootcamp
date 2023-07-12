@@ -23,12 +23,19 @@ nodemon app.js
 
 // In atom, to create node app
 const express = require("express");
+// To request data from external server and to show in our website, we need to require this
+const https = require("https");  // This is found by searching on google as "get request to external server node". It is found in this website "https://www.twilio.com/blog/http-requests-in-node-js.html"
 
 // To initialize express and incoporate in app.
 const app = express();
 
 // When user browse home page, it routes to root and we send this response.
 app.get('/',function(req,res){
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=e74da4a7e8e966c78c479837cd5662c0"  // we have to mandatorily mention https in url. This link provides weather api data.
+  https.get(url,function(response){  // This will get make https get request to url(external server) provided, using https(internet).
+    console.log(response);
+  })
+
   res.send("Server is up and running.")
 })
 
@@ -36,6 +43,13 @@ app.get('/',function(req,res){
 app.listen(3000,function(){
   console.log("Server is running on port 3000.")
 })
+
+
+//In hyper after running
+nodemon app.js
+//If status code is 200 and status message is OK then it is sucessful
+statusCode: 200,
+statusMessage: 'OK',
 
 
 // On browser search
