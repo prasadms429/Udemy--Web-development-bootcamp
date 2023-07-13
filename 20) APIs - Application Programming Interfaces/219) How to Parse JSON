@@ -2,6 +2,21 @@ app.get('/',function(req,res){
   const url = "https://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=e74da4a7e8e966c78c479837cd5662c0"
   https.get(url,function(response){
     console.log(response.statusCode);  // To get only status code on console give like this.
+
+    response.on("data",function(data){    // Here we call response on, when we receive some data
+      // console.log(data);    // This logs data to console in hexadecimal format.
+
+      const weatherData = JSON.parse(data);    // "JSON.parse" converts data to string such as hexadecimal or binary or Text then converts it into JSON format.
+      console.log(weatherData);
+
+      const object = {
+        name: "Angela",
+        favouriteFood: "Ramen"
+      }
+
+      console.log(JSON.stringify(object));    // "JSON.stringify" converts data from Javascript Object format to String format. It does reverse function of "JSON.parse".
+    })
+  })
   })
 
   res.send("Server is up and running.")
@@ -29,3 +44,7 @@ In the browser, this means the URL is not recognized. In an API, this can also m
 // In atom if I changes url address like
 const url = "https://api.openweathermap.org/data/2.5/weeather?q=london&units=metric&appid=e74da4a7e8e966c78c479837cd5662c0"
 // Here weather is changed to weeather. Now we get status code as 404, By this Open weather map server is telling us the resource that we are looking at the path weeather doesn't exist.
+
+// Anther type of error(status code 401) that we often get, when we want to authenticate us with api provider.
+// Lets say, if we make mistake appid, then we get status code 401, because that appid is not recognized by server.
+
