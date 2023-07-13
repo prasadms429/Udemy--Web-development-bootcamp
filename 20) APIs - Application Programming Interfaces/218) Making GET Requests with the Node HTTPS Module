@@ -32,7 +32,7 @@ const app = express();
 // When user browse home page, it routes to root and we send this response.
 app.get('/',function(req,res){
   const url = "https://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=e74da4a7e8e966c78c479837cd5662c0"  // we have to mandatorily mention https in url. This link provides weather api data.
-  https.get(url,function(response){  // This will get make https get request to url(external server) provided, using https(internet).
+  https.get(url,function(response){  // This will make https get request to url(external server) provided, using https(internet).
     console.log(response);
   })
 
