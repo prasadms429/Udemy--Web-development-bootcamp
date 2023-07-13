@@ -1,0 +1,31 @@
+app.get('/',function(req,res){
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=e74da4a7e8e966c78c479837cd5662c0"
+  https.get(url,function(response){
+    console.log(response.statusCode);  // To get only status code on console give like this.
+  })
+
+  res.send("Server is up and running.")
+})
+
+// To see HTTP response status codes, Go to "MDN we docs" website.
+Their search "HTTP response status code" in search bar
+
+Informational responses (100 – 199)
+Successful responses (200 – 299)
+Redirection messages (300 – 399)
+Client error responses (400 – 499)   // The error caused by user, while interacting with server or website.
+Server error responses (500 – 599)
+
+// The detailed description can be find below
+200 means OK
+The request succeeded
+The resource has been fetched and transmitted in the message body.
+
+//Client error responses
+// We often see this status code on internet. when we request for something to server, if it is not found on server then we get status code as 404.
+404 Not Found
+The server cannot find the requested resource.
+In the browser, this means the URL is not recognized. In an API, this can also mean that the endpoint is valid but the resource itself does not exist.
+// In atom if I changes url address like
+const url = "https://api.openweathermap.org/data/2.5/weeather?q=london&units=metric&appid=e74da4a7e8e966c78c479837cd5662c0"
+// Here weather is changed to weeather. Now we get status code as 404, By this Open weather map server is telling us the resource that we are looking at the path weeather doesn't exist.
