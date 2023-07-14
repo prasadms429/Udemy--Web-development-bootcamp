@@ -15,6 +15,12 @@ app.get('/',function(req,res){
       }
 
       console.log(JSON.stringify(object));    // "JSON.stringify" converts data from Javascript Object format to String format. It does reverse function of "JSON.parse".
+
+      const temp = weatherData.main.temp;      // To tap into the temperature data of Javascript object. weatherData is the Javascript object.
+      console.log(temp);
+
+      const weatherDescription = weatherData.weather[0].description;    // we can just open api in browser. By using extension that we added to view json, we can just hover over the element and copy the path and paste it after javascript object that we created to tap into the specific data.
+      console.log(weatherDescription);      
     })
   })
   })
