@@ -1,0 +1,28 @@
+//In atom.js
+...
+...
+app.get('/',function(req,res){
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=e74da4a7e8e966c78c479837cd5662c0"
+
+  https.get(url,function(response){
+    console.log(response.statusCode);
+
+    response.on("data",function(data){
+      const temp = weatherData.main.temp;
+      console.log(temp);
+
+      const weatherDescription = weatherData.weather[0].description;
+      console.log(weatherDescription);
+      const icon = weatherData.weather[0].icon;    // To display the weather icon on our website, we have to tap into that in our javascript object.
+      const imageURL = "https://openweathermap.org/img/wn/" +icon+ "@2x.png"    // This is the url to display icon on browser "https://openweathermap.org/img/wn/10d@2x.png"  . I modified this url by replacing 10d with icon variable, which may change each time when we browse website. 10d is icon id using that image will display.
+                                                                            // To find that url go to Open weather map website -> API -> Current Weather Data -> API doc -> List of condtion codes (on right it is there) -> weather condition codes (click) -> Then we can find this url below "https://openweathermap.org/img/wn/10d@2x.png"
+                                                                            // Or we can directly dind that using this link on browser "https://openweathermap.org/weather-conditions"
+      res.write("<p>The weather is currently "+weatherDescription+"</p>");          // we cant have two send() mehthod in the code, if we have that then we get error. So we use write() methods to send multiple response to website.
+      res.write("<h1>The temperature in lodnon is "+temp+"degree celcius.</h1>");   // we can display our line of code as header1 using HTML like this.
+      res.write("<img src="+ imageURL +">");    // This is to display image using HTML syntax.
+      res.send();    // After write methods, we have to send those data to website using this method at the end.      
+    })
+  })
+})
+...
+...
