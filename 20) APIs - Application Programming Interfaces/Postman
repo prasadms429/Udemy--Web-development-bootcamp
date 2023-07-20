@@ -1,0 +1,13 @@
+// When client make request to server, it send request to server using HTTP.
+// Server sends back the reponse to the client using HTTP protocol.
+//Client can be anything that is making request, such as laptop, desktop or mobile.
+// Server side consist of Server, Application that is running server code, Database.
+
+// HTTP response may in form text, HTML or HTTP status response code.
+// To know about HTTP status response code vist
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+200 - Everything is OK and successful. Request succeded.
+201 - It is the reponse sent after Post request. We may cant see whatever is posted, But When something is successfully posted in server then we get this reponse.
+301 - The URL of the requested resource has been changed permanently. The new URL is given in the response.
+// In google open console, and go to Network tab and there select "Preserve log" then In google search bar search "googl.com" then we can see the 301 response on console to Redirecting the url to other URL.
