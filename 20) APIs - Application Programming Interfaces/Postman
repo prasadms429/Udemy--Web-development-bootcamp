@@ -11,3 +11,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 201 - It is the reponse sent after Post request. We may cant see whatever is posted, But When something is successfully posted in server then we get this reponse.
 301 - The URL of the requested resource has been changed permanently. The new URL is given in the response.
 // In google open console, and go to Network tab and there select "Preserve log" then In google search bar search "googl.com" then we can see the 301 response on console to Redirecting the url to other URL.
+
+Informational responses (100 – 199)
+Successful responses (200 – 299)
+Redirection messages (300 – 399)     // While redirecting us to other website or url we get this response codes.
+Client error responses (400 – 499)   // The error caused by user, while interacting with server or website. Client has requested for something that is not right.
+Server error responses (500 – 599)   // Server side application has something wrong with it and is not working as a result.
