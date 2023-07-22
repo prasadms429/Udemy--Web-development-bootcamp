@@ -17,3 +17,42 @@ Successful responses (200 – 299)
 Redirection messages (300 – 399)     // While redirecting us to other website or url, we get this response codes.
 Client error responses (400 – 499)   // The error caused by user, while interacting with server or website. Client has requested for something that is not right.
 Server error responses (500 – 599)   // Server side application has something wrong with it and is not working as a result.
+
+
+// There are different HTTP methods.
+// By using Postman app we can create backend withough a frontend, means we can test our Backend code withought frontend.
+
+// In hyper
+cd 3.3\ Postman/
+npm install   // when we download any node code template from browser, it will not have required npm packages with it. For that we have to install npm, and no need to specify which packages to install, it will auto detect which packages are required with the help of given code.
+nodemon index.js
+
+// In atom
+...
+app.get("/", (req, res) => {       // To get some information from the server we use HTTP method get.
+  res.send("<h1>Home Page</h1>");  // If request is successful then this line of code only displayed on browser and status codes will not be displayed.
+});
+
+app.post("/register", (req, res) => {    // To post something to server
+  //Do something with the data
+  res.sendStatus(201);              // If post is successful then with help of this code we get status code 201 on console.
+});
+
+app.put("/user/angela", (req, res) => {    // To chage any exsting data on server we use this put method. Example :- If we want to change USERNAME, PASSWORD and EMAIL address associated with the user, then we use this put method. 
+  res.sendStatus(200);                     // Here before modifying data, we provide various details such as our id, password and other details in request to verify our identity.
+});
+
+app.patch("/user/angela", (req, res) => {  // It works same as put method. By using this patch method, we can modify specified parts of client provided resources. Example :- Only changing Username.
+  res.sendStatus(200);
+});
+
+app.delete("/user/angela", (req, res) => {   // By using this we can delete any existing User.
+  //Deleting
+  res.sendStatus(200);
+});
+...
+
+
+// In Postman app
+http://localhost:3000/          // By selecting "GET" tab.
+http://localhost:3000/register  // By selecting "POST" tab we have to give this link and click on send then we get status code 201 on Postman. Like this we have to give for other methods.
