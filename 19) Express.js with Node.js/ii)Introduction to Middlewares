@@ -1,0 +1,51 @@
+// Middleware is something between Server and Routes.
+// Before sending request to Route methods(GET,PUT,PATCH,DELETE,POST etc) to process. We have Middleware to pre-process that.
+// When request came, Middleware identifies which type of request it is, whether GET or POST or PUT request.
+// Middleware also verifies whether request is authorized to process, before making any changes to database using that request.
+// If there is any error in request then middleware removes that error.
+
+// One of the popular middleware is Body-Parser
+//It parse the incoming request bodies in a middleware before handlers(HTTP methods such GET), available under the req.body property.
+
+// In login website
+// When we enter our credentials and submit. In order to get access to the data that is inputed there, We use Body-Parser to parse the body of the Post request.
+
+// Download the code template given in resource section.
+// In atom open that
+// In index.html under public folder. Public folder contains static files such as HTML,CSS, which will not get change later.
+...
+<form action="/submit" method="POST">    // Here action refers to Route that we need our server to handle it. Method tells how we want to process our data.
+    <label for="street">Street Name:</label>    // label is the label given to input. Lable and input are two pairs together.
+    <input type="text" name="street" required>  // "required" tells this field is mandatory. Input type can be text or radio botton or check box or drop down button. "name" is the key to input value, like key value pair.
+    <label for="pet">Pet Name:</label>
+    <input type="text" name="pet" required>
+    <input type="submit" value="Submit">   // Then here we have input submit button with name Submit.
+  </form>
+...
+
+// In index1.js
+import express from "express";
+import { dirname } from "path";      // This below three line of code to get to know the dynamic path of our file hosted, where-ever. Such as it may be posted on Cloud or other Computer, to know that path we use this.
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const app = express();
+const port = 3000;
+
+app.get("/", (req, res) => {
+  console.log(__dirname + "/public/index.html");      // To see file path on console(Hyper).
+  res.sendFile(__dirname + "/public/index.html");     // "__dirname" gives the path of the file hosted, wherever.
+});
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+
+// In hyper
+go the the "3.4 Middleware" path
+npm install
+nodemon index1.js
+
+// In Postman
+http:\\localhost:3000/  // Then we can see file path on hyper.
