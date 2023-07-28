@@ -49,3 +49,41 @@ nodemon index1.js
 
 // In Postman
 http:\\localhost:3000/  // Then we can see file path on hyper.
+
+
+
+// In index1.js
+import express from "express";
+import bodyParser from "body-parser";        // Import bodyParser
+
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.urlencoded({ extended: true }));    // "use" method is to get acces to the request body, before that is sent to handler methods.
+                                                       // Using our middleware "bodyParser inside that. "urlencoded" is the method to get access to HTML forms.
+app.post("/submit",(req,res) => {       // The "/submit" is the route, where we want to post our form. It is present in html form.
+  console.log(req.body);        // "req.body" logs the whatever we enter on our form, click submit. If we don't include line 61, then "req.body" gives undefined.
+})
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+// In hyper
+npm install body-parser
+nodemon index1.js
+
+// On browser open localhost:3000/submit
+Enter the inputs on browser and click submit button.
+
+// In hyper we get this output
+{ street: 'Niluvagilu', pet: 'Dasu' }
+
+// Without using browser, we can use postman to send the data
+Go to "body" section of Postman.
+Click on "x-www-form-urlencoded
+Then select "POST" method from drop down.
+Enter this url "http://localhost:3000/submit"
+Then the key and value, need to be sent.
+Then click on Send
+After this, we can see our KEY and VALUE pair on hyper.
