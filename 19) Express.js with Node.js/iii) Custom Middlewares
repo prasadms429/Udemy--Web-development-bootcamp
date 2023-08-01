@@ -36,3 +36,43 @@ http://localhost:3000/submit   // select POST method and send
 Then In heyper we get thsi, POST /submit 404 28.935 ms - 146
 // There is no route handler called submit for this. But we are accesing it in middle, before sending to route. So, we are logging our request to console.
 // We are getting status code as 404, because there is no route called submit defined.
+
+
+// Custom Middleware
+// In index3.js
+import express from "express";
+
+const app = express();
+const port = 3000;
+
+function logger(req,res,next){  // This is custom Middleware we created, using function.
+  console.log(req.method);      // It will log "get" or "post" based on method provided.
+  console.log(req.url);         // It will log url such as "/" or "/submit" based on Route provided.
+  next();                       // After all functions of Middleware, we need to pass the control to next line of code. For that we use next() method.
+}
+
+app.use(logger);    // Here we used our own custom Middleware.
+
+app.get("/", (req, res) => {
+  res.send("Hello");
+});
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+//In hyper
+nodemon index3.js
+
+// In Postman
+http://localhost:3000/      // Select GET and send on click send
+Then we get this on hyper
+GET
+/
+
+http://localhost:3000/submit  // Select Post and send on click send
+Then we get this on hyper
+POST
+/submit
+
+// If we dont include next() method in code, then code execution will not reach app.get method and we can't go to our home route. In browser if search "http://localhost:3000/", then we get message, local host can't be reached.
