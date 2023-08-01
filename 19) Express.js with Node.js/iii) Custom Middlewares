@@ -1,0 +1,38 @@
+// In last session, we used Pre-processing middle-ware that is Body-parser.
+// In this lesson, we will be using Middleware to log our request, that is Morgan.
+
+// This is the path to Morgan doc
+https://www.npmjs.com/package/morgan
+
+// There are many Pre defined format, that we can find in above path, the Pre defiend format tells how detail our logging should be.
+
+// In index2.js
+import express from "express";
+import morgan from "morgan";     // import Morgan
+
+const app = express();
+const port = 3000;
+
+app.use(morgan("dev"));         // Use morgan as middleware with app.use() method.
+                                // Another Pre defined format called "combined" which logs, date, status code, url link etc to console.
+
+app.get("/", (req, res) => {
+  res.send("Hello");
+});
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+// In hyper
+npm install morgan
+nodemon index2.js
+
+// In postman
+http://localhost:3000/    // select GET method and send this
+Then In hyper we get this, GET / 200 31.697 ms - 5
+
+http://localhost:3000/submit   // select POST method and send
+Then In heyper we get thsi, POST /submit 404 28.935 ms - 146
+// There is no route handler called submit for this. But we are accesing it in middle, before sending to route. So, we are logging our request to console.
+// We are getting status code as 404, because there is no route called submit defined.
