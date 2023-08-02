@@ -13,7 +13,7 @@ import morgan from "morgan";     // import Morgan
 const app = express();
 const port = 3000;
 
-app.use(morgan("dev"));         // Use morgan as middleware with app.use() method.
+app.use(morgan("dev"));         // Use morgan as middleware with app.use() method. "dev" is Predefined format, which logs Request method, URL, status code in colored format, time etc.
                                 // Another Pre defined format called "combined" which logs, date, status code, url link etc to console.
 
 app.get("/", (req, res) => {
@@ -65,12 +65,12 @@ app.listen(port, () => {
 nodemon index3.js
 
 // In Postman
-http://localhost:3000/      // Select GET and send on click send
+http://localhost:3000/      // Select GET and click on send
 Then we get this on hyper
 GET
 /
 
-http://localhost:3000/submit  // Select Post and send on click send
+http://localhost:3000/submit  // Select Post and click ob]n send
 Then we get this on hyper
 POST
 /submit
