@@ -1,3 +1,4 @@
+// This project is to Parse html form into browser and Displays the Band Name(By combining two inputs entered), when we enter inputs and click submit.
 // In hyper
 npm install
 
