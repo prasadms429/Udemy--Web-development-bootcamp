@@ -14,7 +14,7 @@ const app = express();
 const port = 3000;
 var bandName = "";
 
-app.use(bodyParser.urlencoded({extended: true}));    // To parse the incoming request, we use this. If we declare it after second use method(line 27) then we get error.
+app.use(bodyParser.urlencoded({extended: true}));    // To parse the incoming request, we use this. If we declare it after second use method(line 28) then we get error.
 
 function bandNameGenerator(req,res,next){
   bandName = req.body["street"]+req.body["pet"];
