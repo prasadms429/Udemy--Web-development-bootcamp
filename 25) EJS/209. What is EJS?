@@ -1,0 +1,10 @@
+// EJS = Embeded javascript
+// EJS is the Templating language of Javascript. For PHP it is TWIG and For Python it is Jinja
+// In our website, when user enters something in input. We insert that input to another HTML form and display to user. For this purpose we use EJS.
+// By using res.send and res.sendFile, we can send only static files. We can't modify value, after sending it(HTML form). But using template method, res.render we can modify HTML form, that is displayed.
+// To separate HTML and CSS code from Javascript, we use EJS.
+// EJS files are mentioned as "index.ejs". In that javascript is enclosed inside a special syntax like this, <% .... %>
+// In EJS file we will have javascript code that is embeded inside HTML form.
+res.render("index.ejs",       // index.ejs is the file that we want to modify. (In this file we want to insert value, while displaying)
+{ name: req.body["name"] }    // This is key value pair. The name value we are inserting in index.ejs file.
+);
