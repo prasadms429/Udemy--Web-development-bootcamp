@@ -8,3 +8,58 @@
 res.render("index.ejs",       // index.ejs is the file that we want to modify. (In this file we want to insert value, while displaying)
 { name: req.body["name"] }    // This is key value pair. The name value we are inserting in index.ejs file.
 );
+
+
+// Create the project which display the message Based on Day of the week.
+// If it is Week day then it displays "Hey, a weekday, it's time to work hard!"
+// If it is Week end then it displays "Hey, It's the weekend, it's time to have a fun!"
+
+// In hyper
+cd E:\
+cd cd Web\ development/
+mkdir "4.0 EJS"
+cd 4.0\ EJS
+npm init -y                // -y reduces number steps to enter.
+npm install express ejs   // To install both express and ejs together, give like this.
+mkdir views; touch index.js views/index.ejs  // It creates views folder inside "4.0 EJS" folder and creates file inside "4.0 EJS" folder. Inside "views" folder it creates "index.ejs" file.
+nodemon index.js
+
+
+// In atom index.js
+const express = require('express');
+const app = express();
+
+var d = new Date();
+var num = d.getDay();    // It stores the Sunday as 0 and Saturday as 6. Like this for remaining days.
+var desc;
+if(num === 0 || num === 6){
+  desc = "the weekend, it's time to have a fun!";
+}
+else{
+  desc = "a weekday, it's time to work hard!";
+}
+
+app.get("/",(req,res) => {
+  res.render("index.ejs",
+  { Description: desc }        // This is key value pair.
+  );
+});
+
+app.listen(3000,function(){
+  console.log("Server started on port 3000");
+});
+
+
+// In atom index.ejs
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weekday warrior</title>
+  </head>
+  <body>
+    <h1>
+      Hey, It's <%= Description%>
+    </h1>
+  </body>
+</html>
