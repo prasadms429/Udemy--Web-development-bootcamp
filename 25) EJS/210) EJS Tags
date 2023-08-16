@@ -1,0 +1,6 @@
+<%= variable %>   // When want to display javascript output on browser(HTML), then we use this syntax. Example, Variables.
+<% console.log("hello") %>  // To excute javascript code, we use this. It will not displayed on browser.
+<%- <h1>Hello</h1> %>    // To write HTML code inside ejs and disply it on browser we use this. Renders HTML.
+<%%  %%>    // It displays ejs synatx on browser like this <% %>
+<%# This is a comment %>
+<%- include("header.ejs") %>   // To insert another EJS file we use this. If we want to constantly display something on browser, then we use this. Like header and footer, In middle it may vary.
