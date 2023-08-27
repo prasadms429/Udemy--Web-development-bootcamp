@@ -4,3 +4,83 @@
 <%%  %%>    // It displays ejs synatx on browser like this <% %>
 <%# This is a comment %>
 <%- include("header.ejs") %>   // To insert another EJS file we use this. If we want to constantly display something on browser, then we use this. Like header and footer, In middle website may vary.
+
+
+// Challenge -
+// Display list of items for even number of seconds, else display "nothing to display" text using EJS Tags.
+// In atom
+cd E:\
+cd Web\ development/
+cd Web\ development/
+npm i
+nodemon index.js
+
+// In index.js
+import express from "express";
+const app = express();
+const port = 3000;
+
+app.get("/", (req, res) => {
+  const data = {
+    title: "EJS Tags",
+    seconds: new Date().getSeconds(),
+    items: ["apple", "banana", "cherry"],
+    htmlContent: "<strong>This is some strong text</strong>",
+  };
+  res.render("index.ejs", data);
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
+
+// In index.ejs
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJS Tags</title>
+</head>
+
+<body>
+  <h1>
+    <!-- Tite goes here -->
+    <%= title %>
+  </h1>
+  <p>Current second:
+    <!-- Current second goes here -->
+    <%= seconds %>        // we use this EJS syntax to display output
+  </p>
+  <% if (seconds % 2===0) { %>      // If we dont want to display output and Just execute Javascript code use this syntax.
+  <ul>
+    <!-- List goes here if current second is even. -->
+    <% for(let i=0; i<items.length ;i++) {%>
+    <li>
+    <%= items[i] %>
+    </li>
+    <% } %>
+  </ul>
+    <!-- Otherwise it should display the following: -->
+    <!-- <p>No items to display</p> -->
+  <% } else { %>
+  <p>No items to display</p>
+  <% } %>
+  <p>
+    <!-- HTML content goes here -->
+    <%- htmlContent %>      // To display html code on browser, that is stored inside this const "htmlContent"
+  </p>
+
+  <!-- Footer goes here -->
+  <%- include("footer.ejs") %>  // To include footer ejs file
+</body>
+
+</html>
+
+
+// In footer.ejs
+<footer>
+  <p>Copyright © from footer</p>
+</footer>
