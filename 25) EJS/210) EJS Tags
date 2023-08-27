@@ -23,7 +23,7 @@ const port = 3000;
 app.get("/", (req, res) => {
   const data = {
     title: "EJS Tags",
-    seconds: new Date().getSeconds(),
+    seconds: new Date().getSeconds(),          // It displays seconds from Date. 10:57:24 is time formata and here 24 is Second. It takes 24 into seconds const.
     items: ["apple", "banana", "cherry"],
     htmlContent: "<strong>This is some strong text</strong>",
   };
