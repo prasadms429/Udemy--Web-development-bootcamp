@@ -12,6 +12,7 @@
 cd E:\
 cd Web\ development/
 cd Web\ development/
+cd 4.1\ EJS Tags/
 npm i
 nodemon index.js
 
