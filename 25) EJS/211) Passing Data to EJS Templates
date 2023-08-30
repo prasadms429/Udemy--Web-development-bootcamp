@@ -1,0 +1,53 @@
+// Passing data from SERVER -> EJS
+// index.js
+app.get("/", (req,res) => {
+  res.render("index.ejs",        // Using res.render method we pass data from server to EJS file.
+  { name: "Angela" });           // name is the property given to value Angela.
+});
+
+// index.ejs
+<body>
+  <h1>
+    Hello <%= name %>    // now the value of name is placed here
+  </h1>
+</body>
+
+// What If there is no Data ?
+// If we don't send data in index.js file and one unknown variable is used ther for data then ejs code will crash.
+// In index.js
+app.get("/", (req,res) => {
+  res.render("index.ejs");
+  res.locals = {data: 42};
+});
+
+// In index.ejs
+<% if(locals.fruits) { %>    // Initially ejs will not check whether this fruits is defined keyword or not in js file. Later it will crash the code.
+// For that we use locals, which will check whether used variable or keyword is defined or not.
+  <ul>
+    <%fruits.forEach((fruit)=> { %>
+        <li>
+`         <%=fruit %>
+        </li>
+    <%}) %>
+  </ul>
+<% } %>
+
+
+// Sending data from EJS (CLIENT) -> Server
+// index.ejs
+<form action="/submit" method="POST">  // Using this form we can send data towards sever. When user enters first name and last name on browser and click on OK(submit) then entered data will be sent to server for further processing.
+  <input type="text" name="fname"
+   placeholder="First name">
+
+  <input type="text" name="lname"
+   placeholder="Last name">
+
+  <input type="submit" value="OK">
+</form>
+
+// index.js
+app.post("/submit", (req,res) => {
+  res.render("index.ejs",
+  { name: req.body["fName"] }
+  );
+});
