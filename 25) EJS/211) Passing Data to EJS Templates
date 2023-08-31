@@ -13,7 +13,7 @@ app.get("/", (req,res) => {
 </body>
 
 // What If there is no Data ?
-// If we don't send data in index.js file and one unknown variable is used ther for data then ejs code will crash.
+// If we don't send data in index.js file and one unknown variable is used there for data then ejs code will crash.
 // In index.js
 app.get("/", (req,res) => {
   res.render("index.ejs");
