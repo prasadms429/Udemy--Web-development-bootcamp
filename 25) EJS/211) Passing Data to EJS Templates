@@ -51,3 +51,57 @@ app.post("/submit", (req,res) => {
   { name: req.body["fName"] }
   );
 });
+
+
+// Chalenge -
+// Display this message when there is no data passed from server to client. "Enter your name below 👇"
+// When the input is entered in browser, pass that data from client to Server and add the lengths of the inputs in server and Send back the length to Client and display it on browser.
+// In index.js
+import express from "express";
+import bodyParser from "body-parser";
+
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.urlencoded({ extended: true }));    // We have to always include bodyParser middleware to acces the request body.
+
+app.get("/", (req, res) => {
+  res.render("index.ejs");      // To render the website we use this line of code.
+});
+
+app.post("/submit", (req, res) => {    // Once we enter and submit our first name and last name in browser, this will trigger.
+  const numLetter = req.body["fName"].length + req.body["lName"].length;    // To add the number letters entered in first name and last name.
+  res.render("index.ejs",
+  {numberOfLetters : numLetter});      // After processing we need to passback to client.
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
+
+// In index.ejs
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+  <!-- Write your code here -->
+  <% if(locals.numberOfLetters){ %>      // If don't use locals in javascript "if" condtion, then code will crash. Because, the ejs couldn't find the variable numberOfLetters.
+    <h1>There are <%= numberOfLetters %> letters in your name.</h1>
+  <% } else { %>
+    <h1>Enter your name below 👇</h1>
+  <% } %>
+  <form action="/submit" method="POST">
+    <input type="text" name="fName" placeholder="First name">
+    <input type="text" name="lName" placeholder="Last name">
+    <input type="submit" value="OK">
+  </form>
+</body>
+
+</html>
