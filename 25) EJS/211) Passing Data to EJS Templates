@@ -56,6 +56,12 @@ app.post("/submit", (req,res) => {
 // Chalenge -
 // Display this message when there is no data passed from server to client. "Enter your name below 👇"
 // When the input is entered in browser, pass that data from client to Server and add the lengths of the inputs in server and Send back the length to Client and display it on browser.
+
+// In hyper
+cd "E:\Web development\4.2 Passing Data"
+npm i
+nodemon index.js
+
 // In index.js
 import express from "express";
 import bodyParser from "body-parser";
