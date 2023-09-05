@@ -7,3 +7,12 @@ app.use(express.static("public"));
 href = "styles/layout.css"
 // When we navigate to different pages on website, then it makes get request to dynamic routes (ex:- localhost:3000/contact). But the styles and images inside that website are static.
 // There are many codes like styles and footer, which is repetative in each web page and to reduce repetative code, we use concept called Templating.
+
+// To include dynamic data inside the static ejs file, we use ejs tags.
+<%= %>
+<%  %>
+<%- %>
+
+// To include repetative header and footer in all Pages
+<%- include("header.ejs") %>
+<%- include("footer.ejs") %>
