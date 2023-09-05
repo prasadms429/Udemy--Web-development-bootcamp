@@ -1,0 +1,9 @@
+// We can include styles to Server side code. 
+// In backend like node.js, we use static files. Static files includes images and styles, which will not change in period of time.
+// We have all the images and styles under "public" folder.
+app.use(express.static("public"));
+// In this section we included styles in index.ejs file.
+// Inside public folder, styles folder is there. Inside styles folder layout.css is there.
+href = "styles/layout.css"
+// When we navigate to different pages on website, then it makes get request to dynamic routes (ex:- localhost:3000/contact). But the styles and images inside that website are static.
+// There are many codes like styles and footer, which is repetative in each web page and to reduce repetative code, we use concept called Templating.
