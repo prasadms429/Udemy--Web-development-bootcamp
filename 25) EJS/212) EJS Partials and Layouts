@@ -92,5 +92,3 @@ app.listen(port, () => {
 </form>
 
 <%- include("partials/footer.ejs") %>      // Step 4
-
-
