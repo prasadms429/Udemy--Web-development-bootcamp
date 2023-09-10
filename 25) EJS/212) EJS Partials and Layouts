@@ -16,3 +16,81 @@ href = "styles/layout.css"
 // To include repetative header and footer in all Pages
 <%- include("header.ejs") %>
 <%- include("footer.ejs") %>
+
+// Challenge - To add styles, images, header and footer to multipage website.
+// In hyper
+cd "E:\Web development\4.3 EJS Partials"
+npm i
+nodemon index.js
+
+
+// In index.js
+import express from "express";
+
+const app = express();
+const port = 3000;
+
+/* Write your code here:
+Step 1: Render the home page "/" index.ejs
+Step 2: Make sure that static files are linked to and the CSS shows up.
+Step 3: Add the routes to handle the render of the about and contact pages.
+  Hint: Check the nav bar in the header.ejs to see the button hrefs
+Step 4: Add the partials to the about and contact pages to show the header and footer on those pages. */
+
+app.get("/",(req,res) => {      // Step 1
+  res.render("index.ejs");    // In index.ejs in views folder. Views folder is relative path to all ejs files. If we create any folder inside views folder and add file inside it. 
+})                            //  To acces the added file, we need to mention folder name then file name like this "folder/file.ejs".
+
+app.use(express.static("public"));    // Step 2: We have to use express middle-ware to give relative path of static files(styles, image files) in "public" folder.
+
+app.get("/about",(req,res) => {  // Step 3
+  res.render("about.ejs");
+})
+
+app.get("/contact",(req,res) => {  // Step 3
+  res.render("contact.ejs");
+})
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
+
+// In about.ejs
+<%- include("partials/header.ejs") %>      // Add this to inlcude common header. Header and footer is inside the folder called partials, partials folder is inside the views folder.
+                                           //  So we need to mention the file path like this "paritals/header.ejs". If the file is just inside views folder, then no need to mention file path. Step 4.
+<h1>About Me</h1>
+<img class="profile" src="images/cat.jpeg" alt="cat profile">
+<p>
+  Quam purus justo enim purus, dolor enim, ut eu lectus nam eget nibh. Ante illum nullam leo, vivamus aliquam massa
+  massainceptos fermentum porttitor, blandit vehicula, lorem in placerat ut aliquam at sociosqu. Vivamus duis
+  ultricies
+  aliquam placerat, tincidunt scelerisque imperdiet, egestas erat vel. Libero rerum. Donec ligula tristique, purus
+  montes,
+  feugiatid nunc in a nec. Duis odio, vitae sed etiam mi massa, laoreet amet purus amet rhoncus, eget sed, arcu
+  urna.
+  Maecenaswisi id, at donec enim. Proin nisl, pulvinar leo suspendisse, cum parturient non, congue leo et ut in,
+  neque ut
+  lacusauctor quam fermentum urna. Metus quis, mauris dictum aptent ultrices nulla viverra ornare, tempor elit enim
+  leo
+  donec,sed sed. Vivamus sapien facilisi, tempor arcu nulla justo sed et, eget suspendisse lacus sed nunc mattis
+  lectus.
+  Metusgravida.</p>
+
+  <%- include("partials/footer.ejs") %>    // Add this to include common footer. Step 4.
+
+
+// In contact.ejs
+<%- include("partials/header.ejs") %>      // Step 4
+
+<h1>Contact Me</h1>
+<form>
+  <input name="name" type="text" class="feedback-input" placeholder="Name" />
+  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+  <input type="submit" value="SUBMIT" />
+</form>
+
+<%- include("partials/footer.ejs") %>      // Step 4
+
+
