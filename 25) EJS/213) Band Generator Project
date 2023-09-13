@@ -1,0 +1,143 @@
+// In hyper
+cd "E:\Web development\4.4 Band Generator Project"
+npm i
+atom -a .
+
+
+// In atom
+// In index.js
+import express from "express";
+import bodyParser from "body-parser";
+
+const app = express();
+const port = 3000;
+
+//Step 3 - Make the styling show up.
+//Hint 1: CSS files are static files!
+//Hint 2: The header and footer are partials.
+//Hint 3: Add the CSS link in header.ejs
+app.use(express.static("public"));
+
+//Step 4 - Add a dynamic year to the footer.
+//Hint: Google to find out how to get the current year using JS.
+// const year = new Date().getFullYear();
+// app.get("/",(req,res) => {
+//   res.render("partials/footer.ejs",
+//     {Year: year});
+// });
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get("/", (req, res) => {
+  //Step 1 - Make the get route work and render the index.ejs file.
+  res.render("index.ejs");
+});
+
+app.post("/submit", (req, res) => {
+  //Step 2 - Make the generate name functionality work
+  //Hint: When the "Generate Name" button in index.ejs is clicked, it should hit up this route.
+  //Then:
+  //1. You should randomly pick an adjective from the const "adj" and a noun from const "noun",
+  //scroll down to see the two arrays.
+  //2. Send the index.ejs as a response and add the adjective and noun to the res.render
+  //3. Test to make sure that the random words display in the h1 element in index.ejs
+  const random1 = Math.floor(Math.random()*adj.length);
+  const random2 = Math.floor(Math.random()*noun.length);
+  const adjective = adj[random1];
+  const nouns = noun[random2];
+  const text = adjective+" "+nouns;
+
+  res.render("index.ejs",
+  {RandomText : text});
+});
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+const adj = [
+  "abandoned",
+  "able",
+  "absolute",
+  "adorable",
+  "adventurous",
+  "academic",
+...
+...
+];
+
+const noun = [
+  "aardvark",
+  "abacus",
+  "abbey",
+  "abdomen",
+  "abolishment",
+  "abroad",
+...
+...
+];
+
+
+
+// In index.ejs
+<!-- Step 3 Add Header -->
+<%- include("partials/header.ejs") %>
+
+
+<!-- Step 2 - If an adjective and noun are sent to this ejs file,
+    Change the h1 to show the adjective and noun.
+    But when the user first goes on the website and there is no adjective and noun,
+    Show the default h1 below -->
+<% if(locals.RandomText){ %>
+  <h1> <%= RandomText %> </h1>
+<% } else { %>
+  <h1> Welcome to the Band Generator 🤟 </h1>
+<% } %>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="/submit" method="POST">
+      <input type="submit" value="Generate Name">
+    </form>
+  </body>
+</html>
+
+<!-- Step 3 Add Footer -->
+<%- include("partials/footer.ejs") %>
+
+
+// In header.ejs
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Add the link to the CSS stylesheet here -->
+  <!-- Hint: the link is relative to the public folder -->
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Band Generator</title>
+</head>
+
+<body>
+  <main>
+
+
+
+// In footer.ejs
+</main>
+
+<footer>
+  <!-- Step 4 - Add a dynamic year to the footer using JS. -->
+  <% const year = new Date().getFullYear(); %>
+  <p>Copyright © <%= year %> </p>
+</footer>
+</body>
+
+</html>
