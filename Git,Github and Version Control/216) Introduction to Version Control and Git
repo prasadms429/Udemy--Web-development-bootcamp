@@ -1,0 +1,4 @@
+Git is used to upload code.
+We can upload different versions of code to Git. Like version 1, version 2...
+If current verison of code doesn't work then we can roll-back to previous version of our code.
+We can also compare our current version of code with previous version of code to detect where the problem is causing.
