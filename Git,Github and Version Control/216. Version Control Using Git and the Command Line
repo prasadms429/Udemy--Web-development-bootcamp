@@ -1,0 +1,32 @@
+// Open hyper
+cd "E:\Web development\Git & Github"
+mkdir Story
+cd Story
+
+// To list the files inside Story folder.
+ls
+
+touch chapter1.txt
+
+// To open the atom application with current folder in hyper
+atom .
+
+// To initialize git inside our working directory
+git init
+
+// To list all hidden files inside our folder
+ls -a
+
+// To track changes of our files, we add our file to git Staging Area.
+// Now the "status" command will display tell whether our files are in Staging Area or not. If our file is not in Staging Area, then our file name will display in red
+// and our file name will display under "Untracked files" heading.
+git status
+
+// To add our file to Staging Area
+git add chapter1.txt
+
+// Now our file name will display in Green, Because it is added to Staging Area. 
+git status
+
+// This will give Heading Message to each set of changes, when we commit. It helps to identify what changes we made.
+git commit -m "Complete Chapter 1"
