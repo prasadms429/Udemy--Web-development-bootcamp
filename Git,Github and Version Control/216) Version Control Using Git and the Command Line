@@ -30,3 +30,26 @@ git status
 
 // This will give Heading Message to each set of changes, when we commit. It helps to identify what changes we made.
 git commit -m "Complete Chapter 1"
+
+// To see versions of commited files inside git repository, with version log. Version log is unique for each commit that we made. (Example of Version log - 104f7b735102586197c0ff2af777a4648c6d47ed)
+git log
+
+touch chapter2.txt
+touch chapter3.txt
+
+git status
+// Now we can see chapter2 and chapter3 files are not commited to staging area. Those file names will display in red color.
+
+// To add all files togeter to Staging area which are in working directory, then give this command
+git add .
+
+git status
+
+// To commit files with message.
+git commit -m "complete Chapter 2 and 3"
+
+// Now we can see two versions of log. One for Chapter1 and another for chapter 2, 3.
+git log
+
+
+
