@@ -1,0 +1,10 @@
+// We can setup of git repository remotely on someone else Computer or Server.
+// To do that we use Git hub.
+
+// To transfer the local git repository which is in our computer to Github, use this below commands in command line.
+…or push an existing repository from the command line
+git remote add origin https://github.com/prasadms429/Story.git
+git branch -M main
+git push -u origin main
+
+// Till 3.00 min completed.
