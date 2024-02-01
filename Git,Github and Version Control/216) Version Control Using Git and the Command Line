@@ -51,7 +51,7 @@ git commit -m "complete Chapter 2 and 3"
 // Now we can see two versions of log. One for Chapter1 and another for chapter 2, 3.
 git log
 
-// If we make changes to any file and not commit that then that file will display in red color. In this case we made changes to chapter 3 file. And Chapter 3 file is not commited yet.
+// If we make changes to any file and not commit that then that file will display in red color. In this case we made changes again to chapter 3 file. And Chapter 3 file is not commited yet.
 git status
 
 // To see what changes we made in current version and see the code of previous verison of a file. Give this command.
@@ -63,3 +63,5 @@ git checkout chapter3.txt
 
 // Now we can see previous version log.
 git log
+
+// Till now we learned how to use git locally on our local computer. In next lesson we will learn how to use git remotely.
