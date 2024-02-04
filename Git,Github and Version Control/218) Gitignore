@@ -1,0 +1,38 @@
+// Certains files containing Secret keys, Password, API keys should not be hosted in Github. If it is hosted then it may be misused by others.
+// To avoid commiting of certain files to Github, we use .gitignore
+// In hyper
+cd "E:\Web development\Git & Github\Story"
+mkdir Project
+cd Project
+touch file1.txt file2.txt file3.txt secrets.txt
+touch .gitignore
+ls
+
+// To see hidden files
+ls -a
+
+// Initialize git inside current working directory.
+git init
+
+// To add all files inside working directory to staging area.
+git add .
+
+git status
+
+// Now all files added to staging area. If we commit then all files will be commited. We don't want commit secrets.txt and .DS_Store files.
+// To remove all files from staging area use below command.
+git rm --cached -r .    // rm = remove, -r = Recursive.
+git status      // Now we can see files removed from staging area (Files appears in red color)
+
+atom .
+
+// In atom, Inside .gitignore file write the file names which you don't want to commit or push to Github. Those files will not be added to staging area, if we add.
+.DS_Store
+secrets.txt
+
+// Inside .gitignore file if we give "*.txt" then all txt files inside working directory will not be committed.
+
+// In hyper
+git add .
+git status    // Now we can see that secrets.txt file is not added to staging area.
+git commit -m "Initial commit"    // This is to commit remaining files.
