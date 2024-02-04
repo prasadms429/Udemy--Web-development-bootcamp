@@ -31,7 +31,6 @@ atom .
 secrets.txt
 
 // Inside .gitignore file if we give "*.txt" then all txt files inside working directory will not be committed.
-
 // In hyper
 git add .
 git status    // Now we can see that secrets.txt file is not added to staging area.
