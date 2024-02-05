@@ -8,7 +8,7 @@ git log
 
 // To transfer the local git repository which is in our computer to Github, use this below commands in command line.
 // To push an existing repository from the command line
-git remote add origin https://github.com/prasadms429/Story.git      // Here origin is the name given to remote repository. It is generally used name by all programmers.
+git remote add origin https://github.com/prasadms429/Story.git      // Here origin is the name given to remote repository. This name is generally used name by all programmers. Then give your url of remote repository.
 git branch -M main    
 git push -u origin main    // -u is used link local repository and remote repository. This command will push the our local repository to remote respository "origin" and branch main.
 
