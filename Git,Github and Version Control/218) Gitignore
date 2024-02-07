@@ -44,7 +44,7 @@ atom .
 npm i    // To install node modules
 touch .gitignore
 
-// In browser, Visit "https://github.com/github/gitignore/blob/main/Node.gitignore" This is github re-build repository, which contains pre-build git files to be ignored
+// In browser, Visit "https://github.com/github/gitignore/blob/main/Node.gitignore" This is github pre-build repository, which contains pre-build git files to be ignored
 // in node project. We can copy that and paste it in our .gitignore file
 // Inside .gitignore file # means comment. In addition to pre-built code, we can add our Project required files to ignore. Here we added that under #Project-wide.
 // In .gitignore file
