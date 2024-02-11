@@ -1,0 +1,4 @@
+// We can do multiple commits on our local repository.
+// To do Experiment on our code to fix bugs or to add new features we will be creating side branches (Called Experiment branch) and commiting those in side branch.
+// Meanwhile we can commit Main branch by adding Maintance code and all.
+// If our Side brach works fine without no issues then we Merge our Side brach with Main branch and See if there are any conflicts raises or not. If not we can proceed.
