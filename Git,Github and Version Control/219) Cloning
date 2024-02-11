@@ -1,2 +1,39 @@
 // If we want to clone the remote repository to our local desktop or computer then do pull request.
 // The cloning we usually do to add some more functionality to someone else code or to fix bugs or Build something new using that code.
+
+// To clone anyone else repository from Github -
+// Go to this url to clone the quakejs game - "github.com/inolen/quakejs"
+// Then click on "Code" there and copy url.
+// In hyper
+cd "E:\Web development\Git & Github"
+git clone https://github.com/inolen/quakejs.git      // Format is git clone url
+cd quakejs    // To navigate inside repository
+npm install   // To install node modules inside repository.
+
+// Then follow the instructions mentioned in Github to run the server.
+// Set content.quakejs.com as the content server:
+echo '{ "content": "content.quakejs.com" }' > bin/web.json
+
+// Run the server:
+node bin/web.js --config ./web.json
+
+// In browser
+localhost:8080/
+
+
+// To clone another game into our local repository and run it locally.
+// The game is word-matermind
+// Go to this url to cline the word-matermind game - "https://github.com/clupasq/word-mastermind"
+// In hyper
+cd..
+git clone https://github.com/clupasq/word-mastermind.git
+cd word-mastermind/
+npm install
+// To run the server:
+npm start
+// In browser
+localhost:3333/
+
+
+// Like this we clone somone else code to our local repository and can make any changes to it to build Version 2 and more.
+// This is open source url where we can make contribute - "https://github.com/MunGell/awesome-for-beginners#javascript"
