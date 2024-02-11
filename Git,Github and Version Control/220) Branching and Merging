@@ -2,3 +2,40 @@
 // To do Experiment on our code to fix bugs or to add new features we will be creating side branches (Called Experiment branch) and commiting those in side branch.
 // Meanwhile we can commit Main branch by adding Maintance code and all.
 // If our Side brach works fine without no issues then we Merge our Side brach with Main branch and See if there are any conflicts raises or not. If not we can proceed.
+
+// In hyper
+cd "E:\Web development\Git & Github\Story"
+git log
+atom .
+
+// To create new branch (Side branch)
+git branch alien-plot
+
+// To see all the braches present inside the repository. The * in front of branch name represents the current branch where we are in.
+git branch
+
+// To switch the branch from main branch to alien-plot branch.
+git checkout alien-plot
+
+// Then I modified chapter 1 and 2 with some alien related text.
+git add .  // To add that to staging area
+git commit -m "modify chapter 1 and 2 to have alien theme"
+git log  // Now we can see the latest commit in github (origin/main) and the latest commit in local repository ( HEAD -> alien-plot )
+git branch
+
+git checkout main   // To switch to main branch.
+touch chapter4.txt  // Add some text inside chapter4.txt in atom.
+git add .
+git commit -m "add chapter 4"
+git log  // Now we can see the latest commit in github (origin/main) and the latest commit in local repository ( HEAD -> main )
+
+// To merge changes of alien-plot with main branch
+git merge alien-plot
+
+git branch
+git log
+git push origin main -u   // To push the changes to Github
+
+// In Github
+// By clicking on Commits, we see all the commits.
+// To see all the commits in graph format -> Insights -> Network
