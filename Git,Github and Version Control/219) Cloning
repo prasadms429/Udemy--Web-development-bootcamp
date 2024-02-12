@@ -6,7 +6,7 @@
 // Then click on "Code" there and copy url.
 // In hyper
 cd "E:\Web development\Git & Github"
-git clone https://github.com/inolen/quakejs.git      // Format is git clone url
+git clone https://github.com/inolen/quakejs.git      // Format is - git clone url
 cd quakejs    // To navigate inside repository
 npm install   // To install node modules inside repository.
 
@@ -22,8 +22,8 @@ localhost:8080/
 
 
 // To clone another game into our local repository and run it locally.
-// The game is word-matermind
-// Go to this url to cline the word-matermind game - "https://github.com/clupasq/word-mastermind"
+// The game is word-mastermind
+// Go to this url to clone the word-mastermind game - "https://github.com/clupasq/word-mastermind"
 // In hyper
 cd..
 git clone https://github.com/clupasq/word-mastermind.git
