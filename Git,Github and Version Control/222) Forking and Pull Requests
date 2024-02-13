@@ -22,4 +22,12 @@
 // Inside copied repository, after making changes click on Pull requests tab -> New pull request -> then we can see what changes we made to previous one ->
 // Create pull request -> Add some more description about our changes and how it is useful to your project. Then submit pull request.
 // After that request will go owner of Original repository.
-// Now after pull request, In our copied repository, we can't see the previous changes we made. Because, we have only read access, not write access to the Repository.
+// After doing pull request, still our changes is not reflecting in original repository. Because, we have only read acces, not write access.
+// For that Owner of original reposiotory need to review and approve our pull reqest.
+
+// To Review and apporve Pull request
+// Click on Pull requests tab -> Click on Description of Pull request -> click on Commits tab -> click on Description of Pull request -> Then we review the changes made ->
+// If Everthying is ok, then click on Review changes tab -> Then add Review summary and Click on Approve radio button -> Submit review
+// Now once changes are approved we can able to merge with our Original repository. For that we can add some comments and click on Confirm merge tab.
+// Click on Insights -> Network to see merged graph with pull request changes.
+
