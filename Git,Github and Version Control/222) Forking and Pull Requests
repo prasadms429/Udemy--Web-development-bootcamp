@@ -26,6 +26,8 @@
 // For that Owner of original reposiotory need to review and approve our pull reqest.
 
 // To Review and apporve Pull request
+
+// We can click on Trending repository on github home page and make contribution there.
 // Click on Pull requests tab -> Click on Description of Pull request -> click on Commits tab -> click on Description of Pull request -> Then we review the changes made ->
 // If Everthying is ok, then click on Review changes tab -> Then add Review summary and Click on Approve radio button -> Submit review
 // Now once changes are approved we can able to merge with our Original repository. For that we can add some comments and click on Confirm merge tab.
