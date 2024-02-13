@@ -1,0 +1,9 @@
+// Previously we saw Working directory, Staging Area, Local Repository and Remote Repository.
+// "git add" to move from Working directory to Staging Area. "git commit" to move from Staging Area to Local Repository. "git push" to add our local repository to Remote Repository.
+// In this lesson we will learn more about Local and Remote Repository.
+
+// If we want to copy someone else Remote repository to Our Remote repository then use Fork request.
+// Owner of local repository might not given write access to everyone. For trusted group of people only may be given. 
+// Because, if they give write accss to everyone then anyone on internet can modify there code and it may alter there feature.
+// Then make changes to copied code in our Remote repository. If all added features works fine then raise PULL request to owner of Original repository.
+// Then Owner of original repository reviews our changes and if everthying is ok then they will pull our code to their Original repository.
