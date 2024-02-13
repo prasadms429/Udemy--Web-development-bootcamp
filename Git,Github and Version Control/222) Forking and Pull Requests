@@ -7,3 +7,19 @@
 // Because, if they give write accss to everyone then anyone on internet can modify there code and it may alter there feature.
 // Then make changes to copied code in our Remote repository. If all added features works fine then raise PULL request to owner of Original repository.
 // Then Owner of original repository reviews our changes and if everthying is ok then they will pull our code to their Original repository.
+
+// To Copy my remote repository Story into another account of my github repository.
+// Signout from current gitgub account.
+// Login with another github account (i.e, prasadms900)
+// Search "prasadms429/Story" inside search box there.
+// Click on Fork tab.
+// Create Fork request.
+// Then original repository is copied to our another account.
+// Here in copied repository I made changes in Chapter 4.txt, Committed changes with some description about that changes.
+
+// Inside orginal repository, if we click on Insights -> Network -> Then we can see who all are forked our repository and We can one side brach for Forked one.
+
+// Inside copied repository, after making changes click on Pull requests tab -> New pull request -> then we can see what changes we made to previous one ->
+// Create pull request -> Add some more description about our changes and how it is useful to your project. Then submit pull request.
+// After that request will go owner of Original repository.
+// Now after pull request, In our copied repository, we can't see the previous changes we made. Because, we have only read access, not write access to the Repository.
