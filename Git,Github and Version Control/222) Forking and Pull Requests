@@ -4,7 +4,7 @@
 
 // If we want to copy someone else Remote repository to Our Remote repository then use Fork request.
 // Owner of local repository might not given write access to everyone. For trusted group of people only may be given. 
-// Because, if they give write accss to everyone then anyone on internet can modify there code and it may alter there feature.
+// Because, if they give write access to everyone then anyone on internet can modify there code and it may alter there feature.
 // Then make changes to copied code in our Remote repository. If all added features works fine then raise PULL request to owner of Original repository.
 // Then Owner of original repository reviews our changes and if everthying is ok then they will pull our code to their Original repository.
 
