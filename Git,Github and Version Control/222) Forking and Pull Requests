@@ -30,5 +30,4 @@
 // If Everthying is ok, then click on Review changes tab -> Then add Review summary and Click on Approve radio button -> Submit review
 // Now once changes are approved we can able to merge with our Original repository. For that we can add some comments and click on Confirm merge tab.
 // Click on Insights -> Network , to see merged graph with pull request changes.
-
 // We can click on Trending repository on github home page and make contribution there.
