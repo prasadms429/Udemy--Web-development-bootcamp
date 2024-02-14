@@ -17,7 +17,7 @@
 // Then original repository is copied to our another account.
 // Here in copied repository I made changes in Chapter 4.txt, Committed changes with some description about that changes.
 
-// Inside orginal repository, if we click on Insights -> Network -> Then we can see who all are forked our repository and We can one side brach for Forked one.
+// Inside orginal repository, if we click on Insights -> Network -> Then we can see who all are forked our repository and We can see one side branch for Forked one.
 
 // Inside copied repository, after making changes click on Pull requests tab -> New pull request -> then we can see what changes we made to previous one ->
 // Create pull request -> Add some more description about our changes and how it is useful to your project. Then submit pull request.
