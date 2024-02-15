@@ -12,4 +12,16 @@
 // Example - If we have one program to watering the plant. Plant conatins water packet with IOT device associated with it. When we send API request with water text in request.
 // then IOT device identifies the water word in some path and start watering the plant. Later IOT device will send us reponse through API mentioning the soil moisture content.
 
-// There are many API's such as GraphQL, SOAP, REST:API, gRPC. We will be using REST:API in our course.
+// There are many API's such as GraphQL, SOAP, REST:API, gRPC. API all are same expect thery are written in different Architecture. 
+// For example, Different houses built with different Architecture. But there use is to provide shelter.
+// We will be using REST:API in our course.
+
+// In REST:API we will be using HTTP Protocol to interact with software. HTTP Protocol are GET, POST, PUT, PATCH, DELETE.
+// Now we will trying an Example using Postman.
+// Sometimes we may see the shooting star on sky. But it can be also moving satellite (ISS - International space station).
+// To locate the location of ISS we can use the API provided by them. Which provides real-time ISS location.
+// In their documentaion, there is format to request.  once we look through the option we may be need to do get or post request and 
+// In response we can select what we want such as latitude and longitude (We can select only the items which is present in documentation).
+// Then give "latitude, longitude" in google map then we get exact location of ISS.
+
+// Open up the POSTMAN and look at this url for description of ISS is "https://wheretheiss.at/w/developer".
