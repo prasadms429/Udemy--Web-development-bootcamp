@@ -5,3 +5,11 @@
 // rules used to get weather data, programming languages used, Database used. Just we need to raise get request through API to that software.
 // We need to mention latitude and longitude of the place, which we want weather data. What all details we need example, icon, Temperature etc we need to mention.
 // Then we get data from OpenWeather software through response.
+
+// Another Example - If we have our news letter website, which sends news on weekly basis. In that we take E-mail id and store in database. To send news to all of the 
+// email id's we have software mailChip, we send Post request to mailchip using API, then it will send mails to mail ids present and send response to us.
+
+// Example - If we have one program to watering the plant. Plant conatins water packet with IOT device associated with it. When we send API request with water text in request.
+// then IOT device identifies the water word in some path and start watering the plant. Later IOT device will send us reponse through API mentioning the soil moisture content.
+
+// There are many API's such as GraphQL, SOAP, REST:API, gRPC. We will be using REST:API in our course.
