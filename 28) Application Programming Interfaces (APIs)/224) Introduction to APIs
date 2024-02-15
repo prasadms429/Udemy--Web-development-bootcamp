@@ -3,5 +3,5 @@
 // Example - If we are building Dairy website, for each day if we want to provide weather of that day with icon, then we can get it using -
 // API from OpenWeather software. OpenWeather is a software which provides the weather data of all locations. We may not know what is the
 // rules used to get weather data, programming languages used, Database used. Just we need to raise get request through API to that software.
-// We need to mention latitude and longitude of the place, which want weather data. What all details we need example, icon, Temperature etc we need to mention.
+// We need to mention latitude and longitude of the place, which we want weather data. What all details we need example, icon, Temperature etc we need to mention.
 // Then we get data from OpenWeather software through response.
