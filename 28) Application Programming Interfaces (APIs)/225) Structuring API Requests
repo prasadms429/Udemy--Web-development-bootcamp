@@ -1,0 +1,13 @@
+// In this lesson, we will learn Formatting our API requests.
+// We may have our own Frontend and Backend. Our forntend send request to backend using HTTP GET request and get Response from our Server by using Private API.
+// Anyone else such as Frontend of others may not be able to access our server thorugh our Private API because, they don't know the what is the structure our server and
+// format to request to our server. If somebody knows how our server is structured then they are able to tap into our server.
+
+// If our sever is able to interact with someone else server through GET request and get Response using Public API. Then, Probably they have documented how to use Public API or
+// they have exposed certain parts of there server, so anyody can use it (Someone else server). 
+// We learn how to use Public API's.
+
+// This is the API documentaion url for things to do in boring time.
+https://bored-api.appbrewery.com/
+
+// API end points - Structuring our request
