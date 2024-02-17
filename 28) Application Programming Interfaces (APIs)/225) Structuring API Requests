@@ -1,5 +1,5 @@
 // In this lesson, we will learn Formatting our API requests.
-// We may have our own Frontend and Backend. Our forntend send request to backend using HTTP GET request and get Response from our Server by using Private API.
+// We may have our own Frontend and Backend. Our forntend send request to backend using HTTP GET request and we get Response from our Server by using Private API.
 // Anyone else such as Frontend of others may not be able to access our server thorugh our Private API because, they don't know the what is the structure our server and
 // format to request to our server. If somebody knows how our server is structured then they are able to tap into our server.
 
