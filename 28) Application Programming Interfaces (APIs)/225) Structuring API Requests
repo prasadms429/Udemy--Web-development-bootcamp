@@ -9,5 +9,7 @@
 
 // This is the API documentaion url for things to do in boring time.
 https://bored-api.appbrewery.com/
-
 // API end points - Structuring our request
+// After url we specify the endpoints. It will tell where to route our request. Because, inside url there are many endpoints(Each endpoints perform differnt job).
+// To get random activity make request to this endpoint, which is specified in documentation.
+https://bored-api.appbrewery.com/random    // Make a GET request in Postman.
