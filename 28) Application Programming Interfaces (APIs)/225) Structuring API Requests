@@ -10,6 +10,12 @@
 // This is the API documentaion url for things to do in boring time.
 https://bored-api.appbrewery.com/
 // API end points - Structuring our request
-// After url we specify the endpoints. It will tell where to route our request. Because, inside url there are many endpoints(Each endpoints perform differnt job).
+// After url we specify the endpoints like this "https://bored-api.appbrewery.com/endpint" . 
+// It will tell where to route our request. Because, inside url there are many endpoints(Each endpoints perform differnt job).
 // To get random activity make request to this endpoint, which is specified in documentation.
 https://bored-api.appbrewery.com/random    // Make a GET request in Postman.
+
+// To provide additional information to API we use parameters.
+// We define parameter in query value pair. First Parameter is given after '?' in url. Subsequent parameters are differentiated using '&'.
+// Example - https://bored-api.appbrewery.com/filter?type=social&participants=2        // This will filter our API result by activity type and number of participants
+// We use parameters in API for filtering, Searching and many more.
