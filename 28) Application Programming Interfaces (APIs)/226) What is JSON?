@@ -1,0 +1,14 @@
+// JSON - Javascript Object Notation
+// JSON is similar to Javascript object. Javascript objects contains key value pair separated by colon. JSON also contains key, value pair and contains key within "".
+// All key in Json are considered as String.
+// JSON is used to transfer data over internet in a readable format.
+
+// When we want to transfer wardrobe from shop to home, we will flatten it by arraing all of its material. So, space is minimized and easy to carry, 
+// without carrying air inside it and all.
+// In a same way JSON is flattened over internet in a serial format. Then it will become easy to transfer. After Json reaches the destination then it will be arranged
+// to it's original format.
+
+// In this website we can view the serial Json on internet in a Formatted view -
+https://jsonviewer.stack.hu/
+// Paste the serial Json on Text window, then click on Viewer tab.
+// 5.00 min.
