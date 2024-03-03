@@ -11,4 +11,18 @@
 // In this website we can view the serial Json on internet in a Formatted view -
 https://jsonviewer.stack.hu/
 // Paste the serial Json on Text window, then click on Viewer tab.
-// 5.00 min.
+
+// To convert javascript object to JSON (With serial format and key will be in "")
+// JS Object -> JSON
+const jsonData = JSON.stringify(data);
+
+// To convert JSON to Javascirpt object format. Serial format to Java script object format. By removing "" in key.
+// JSON -> JS Object
+cosnt data = JSON.parse(jsonData);
+
+// Download the module resource
+cd "E:\Web development\API\5.2 JSON"
+npm install
+nodemon solution.js
+
+11.30 min
