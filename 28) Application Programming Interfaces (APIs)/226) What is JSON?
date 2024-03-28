@@ -79,7 +79,8 @@ app.post("/recipe", (req, res) => {
 
 
     <!-- Else, show the recipe name e.g. <h2>Recipe name</h2>-->
-    <% if(locals.recipe){ %>
+    <% if(locals.recipe){ %> // Initially ejs will not check whether this recipe is defined keyword or not in js file. Later it will crash the code.
+                             // For that we use locals, which will check whether used variable or keyword is defined or not.
       <h2 id = "receipeTitle">
         <%= recipe.name %>        // recipe refers to the data sent from JS file.
       </h2>
