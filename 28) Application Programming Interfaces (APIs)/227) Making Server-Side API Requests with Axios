@@ -1,0 +1,87 @@
+// Axios is the node library to get the data from another server.
+// Axios website - https://www.npmjs.com/package/axios
+
+// Download video resource to complete challenge.
+cd "E:\Web development\API\5.3 Axios"
+npm install
+
+// In index.js
+// Step 1: Make sure that when a user visits the home page,
+//   it shows a random activity.You will need to check the format of the
+//   JSON data from response.data and edit the index.ejs file accordingly.
+app.get("/", async (req, res) => { // When we visit website first time it will display random activity using get method.
+  try {
+    const response = await axios.get("https://bored-api.appbrewery.com/random");
+    const result = response.data;
+    res.render("index.ejs", { data: result });
+  } catch (error) {
+    console.error("Failed to make request:", error.message);
+    res.render("index.ejs", {
+      error: error.message,
+    });
+  }
+});
+
+app.post("/", async (req, res) => {  // Next time based on our selected choice in website it should display random activity using Post method.
+  // Step 2: Play around with the drop downs and see what gets logged.
+  // Use axios to make an API request to the /filter endpoint. Making
+  // sure you're passing both the type and participants queries.
+  // Render the index.ejs file with a single *random* activity that comes back
+  // from the API request.
+
+  // Step 3: If you get a 404 error (resource not found) from the API request.
+  // Pass an error to the index.ejs to tell the user:
+  // "No activities that match your criteria."
+  try {
+    const type1 = req.body.type;    // req.body will hold the selected values of frontend.
+    const participants1 = req.body.participants;
+    const response = await axios.get(`https://bored-api.appbrewery.com/filter?type=${type1}&participants=${participants1}`);    // To enter parameter and its values inside url we need to follow this syntax ` $ `
+    // axios will get required data from specified url/server. await method will wait till we get data.
+    const result = response.data;
+    res.render("index.ejs", { data: result[Math.floor(Math.random()*result.length)], });    // To select random activity based upon result that we got using filter criteria(type, participants) and send it ejs file.
+  } catch (error) {
+    console.error("Failed to make request:", error.message);
+    res.render("index.ejs", {
+      error:"No activities that match your criteria."
+    });
+  }
+});
+
+
+// In indes.ejs
+<body>
+..
+..
+    <section id="cards" class="cards">
+    <% if(locals.data){ %>  // It will check data is defined variable inside Javascript file.
+      <article class="card-item">
+        <h2 class="card-activity">
+          <!-- Show Activity -->
+          <%= data.activity %>
+        </h2>
+        <div class="card-info">
+          <span class="card-type">
+            <!-- Show Activity type -->
+            <%= data.type %>
+          </span>
+          <span class="card-participants">
+            <!-- participants: Show participant number -->
+            participants: <%= data.participants %>
+            <span class="card-number"></span>
+          </span>
+        </div>
+      </article>
+    <% } %>
+
+    <% if(locals.error){ %>
+      <div id="tag-error" class="tag-error">
+        <!-- Show any errors that were sent from the backend -->
+        <%= error%>
+
+       </div>
+    <% } %>
+
+    </section>
+  </div>
+
+</body>
