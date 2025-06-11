@@ -9,6 +9,7 @@ npm install
 // Step 1: Make sure that when a user visits the home page,
 //   it shows a random activity.You will need to check the format of the
 //   JSON data from response.data and edit the index.ejs file accordingly.
+import axios from "axios";
 app.get("/", async (req, res) => { // When we visit website first time it will display random activity using get method.
   try {
     const response = await axios.get("https://bored-api.appbrewery.com/random");
