@@ -1,1 +1,16 @@
+There are diffenet kind of API authentication -
+1. No Authentication
+2. Basic Authentication
+3. API key authorization
+4. Token based Authentication
 
+To restrict all user from using API we have some Authentication to API.
+
+No Authentication -
+Previosuly for Bored API we didn't have any authentication. Anyone can access it.
+But for Bored API we have rate limit. Which is having 100 request per minute.
+
+Basic Authentication -
+Basic Authentication will have USER name and Password for Authentication.
+Usually in base authentication, we pass over base 64 endcode string in header of request.
+Base 64 will take ASCCI character(Text) and convert that to bits (0's and 1's) and encode it another character.
