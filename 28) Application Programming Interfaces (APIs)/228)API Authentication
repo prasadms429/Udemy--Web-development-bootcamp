@@ -14,3 +14,13 @@ Basic Authentication -
 Basic Authentication will have USER name and Password for Authentication.
 Usually in base authentication, we pass over base 64 endcode string in header of request.
 Base 64 will take ASCCI character(Text) and convert that to bits (0's and 1's) and encode it another character.
+For example: MAN is base 64 encoded into TBAFu.
+Each character is represented in binary.
+In our case we will take User name and Password and convert those all into BASE 64. Then we can add this to Authorization header. We can pass this data when we make a request.
+Example -
+http://secrets-api.appbrewery.com/
+With this API we can register new user by passing over User name and password in  the body of Post request.
+Then we can use that User name and password perform GET request.
+Using Post man make request -
+https://secrets-api.appbrewery.com/all?page=1
+10.00 in
