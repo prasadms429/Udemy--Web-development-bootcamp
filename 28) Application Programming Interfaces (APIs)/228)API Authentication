@@ -26,5 +26,5 @@ https://secrets-api.appbrewery.com/all?page=1
 
 Make post request to register route to regesiter username and password.
 https://secrets-api.appbrewery.com/register
-In Postman, Select Post -> Give URL -> click on Body -> click on x-www-form-urlencoded -> Give User name and password in key -> Enter values in those fields -> Click on Send
+In Postman, Select Post -> Give URL -> click on Body -> click on x-www-form-urlencoded -> Give User name and password in key -> Enter values in for fields -> Click on Send
 
