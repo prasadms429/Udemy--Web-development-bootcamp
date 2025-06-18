@@ -33,3 +33,4 @@ Enter Username and Password -> Send
 We can check encoded string by clicking on Headers on Postman -> Copy Authorization value present after Basic -> Paste value in this website -
 https://www.base64decode.org/
 Select source character set as ASCII -> Click on Decode -> Then we can see our User name and password.
+15.00 min
