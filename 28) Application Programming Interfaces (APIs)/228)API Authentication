@@ -8,7 +8,7 @@ To restrict all user from using API we have some Authentication to API.
 
 No Authentication -
 Previosuly for Bored API we didn't have any authentication. Anyone can access it.
-But for Bored API we have rate limit. Which is having 100 request per minute.
+But for Bored API we have rate limit. Which is having 100 request per 15 minute.
 
 Basic Authentication -
 Basic Authentication will have USER name and Password for Authentication.
