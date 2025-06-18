@@ -30,3 +30,6 @@ In Postman, Select Post -> Give URL -> click on Body -> click on x-www-form-urle
 
 After registering, Select GET -> Click on Authorization -> Select type as Basic Auth -> Give URL as https://secrets-api.appbrewery.com/all?page=1 ->
 Enter Username and Password -> Send
+We can check encoded string by clicking on Headers on Postman -> Copy Authorization value present after Basic -> Paste value in this website -
+https://www.base64decode.org/
+Select source character set as ASCII -> Click on Decode -> Then we can see our User name and password.
