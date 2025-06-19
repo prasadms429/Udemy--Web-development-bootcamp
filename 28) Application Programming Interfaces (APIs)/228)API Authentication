@@ -45,3 +45,4 @@ https://secrets-api.appbrewery.com/generate-api-key
 
 Make get request to below url with embarrassment score 7 -
 https://secrets-api.appbrewery.com/filter?score=7&apiKey=keyValue
+20 min.
