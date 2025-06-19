@@ -33,4 +33,15 @@ Enter Username and Password -> Send
 We can check encoded string by clicking on Headers on Postman -> Copy Authorization value present after Basic -> Paste value in this website -
 https://www.base64decode.org/
 Select source character set as ASCII -> Click on Decode -> Then we can see our User name and password.
-15.00 min
+
+Difference between Authentication and Authorization -
+In Authentication User will use Username and Password to Authenticate themselef for service that API will 
+provide.
+In Authorization Client will use API key to Authorize themself to take API service.
+The API key will be used track particular service is used how many times per day.
+
+To generate api key make Get request to below url -
+https://secrets-api.appbrewery.com/generate-api-key
+
+Make get request to below url with embarrassment score 7 -
+https://secrets-api.appbrewery.com/filter?score=7&apiKey=keyValue
