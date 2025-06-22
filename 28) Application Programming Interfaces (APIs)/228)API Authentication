@@ -53,3 +53,9 @@ data they pass over internet. Then it can't be decoded.
 Token based Authentication -
 In Token based Authentication we will enter user name and password then one token will be generated, we will use that token to use services of API.
 
+OAUTH is industry standard to use Token authentication.
+
+For example -
+If we have developed weather app which will make api request to Google calander to get user daily schedules. If on Tuesday the user has meeting then based on weather
+weaterh app will send notification to bring umbrella.
+User can sing with Google then one token will be generated to get Google calender service. This token will be furhter accessed to get data to our Weather app.
