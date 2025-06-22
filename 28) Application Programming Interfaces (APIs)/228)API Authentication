@@ -60,4 +60,9 @@ If we have developed weather app which will make api request to Google calander 
 weaterh app will send notification to bring umbrella.
 User can sing with Google then one token will be generated to get Google calender service. This token will be furhter accessed to get data to our Weather app.
 
-Get token 
+Make post request to below url to get token -> Click on body -> Click on x-www-form-urlencoded -> Enter usernme and password in key field -> Enter Values -> Send
+https://secrets-api.appbrewery.com/get-auth-token
+
+Make Get request to below url -> Click on Authorization -> Select type as Bearer token -> Enter token value -> Send
+https://secrets-api.appbrewery.com/secrets/2
+30.55 min
