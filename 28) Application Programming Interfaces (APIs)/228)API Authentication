@@ -38,11 +38,18 @@ Difference between Authentication and Authorization -
 In Authentication User will use Username and Password to Authenticate themselef for service that API will 
 provide.
 In Authorization Client will use API key to Authorize themself to take API service.
-The API key will be used track particular service is used how many times per day.
+The API key will be used to track particular service is used how many times per day.
 
 To generate api key make Get request to below url -
 https://secrets-api.appbrewery.com/generate-api-key
 
 Make get request to below url with embarrassment score 7 -
 https://secrets-api.appbrewery.com/filter?score=7&apiKey=keyValue
-20 min.
+Or click on Authorization and select type as API key -> Give Key and Value -> Select Add to as Query Params -> Click on Send
+
+In Basic authentication user name and password will be base 64 encoded and it can be decoded using Base64decode website. So some website will use https to secure
+data they pass over internet. Then it can't be decoded.
+
+Token based Authentication -
+In Token based Authentication we will enter user name and password then one token will be generated, we will use that token to use services of API.
+
