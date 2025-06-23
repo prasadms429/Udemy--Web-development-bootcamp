@@ -58,11 +58,11 @@ OAUTH is industry standard to use Token authentication.
 For example -
 If we have developed weather app which will make api request to Google calander to get user daily schedules. If on Tuesday the user has meeting then based on weather
 weaterh app will send notification to bring umbrella.
-User can sing with Google then one token will be generated to get Google calender service. This token will be furhter accessed to get data to our Weather app.
+User can sign with Google then one token will be generated to get Google calender service. This token will be furhter accessed to get data to our Weather app.
 
 Make post request to below url to get token -> Click on body -> Click on x-www-form-urlencoded -> Enter usernme and password in key field -> Enter Values -> Send
 https://secrets-api.appbrewery.com/get-auth-token
 
 Make Get request to below url -> Click on Authorization -> Select type as Bearer token -> Enter token value -> Send
 https://secrets-api.appbrewery.com/secrets/2
-30.55 min
+33.00 min
