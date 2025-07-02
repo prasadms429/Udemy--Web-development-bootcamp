@@ -1,0 +1,14 @@
+With axios we can use axios.get().then() functionality or 
+async await axios.get() 
+both types will do same work.
+Once after code inside await is executed, other code will be executed line by line.
+async await modern Javascript syntax.
+
+HTTP protocol -
+GET, POST, PUT, PATCH, DELETE
+
+While doing fet request we are passing,
+axios.get("URL", config)
+Now for Post request we will pass,
+axiox.post("URL", body, config)
+In body we will pass html body data such as User name and password.
