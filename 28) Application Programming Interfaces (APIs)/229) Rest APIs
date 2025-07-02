@@ -12,3 +12,4 @@ axios.get("URL", config)
 Now for Post request we will pass,
 axiox.post("URL", body, config)
 In body we will pass html body data such as User name and password.
+5.30 min
