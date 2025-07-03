@@ -12,4 +12,19 @@ axios.get("URL", config)
 Now for Post request we will pass,
 axios.post("URL", body, config)
 In body we will pass html body data such as User name and password.
-5.30 min
+
+In config we can pass basic authentication values, parameters, headers required for bearer token authorization.
+If we want to replace some data from backend with new data then we make Put request. 
+axios.put("URL", body, config)
+syntax of put request is similar to post request.
+
+If we want to update some data then we make Patch request.
+axios.patch("URL", body, config)
+
+Delete syntax -
+axios.delete("URL", config)
+
+We will use config to pass Javascript object.
+axios.post("URL[, data[, config]])
+If mention parameters inside sqare bracket then it is opetional to use. Here data and config are optional to pass.
+14.30 min
