@@ -27,4 +27,7 @@ axios.delete("URL", config)
 We will use config to pass Javascript object.
 axios.post("URL[, data[, config]])
 If mention parameters inside sqare bracket then it is opetional to use. Here data and config are optional to pass.
+
+//Challenge
+npm i
 14.30 min
