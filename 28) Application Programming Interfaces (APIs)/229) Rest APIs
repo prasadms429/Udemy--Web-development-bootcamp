@@ -7,9 +7,9 @@ async await modern Javascript syntax.
 HTTP protocol -
 GET, POST, PUT, PATCH, DELETE
 
-While doing fet request we are passing,
+While doing fetch request we are passing,
 axios.get("URL", config)
 Now for Post request we will pass,
-axiox.post("URL", body, config)
+axios.post("URL", body, config)
 In body we will pass html body data such as User name and password.
 5.30 min
