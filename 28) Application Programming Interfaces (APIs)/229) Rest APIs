@@ -30,6 +30,7 @@ If mention parameters inside sqare bracket then it is opetional to use. Here dat
 
 //Challenge
 Download path - D:\Web development\API\5.5 REST APIs
+Open path in hyper and give below command,
 npm i
 
 index.js -
