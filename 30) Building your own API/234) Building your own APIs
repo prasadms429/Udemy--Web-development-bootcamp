@@ -1,0 +1,13 @@
+Application Programming interface (API) -
+There are lot of Public API's that we can use. This will make our development faster, instead of buidling API from scratch.
+Rapid API is like github, where developers have posted there APIs. It has paid APIs as well as Free APIs.
+
+Monetised APIs:
+Data collection (Example - Ingrediants to make pasta)
+Algorithm/ Services - (API to find shortest distance to one desination for Car. ChatGPT API) 
+Simplified Interface (Google sheet has many functionality to do. We can create one API with simplified version to just enter data in sheet. This will simplify the functionality and easy to use)
+Domnio's Pizza API GITHUB is an example for Simplified Interface.
+
+There is API called Internal APIs
+Internal APIs are used internal in originization, those are not public and there is no documentation for those in public for how to use it.
+Example - Amazon have Internal API to store the product details that are sold and unsold. These are also called as Private APIs.
