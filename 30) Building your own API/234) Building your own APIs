@@ -11,3 +11,25 @@ Domnio's Pizza API GITHUB is an example for Simplified Interface.
 There is API called Internal APIs
 Internal APIs are used internal in originization, those are not public and there is no documentation for those in public for how to use it.
 Example - Amazon have Internal API to store the product details that are sold and unsold. These are also called as Private APIs.
+
+REST (Representational State Transfer) API -
+What makes an API RESTful ?
+1. It uses Standard HTTP Methods -
+GET, POST, PUT, PATCH, DELETE
+
+2. It responds with Standard Data Format such as JSON(Javascript Object Notation), XML.
+
+3. Client and Server in RESTful APIs are completly separate. 
+This will scale system very easily. Multiple User can access API at a time.
+
+4. Stateless
+Each request from client to request will contain all information to proecss request and provide response in back.
+So, the server shouldn't be storing any client side data from the request. So, server can serve many clients and requets.
+
+5. Resource-Based
+Rest API is centered around resources and uses Unique Resource Identifer(URI) also known as Resource locator(URL) in order to locate specific resource.
+
+Interent is one of the successful implementation of Restful architecture.
+In World wide web we make HTTP request we get response either in JSON, XML or Javascript or HTML.
+It is perfect client server interaction.
+It will not store client request data in that URL hosted page.
