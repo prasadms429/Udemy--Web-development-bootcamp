@@ -23,7 +23,7 @@ GET, POST, PUT, PATCH, DELETE
 This will scale system very easily. Multiple User can access API at a time.
 
 4. Stateless
-Each request from client to request will contain all information to proecss request and provide response in back.
+Each request from client to server will contain all information to proecss request and provide response in back.
 So, the server shouldn't be storing any client side data from the request. So, server can serve many clients and requets.
 
 5. Resource-Based
