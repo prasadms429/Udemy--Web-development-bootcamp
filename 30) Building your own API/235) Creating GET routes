@@ -1,0 +1,10 @@
+In Postman,
+Download resources,
+Click on My workspace -> Collections -> Import -> Drag and drop files.
+
+Reference URL - https://documenter.getpostman.com/view/6048123/2s9XxsTv8Y
+
+For creating new request,
+Click on New -> Click on HTTP -> Enter some sort of URL -> Click on send
+We are able save this request to a collection and we are able to generate documentation for this automatically.
+We are also able to delete this.
