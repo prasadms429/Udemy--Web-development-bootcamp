@@ -8,4 +8,34 @@ For creating new request,
 Click on New -> Click on HTTP -> Enter some sort of URL -> Click on send
 We are able save this request to a collection and we are able to generate documentation for this automatically.
 We are also able to delete this.
-5.00 min
+
+Path:
+D:\Web development\Build your own API\6.0 DIY API
+
+In hyper -
+npm i
+npm install express
+
+In index.js -
+import express from "express";
+import bodyParser from "body-parser";
+
+const app = express();
+const port = 3000;
+const masterKey = "4VGP2DN-6EWM4SJ-N6FGRHV-Z3PR3TT";
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+//1. GET a random joke
+app.get("/random", (req,res) => {
+  const random = Math.floor(Math.random()* jokes.length);
+  const value = jokes[random];
+  res.send(value);
+});
+
+//2. GET a specific joke
+app.get("/jokes/:id", (req,res) => {              // :id will speify URL path parameter. To specify query parameter we specify as "?".
+  const id = parseInt(req.params.id);             // parameters that we get in req.params.id is in string format. To convert it into Integer format we parseInt() method.
+  const foundJoke = jokes.find((joke) => joke.id === id);  // find() method will loop through the arrary of jokes one by one. joke mentioned inside find() method is call back function which will returns true when condition mentioned after it becomes true.
+  res.json(foundJoke); // .json will convert Javascript object format to JSON format and send it in response.
+});
