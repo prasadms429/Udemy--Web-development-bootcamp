@@ -39,3 +39,5 @@ app.get("/jokes/:id", (req,res) => {              // :id will speify URL path pa
   const foundJoke = jokes.find((joke) => joke.id === id);  // find() method will loop through the arrary of jokes one by one. joke mentioned inside find() method is call back function which will returns true when condition mentioned after it becomes true.
   res.json(foundJoke); // .json will convert Javascript object format to JSON format and send it in response.
 });
+
+14.00 min
