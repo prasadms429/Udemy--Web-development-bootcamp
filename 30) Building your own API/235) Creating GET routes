@@ -40,4 +40,9 @@ app.get("/jokes/:id", (req,res) => {              // :id will speify URL path pa
   res.json(foundJoke); // .json will convert Javascript object format to JSON format and send it in response.
 });
 
-14.00 min
+//3. GET a jokes by filtering on the joke type
+app.get("/filter", (req,res) => {
+  const type = req.query.type;  // get type of jokes using query parameter
+  const filterJokesType = jokes.filter((joke) => joke.jokeType === type); // filter will loop through array of jokes and displays all array items which will match type
+  res.json(filterJokesType);
+});
