@@ -46,16 +46,3 @@ app.get("/filter", (req,res) => {
   const filterJokesType = jokes.filter((joke) => joke.jokeType === type); // filter will loop through array of jokes and displays all array items which will match type
   res.json(filterJokesType);
 });
-
-//4. POST a new joke
-app.post("/jokes", (req,res) => {
-  const newJoke = {
-    id: jokes.length + 1,
-    jokeText: req.body.text,    // bodyParser is included to get values passed in. In postman select Post and click on body, then click on x-www-form-urlencoded. Include key as text and type. Enter values for those keys and click send.
-    jokeType: req.body.type,
-  };
-  jokes.push(newJoke);
-  console.log(jokes.slice(-1)); // slice(-1) will display last object of array in console(Hyper).
-  res.json(newJoke);
-});
-05.00 min
