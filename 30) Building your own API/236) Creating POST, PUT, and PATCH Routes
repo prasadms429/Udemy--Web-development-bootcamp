@@ -1,4 +1,5 @@
 //4. POST a new joke
+// http://localhost:3000/jokes enter this URL in postman.
 app.post("/jokes", (req,res) => {
   const newJoke = {
     id: jokes.length + 1,
@@ -9,4 +10,27 @@ app.post("/jokes", (req,res) => {
   console.log(jokes.slice(-1)); // slice(-1) will display last object of array in console(Hyper).
   res.json(newJoke);
 });
-05.00 min
+
+//5. PUT a joke
+// http://localhost:3000/jokes/id enter this URL in Postman. Click on body, then click on x-www-form-urlencoded and Enter key as text and type, then type its value and click on send.
+app.put("/jokes/:id", (req,res) => {   // PUT will replace entire data of an object with new data.
+  const id = parseInt(req.params.id);
+  const replacementJoke = {
+    id: id,
+    jokeText: req.body.text,  // This we will get through body of postman request.
+    jokeType: req.body.type,
+  };
+  const searchIndex = jokes.findIndex((joke) => joke.id === id);
+  jokes[searchIndex] = replacementJoke;
+  res.json(replacementJoke);  // To display updated joke to user
+
+// Another method of doing
+/*
+  const id = parseInt(req.params.id);
+  const foundJoke = jokes.find((joke) => joke.id === id);
+  foundJoke.id = id;
+  foundJoke.jokeText = req.body.text;
+  foundJoke.jokeType = req.body.type;
+  res.json(foundJoke);
+  */
+});
