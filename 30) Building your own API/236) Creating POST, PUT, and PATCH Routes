@@ -34,3 +34,32 @@ app.put("/jokes/:id", (req,res) => {   // PUT will replace entire data of an obj
   res.json(foundJoke);
   */
 });
+
+//6. PATCH a joke
+// We do PATCH request to partially update data of object. It will not replace entire data of an object.
+app.patch("/jokes/:id", (req,res) => {
+const id = parseInt(req.params.id);
+const existingJoke = jokes.find((joke) => joke.id === id);
+const replacementJoke = {
+  id: id,
+  jokeText: req.body.text || existingJoke.jokeText, // First it will check any value is present in req.body.text. If it is nill then we will take value from existingJoke.jokeText
+  jokeType: req.body.type || existingJoke.jokeType,
+};
+const searchIndex = jokes.findIndex((joke) => joke.id === id);
+jokes[searchIndex] = replacementJoke;
+console.log(jokes[searchIndex]);
+res.json(replacementJoke);
+
+// Another method of doing
+/*
+  const id = parseInt(req.params.id);
+  const searchIndex = jokes.findIndex((joke) => joke.id === id);
+  if(req.body.text){
+    jokes[searchIndex].jokeText = req.body.text;
+  }
+  if(req.body.type){
+    jokes[searchIndex].jokeType = req.body.type;
+  }
+  res.json(jokes[searchIndex]);
+*/
+});
