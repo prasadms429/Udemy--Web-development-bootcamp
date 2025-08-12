@@ -1,4 +1,5 @@
 //7. DELETE Specific joke
+// http://localhost:3000/jokes/id enter this URL in Postman. Select Delete and send.
 app.delete("/jokes/:id", (req,res) => {
   const id = parseInt(req.params.id);
   const searchIndex = jokes.findIndex((joke) => joke.id === id);
@@ -10,4 +11,30 @@ app.delete("/jokes/:id", (req,res) => {
     .status(404)
     .json({error: `joke with id: ${id} not found. No jokes were deleted`})
   }
+});
+
+//8. DELETE All jokes
+// Enter URL http://localhost:3000/all in Postman. Select Delte then click on Authorisation and select Type as API Key. Enter Key as key and enter its value.
+app.delete("/all", (req,res) => {
+  const userKey = req.query.key;
+  if(masterKey === userKey){ // masterKey has in above of index.js file. This is add one level of security check. When masterKey is equal to user entered key then only perform all delete from Jokes array.
+    jokes = [];
+    res.sendStatus(200);
+  }else{
+    res
+    .status(404)
+    .json({error: `You are not authorised to perform this action.`})
+  }
+
+
+ // Another way of doing
+ /*
+  const enteredMasterid = req.query.key;
+  if(masterKey === enteredMasterid){
+    jokes.splice(0, jokes.length);
+    res.sendStatus(200);
+  }else{
+    res.json("Jokes are not deleted");
+  }
+*/
 });
