@@ -37,7 +37,7 @@ app.put("/jokes/:id", (req,res) => {   // PUT will replace entire data of an obj
 
 //6. PATCH a joke
 // We do PATCH request to partially update data of object. It will not replace entire data of an object.
-//By using this we can either update joke text or type
+// By using this we can either update joke text or type
 app.patch("/jokes/:id", (req,res) => {
 const id = parseInt(req.params.id);
 const existingJoke = jokes.find((joke) => joke.id === id);
