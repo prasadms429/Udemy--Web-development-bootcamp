@@ -14,7 +14,7 @@ app.delete("/jokes/:id", (req,res) => {
 });
 
 //8. DELETE All jokes
-// Enter URL http://localhost:3000/all in Postman. Select Delte then click on Authorisation and select Type as API Key. Enter Key as key and enter its value.
+// Enter URL http://localhost:3000/all in Postman. Select Delete then click on Authorisation and select Type as API Key. Enter Key as key and enter its value.
 app.delete("/all", (req,res) => {
   const userKey = req.query.key;
   if(masterKey === userKey){ // masterKey has in above of index.js file. This is add one level of security check. When masterKey is equal to user entered key then only perform all delete from Jokes array.
