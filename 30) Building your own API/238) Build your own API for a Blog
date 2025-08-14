@@ -1,0 +1,8 @@
+// Download resources
+// In hyper, cd "D:\Web development\API\6.1 +Blog+API+Project"
+// npm i
+// node server.js --> It will send request to API
+// node index.js  --> It will receive request from server.js and send response back to server.js
+// Run both of these server.js and index.js in different session of hyper.
+// To open new session in hyper: In hyper click on left top of side bar -> File -> New tab
+// Maximum upto only two sessions will work properly.
