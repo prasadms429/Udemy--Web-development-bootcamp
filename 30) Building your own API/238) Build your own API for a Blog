@@ -3,6 +3,70 @@
 // npm i
 // node server.js --> It will send request to API. (Server that is making API request)
 // node index.js  --> It will receive request from server.js and send response back to server.js. (Backend API that will receive request and process it then send response).
+// server.js is running on port 3000 and index.js is running on port 4000. At a time two servers, can't run on same port, so we used different port number.
 // Run both of these server.js and index.js in different session of hyper.
 // To open new session in hyper: In hyper click on left top of side bar -> File -> New tab
 // Maximum upto only two sessions will work properly.
+
+// In index.js
+//CHALLENGE 1: GET All posts
+// In chrome open - http://localhost:3000/
+app.get("/posts", async (req, res) => {    // In server.js file we can check axios.get() and find what specific route to hitup.
+  console.log(posts);
+  res.json(posts);
+});
+
+//CHALLENGE 2: GET a specific post by id
+app.get("/posts/:id", (req,res) => {
+  const id = parseInt(req.params.id);
+  const foundPost = posts.find((post) => post.id === id);
+  if(foundPost){
+    res.json(foundPost);
+  }else{
+    res
+    .staus(404)
+    .json({message: "Post not found"});
+  }
+});
+
+//CHALLENGE 3: POST a new post
+app.post("/posts", (req,res) => {
+  const newPost = {
+    id: posts.length + 1,
+    title: req.body.title,
+    content: req.body.content,
+    author: req.body.author,
+    date: new Date(),
+  }
+  posts.push(newPost);
+  res.status(201).json(newPost);
+});
+
+//CHALLENGE 4: PATCH a post when you just want to update one parameter
+app.patch("/posts/:id", (req,res) => {
+  const id = parseInt(req.params.id);
+  const existingPost = posts.find((post) => post.id === id);
+  if (!existingPost) return res.staus(404).json({message: "Post not found"});
+  const replacementPost = {
+    id: id,
+    title: req.body.title || existingPost.title,
+    content: req.body.content || existingPost.content,
+    author: req.body.author || existingPost.author,
+    date: existingPost.date,
+  };
+  const searchIndex = posts.findIndex((post) => post.id === id);
+  posts[searchIndex] = replacementPost;
+  res.json(replacementPost);
+});
+
+//CHALLENGE 5: DELETE a specific post by providing the post id.
+app.delete("/posts/:id", (req,res) => {
+  const id = parseInt(req.params.id);
+  const searchIndex = posts.findIndex((post) => post.id === id);
+  if(searchIndex > -1){
+    posts.splice(searchIndex, 1);
+    res.json({message: "Post deleted"});
+  }else{
+    return res.status(404).json({message: "No jokes were deleled"});
+  }
+});
