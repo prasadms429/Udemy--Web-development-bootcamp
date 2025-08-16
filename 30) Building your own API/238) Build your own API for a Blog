@@ -67,6 +67,6 @@ app.delete("/posts/:id", (req,res) => {
     posts.splice(searchIndex, 1);
     res.json({message: "Post deleted"});
   }else{
-    return res.status(404).json({message: "No jokes were deleled"});
+    return res.status(404).json({message: "No posts were deleled"});
   }
 });
