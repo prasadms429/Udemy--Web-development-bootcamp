@@ -1,0 +1,19 @@
+// While doing API requests, we observed that data was not stored after refreshing nodemon.
+// It is due to data was not stored in database.
+
+// In magnetic based memory storage, we  have strips of electromagnets with North and south poles. By changing current we can flip North and south poles. 
+// If we have two magnets of opposite direction then it would be one.  If we have two magnets of same direction then it is counted as zero.
+
+// Types of data bases - SQL DB and NoSQL DB
+// SQL DB (Structured query language) -
+// It helps to query the database which structured format.
+// In SQL data is stored structurally in tables.
+// Our website may need to hold some data of Users. So, we need to create anticipate what all other data/field our table need to store.
+// Then we can create table and store records in it.
+
+// SQL has ability to form realtion ship. So, it is also called as Realtional database.
+// Using Relational database we can link column of one table with another column of different table.
+// By this method it will elemenate stroing many field values in single table.
+// There are different types of SQL databases - Oracle, Microsoft SQL server these are paid databases.
+// Opensource/ Free databases - MySQL, PostgreSQL, SQLite.
+// 7.30 min.
