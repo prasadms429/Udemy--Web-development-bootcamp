@@ -16,4 +16,15 @@
 // By this method it will elemenate stroing many field values in single table.
 // There are different types of SQL databases - Oracle, Microsoft SQL server these are paid databases.
 // Opensource/ Free databases - MySQL, PostgreSQL, SQLite.
-// 7.30 min.
+
+// NoSQL -
+// In NoSQL we can chagne structure of data without changing structure of entire database.
+// NoSQL data is stored like json format.
+// We can add new field to data object without altering structure original database.
+// NoSQL is flexible compared to SQL. We can add new field whenever it required and It can be scalable horizontally (To add new fields), Vertically (To add new records).
+// NoSQL databases are Dynamo DB, Redis, Mongo db.
+// Dynamo db is run by Amazon.
+// Redis is opensource. Mongo DB and Dynamo db is run by companies, which are paid resources.
+.
+
+// SQL is structured, consistent and which is useful to maitain coding standrads. SQL will form Realtionships which is helpful for querying and interlinking many tables.
