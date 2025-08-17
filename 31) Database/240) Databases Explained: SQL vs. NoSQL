@@ -8,7 +8,7 @@
 // SQL DB (Structured query language) -
 // It helps to query the database which structured format.
 // In SQL data is stored structurally in tables.
-// Our website may need to hold some data of Users. So, we need to create anticipate what all other data/field our table need to store.
+// Our website may need to hold some data of Users. So, while creating table, we need to anticipate what all other data/field our table need to store.
 // Then we can create table and store records in it.
 
 // SQL has ability to form realtion ship. So, it is also called as Realtional database.
