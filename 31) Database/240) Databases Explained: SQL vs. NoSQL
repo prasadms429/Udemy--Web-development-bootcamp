@@ -8,10 +8,10 @@
 // SQL DB (Structured query language) -
 // It helps to query the database which structured format.
 // In SQL data is stored structurally in tables.
-// Our website may need to hold some data of Users. So, while creating table, we need to anticipate what all other data/field our table need to store.
+// Our website may need to hold some data of Users. So, we need to anticipate what all other data/field our table need to store.
 // Then we can create table and store records in it.
 
-// SQL has ability to form realtion ship. So, it is also called as Realtional database.
+// SQL has ability to form realtionship. So, it is also called as Realtional database.
 // Using Relational database we can link column of one table with another column of different table.
 // By this method it will elemenate stroing many field values in single table.
 // There are different types of SQL databases - Oracle, Microsoft SQL server these are paid databases.
