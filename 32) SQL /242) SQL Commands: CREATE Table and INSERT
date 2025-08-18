@@ -10,4 +10,12 @@ CREATE TABLE products (
   price MONEY, // To include monetory values with comma and decimal point we include data type MONEY.
   PRIMARY KEY (id) // PRIMARY KEY allows particluar column to uniquely identify each record in database. Means there should not be any duplicate id.
   );
-  
+
+// Insert table
+// If we provide all column values then no need to mention column names during inisert query.
+INSERT INTO products
+VALUES (1, 'PEN', 1.20);
+
+// If we want to insert values only for few columns of table then we need to specify column names during insert
+INSERT INTO products (id, name)
+VALUES (2, 'PENCIL');
