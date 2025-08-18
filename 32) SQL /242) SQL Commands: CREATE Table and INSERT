@@ -1,0 +1,13 @@
+// For more details on SQL check this reference link - https://www.w3schools.com/sql
+// Website to run SQL queris - https://sqliteonline.com/
+
+// We usually perform CREATE, READ, UPDATE, DESTROY (CRUD) Operation on database.
+
+// Create table
+CREATE TABLE products (
+  id INT NOT NULL, // NOT NULL will make sure if id is not provided then records will not be added to table.
+  name STRING,
+  price MONEY, // To include monetory values with comma and decimal point we include data type MONEY.
+  PRIMARY KEY (id) // PRIMARY KEY allows particluar column to uniquely identify each record in database. Means there should not be any duplicate id.
+  );
+  
