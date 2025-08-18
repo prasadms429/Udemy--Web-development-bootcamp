@@ -18,7 +18,7 @@
 // Opensource/ Free databases - MySQL, PostgreSQL, SQLite.
 
 // NoSQL -
-// In NoSQL we can chagne structure of data without changing structure of entire database.
+// In NoSQL we can change structure of data without changing structure of entire database.
 // NoSQL data is stored like json format.
 // We can add new field to data object without altering structure original database.
 // NoSQL is flexible compared to SQL. We can add new field whenever it required and It can be scalable horizontally (To add new fields), Vertically (To add new records).
