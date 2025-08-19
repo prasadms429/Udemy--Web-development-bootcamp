@@ -19,3 +19,13 @@ VALUES (1, 'PEN', 1.20);
 // If we want to insert values only for few columns of table then we need to specify column names during insert
 INSERT INTO products (id, name)
 VALUES (2, 'PENCIL');
+
+// To display all columns and show entire data of table
+SELECT * FROM products;
+
+// To display the data of specific columns
+SELECT name, price FROM products;
+
+// To disply only few rows by using where condition
+SELECT * FROM products where id = 1;
+
