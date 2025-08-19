@@ -1,0 +1,8 @@
+// To display all columns and show entire data of table
+SELECT * FROM products;
+
+// To display the data of specific columns
+SELECT name, price FROM products;
+
+// To disply only few rows by using where condition
+SELECT * FROM products where id = 1;
