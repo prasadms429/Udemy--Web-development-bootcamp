@@ -12,7 +12,7 @@ CREATE TABLE products (
   );
 
 // Insert table
-// If we provide all column values then no need to mention column names during inisert query.
+// If we provide all column values then no need to mention column names during insert query.
 INSERT INTO products
 VALUES (1, 'PEN', 1.20);
 
