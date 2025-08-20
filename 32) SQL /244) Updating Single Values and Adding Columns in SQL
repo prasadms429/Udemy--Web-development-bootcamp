@@ -3,7 +3,7 @@ UPDATE products
 SET price = 0.8
 WHERE id = 2;
 
-// To alter table and new column to table
+// To alter table and add new column to table
 // The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
 ALTER TABLE products
 ADD stock INT;
