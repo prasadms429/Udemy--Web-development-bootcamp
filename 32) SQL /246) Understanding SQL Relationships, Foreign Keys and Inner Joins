@@ -30,3 +30,9 @@ VALUES (2, 'Prasad', 'M S', 'Bengaluru');
 SELECT orders.order_number, customers.first_name, customers.last_name, customers.address
 FROM orders
 INNER JOIN customers ON orders.customer_id = customers.id;
+
+// To asemble data of different tables and to query data from different table we use join
+// In below query we joined few columns of orders and products tables.
+SELECT orders.order_number, products.name, products.price, products.stock
+FROM orders
+INNER JOIN products ON orders.product_id = products.id;
