@@ -1,0 +1,12 @@
+create table orders(
+  id INT not NULL,
+  order_number INT,
+  customer_id INT,
+  product_id INT,
+  PRIMARY KEY(id),
+  FOREIGN KEY(customer_id) REFERENCES customer(id), // FORIEGN KEY links tables together and it will establish relationship. 
+  FOREIGN KEY(product_id) REFERENCES product(id)
+  );
+
+INSERT INTO orders
+VALUES (1, 4362, 2, 1);
