@@ -10,3 +10,23 @@ create table orders(
 
 INSERT INTO orders
 VALUES (1, 4362, 2, 1);
+
+CREATE TABLE customers(
+  id INT NOT NULL,
+  first_name STRING,
+  last_name STRING,
+  address STRING,
+  PRIMARY KEY(id)
+  );
+
+INSERT INTO customers
+VALUES (1, 'John', 'Doe', '32 Cherry Bivd');
+
+INSERT INTO customers
+VALUES (2, 'Prasad', 'M S', 'Bengaluru');
+
+// We can join tables together. There differnt joins such as left join, right join, inner join, full join.
+// Joining orders and customers table. Showing specific columns of those tables.
+SELECT orders.order_number, customers.first_name, customers.last_name, customers.address
+FROM orders
+INNER JOIN customers ON orders.customer_id = customers.id;
