@@ -18,11 +18,17 @@ const db = new Client({   // These will contain all of the details that is neede
 
 db.connect();
 
-db.query("SELECT * FROM users", (err, res) => {
+db.query("SELECT * FROM users", (err, res) => {   // We will have sql inside quotes here.
   if (err) {
     console.error("Error executing query", err.stack);
   } else {
-    console.log("User data:", res.rows);
+    console.log("User data:", res.rows);    // All of the rows from users table will be displayed here
   }
   db.end();
 });
+
+// node-postgres npm pakcage we will be using and it is known as pg.
+npm install pg
+
+// We need to install Postgres server and pgAdmin.
+// PgAdmin is UI to make request and to graphically show query output.
