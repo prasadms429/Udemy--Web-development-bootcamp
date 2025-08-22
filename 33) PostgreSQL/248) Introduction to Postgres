@@ -13,5 +13,5 @@ const db = new Client({   // These will contain all of the details that is neede
   host: "localhost",
   database: "mydatabase",
   password: "password"
-  port: 5432,
+  port: 5432,  // port number indicates where the database server is running
 });
