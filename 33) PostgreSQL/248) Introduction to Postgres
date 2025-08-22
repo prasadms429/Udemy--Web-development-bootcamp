@@ -1,0 +1,17 @@
+// PostgreSQL is widely used in industry
+// It is free and open source
+// Client will make request to Server. App.js or index.js will handle the request and figure out what needs to do. index.js will talk to database.
+// Data base will store all the data which needs to be stored permanently.
+// app/ index.js will retrieve data from Database.
+// app will send back the data via correct response code to Client.
+
+// To use Postgres with node (To interact with postgres from node backend)
+import Client from "pg";   // pg is npm package. It set's up to get running with postgres in our node backend
+
+const db = new Client({   // These will contain all of the details that is needed to connect for database
+  user: "username",
+  host: "localhost",
+  database: "mydatabase",
+  password: "password"
+  port: 5432,
+});
