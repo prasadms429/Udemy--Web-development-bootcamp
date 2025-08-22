@@ -15,3 +15,14 @@ const db = new Client({   // These will contain all of the details that is neede
   password: "password"
   port: 5432,  // port number indicates where the database server is running
 });
+
+db.connect();
+
+db.query("SELECT * FROM users", (err, res) => {
+  if (err) {
+    console.error("Error executing query", err.stack);
+  } else {
+    console.log("User data:", res.rows);
+  }
+  db.end();
+});
