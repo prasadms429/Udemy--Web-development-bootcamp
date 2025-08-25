@@ -20,3 +20,10 @@ Create table friends (
 // But in TEXT datatype, no need to specify maximum number of characters. Size will be adjusted based on NAME field value.
 
 // BOOLEAN is binary option to store True or False values.
+
+// For more details of Postgresql data types -
+https://www.postgresql.org/docs/current/datatype.html
+
+// serial8 data type will store eight digit value. If we want store billion or more records with auto increment then we use bigserial.
+// varchar will store variable length character string.
+// date to store date
