@@ -1,6 +1,17 @@
+// CSV - Comma separated values
+// Header/ first row in csv file contains field(column) names.
+// From second row it contains field values with comma separted.
 
+// Open PgAdmin -> Expand Database -> Then we can see Databases that are already exist.
+// To create new Database: Right click on Database -> Click on create -> Database.
+// Created world database.
+
+// Created table for CSV file fields
 CREATE TABLE capitals(
-	id SERIAL PRIMARY KEY,
-	country VARCHAR(45),
+	id SERIAL PRIMARY KEY, // If we add new records to our table then id will be added automatically by computer
+	country VARCHAR(45), // country field is not larger than 45 characters. So we gave it as 45.
 	capital VARCHAR(45)
 );
+
+// 7.00 min
+
