@@ -1,0 +1,22 @@
+// Columns in table is known an fields.
+// We can store data in excel. But if we store many records/ data in it then excel will take more time to open or load all data present inside it.
+// Database is faster than excel and it will form realtionships between tables. In database we can define table with certain conditions.
+// In postgres there is more datatypes avialable compared to SQL.
+
+// To create table using postgres
+Create table friends (
+  id SERIAL PRIMARY KEY,  // Primary key ensures any of the entry going into the id field must be unique and it uniquely identifies each record in table.
+  name VARCHAR(50),
+  age INT,
+  is_cool BOOLEAN
+);
+
+// Postgres keyword SERIAL means if add new record to friends table then no need to specify the id. SERIAL will auto increment id value based previous record id value.
+
+// VARCHAR can have maximum character value upto 50 characters in frieds table. 
+// If name field is having 3 characters then it will take only 3 bytes. The size of field is auto adjusted based on number of characters.
+
+// There is another data type called TEXT. Which is little slow compared VARCHAR. In VARCHAR always we need to specify the maximum number of characters.
+// But in TEXT datatype, no need to specify maximum number of characters. Size will be adjusted based on NAME field value.
+
+// BOOLEAN is binary option to store True or False values.
