@@ -24,6 +24,6 @@ Create table friends (
 // For more details of Postgresql data types -
 https://www.postgresql.org/docs/current/datatype.html
 
-// serial8 data type will store eight digit value. If we want store billion or more records with auto increment then we use bigserial.
+// serial8 data type will store eight digit value. If we want store billion or more records with auto increment then we use serial8.
 // varchar will store variable length character string.
 // date to store date
