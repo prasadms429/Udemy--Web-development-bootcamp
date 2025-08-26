@@ -1,0 +1,52 @@
+// Port 5432 for Postgresql server
+
+Download resources. Javascript and EJS code is already present in resource material. We need to write postgresql inside Javascript file.
+
+// In index.js
+..
+// Middleware
+app.use(bodyParser.urlencoded({ extended: true }));    // bodyParser to hold the data from form
+app.use(express.static("public")); // We used public to have our static files, background images and to make all css to work..
+..
+// POST a new post
+app.post("/submit", (req, res) => {
+  let answer = req.body.answer.trim();  // trim() function removes the space from begening and end of the user entered value.
+  let isCorrect = false;
+  if (currentQuestion.capital.toLowerCase() === answer.toLowerCase()) {
+    totalCorrect++;
+    console.log(totalCorrect);
+    isCorrect = true;
+  }
+..
+
+
+// In index.ejs
+<body id="app">
+  <form class="container" action="/submit" method="post">  // Once after clicking submit button we are going to submit form to /submit route of post request in index.js
+    <div class="horizontal-container">
+      <h3>
+        Total Score:
+        <span id="score">
+          <%= locals.totalScore ? totalScore : "0" %>
+        </span>
+      </h3>
+
+    </div>
+
+    <h1 id="countryName">
+      <%=question.country %>
+    </h1>
+    <div class="answer-container">
+      <input type="text" name="answer" id="userInput" placeholder="Enter the capital" autofocus autocomplete="off">   // autofocus autocomplete will select this input field when website is load up. No need to click on it to enter input.
+
+    </div>
+    <button type="submit">SUBMIT<% if(locals.wasCorrect){ %>
+        <span class="checkmark">✔</span>
+        <% } else if (locals.wasCorrect===false) { %>
+          <span class="cross" id="error">✖</span>
+          <% } %>
+    </button>
+
+  </form>
+..
+
