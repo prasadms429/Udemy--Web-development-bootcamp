@@ -13,5 +13,24 @@ CREATE TABLE capitals(
 	capital VARCHAR(45)
 );
 
-// 7.00 min
+// To import data from CSV file to our table
+// Right click on table in PgAdmin -> Click on Import/Export data -> Select file name (In Options make sure Header is selected) -> OK
 
+// To show all rows of table
+// Right click on table -> View/Edit data -> All Rows
+SELECT * FROM public.capitals
+ORDER BY id ASC
+
+// To show first 100 rows of table
+SELECT * FROM public.capitals
+ORDER BY id ASC LIMIT 100
+
+// To create table of flags
+create table flags(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(45),
+	flag TEXT
+);
+
+// Download csv file of flags given in resource and import data to table
+// flag in CSV file is an emoji. An emoji is basically UTF-8 data type and it is stored as TEXT. When that TEXT is recognized by the computer then it will know to pick an image to display in it place.
