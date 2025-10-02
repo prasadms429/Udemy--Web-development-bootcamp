@@ -53,5 +53,28 @@ app.post("/submit", (req, res) => {
   </form>
 ..
 
-// 14.00min
+// To get capitals of country from capitals database instead of getting capital from array defined inside our index.js
+// We can see captials table in pgAdmin 4 app.
+import pg from "pg";
+
+let quiz;
+
+const db = new pg.Client({ // To define new client
+  user: "postgres",
+  host: "localhost",
+  database: "world",
+  password: "12345", // Give your password
+  port: 5432,
+});
+
+db.connect();
+
+db.query('Select * from capitals', (err, res) => {
+  if(err){
+    console.error('Error executing query', err.stack);
+  }else{
+    quiz = res.rows;  // Displays allthe rows from database.
+  }
+  db.end();
+});
 
