@@ -77,4 +77,3 @@ db.query('Select * from capitals', (err, res) => {
   }
   db.end();
 });
-
