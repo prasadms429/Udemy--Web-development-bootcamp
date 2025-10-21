@@ -105,3 +105,5 @@ db.query('Select * from flags', (err, res) => {
   }
   db.end();
 });
+
+// After doing coding open http://localhost:3000/ in Firefox because, flags can only displayed in Firefox browser. In Chrome it won't display.
