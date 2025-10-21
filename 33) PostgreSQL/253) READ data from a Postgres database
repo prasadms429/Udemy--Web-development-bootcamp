@@ -78,6 +78,7 @@ db.query('Select * from capitals', (err, res) => {
   db.end();
 });
 
+
 // Quiz to identify the country by flag
 // In hyper
 cd "D:\Web development\Postgresql\8.2 Postgres Read"
@@ -93,7 +94,6 @@ const db = new pg.Client({
   password: "your password",
   port: 5432,
 });
-
 
 db.connect();
 
