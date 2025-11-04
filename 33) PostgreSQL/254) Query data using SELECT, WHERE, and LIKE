@@ -10,4 +10,16 @@ Create table world_food (
 
 // In our csv file there is no id column. So, while importing data into our table,
 // click on Columns-> Remove id column name from it (Then id will be auto generated) -> OK
-05.43 min
+
+// Queries -
+Select * from world_food;
+
+select country from world_food;
+
+select country, wheat_production from world_food;
+
+select rice_production
+from world_food
+where country = 'United States';
+
+12.00 min
