@@ -22,4 +22,14 @@ select rice_production
 from world_food
 where country = 'United States';
 
-12.00 min
+select country 
+from world_food 
+where wheat_production > '20';
+
+select country 
+from world_food
+where country like 'U' || '%';  //  '||' this symbol will concatenate U with % and select country with first letter U and whatever characters may be after it. 
+
+select country
+from world_food
+where country like '%' || 'a';
