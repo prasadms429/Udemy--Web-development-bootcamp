@@ -11,3 +11,4 @@ CREATE TABLE visited_countries (
 	country_code CHAR(2) NOT NULL UNIQUE
 );
 // Add rows manually into this table by clicking plus sign and save data.
+// 06.00 min
