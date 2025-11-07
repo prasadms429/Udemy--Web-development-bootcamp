@@ -1,0 +1,13 @@
+// Download course resource
+// D:\Web development\Postgresql\8.3 Travel Tracker
+// Travel tracker is project to keep of track of countries which we visited.
+
+// In hyper
+cd "D:\Web development\Postgresql\8.3 Travel Tracker"
+npm i  // To install node packages
+
+CREATE TABLE visited_countries (
+	id SERIAL PRIMARY KEY,
+	country_code CHAR(2) NOT NULL UNIQUE
+);
+// Add rows manually into this table by clicking plus sign and save data.
