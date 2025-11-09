@@ -55,6 +55,7 @@ app.post("/submit", (req, res) => {
 
 // To get capitals of country from capitals database instead of getting capital from array defined inside our index.js
 // We can see captials table in pgAdmin 4 app.
+//In index.js
 import pg from "pg";
 
 let quiz;
