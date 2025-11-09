@@ -24,7 +24,7 @@ CREATE TABLE visited_countries (
 ..
 //Here path will store dimensions of each countries and id will store country code.
  <script>
-    const country_codes = "<%= countries %>".split(",")   // We will get country codes from index.js in countries. Inside index.ejs the values we received in countries will be in string format. So, we add comma in between each countries using splice method to separate each country.
+    const country_codes = "<%= countries %>".split(",")   // We will get country codes from index.js in countries. Inside index.ejs the values we received in countries will be in string format. So, we add comma in between each countries using split method to separate each country.
     console.log(typeof ("<%= countries %>")) // This is to show the the format of values received in countries
     country_codes.forEach(code => {  // To loop through each element inside country_codes
       document.getElementById(code).style.fill = 'teal'  // Get each element by it's Id and make that country colour teal.
