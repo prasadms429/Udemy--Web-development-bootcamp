@@ -33,4 +33,35 @@ CREATE TABLE visited_countries (
   </script>
 </body>
 
-12.14 min
+// In index.js
+import pg from "pg";
+
+const db = new pg.Client({
+  user: "postgres",
+  host: "localhost",
+  database:"world",
+  password: "your password",
+  port: 5432,
+});
+
+db.connect();
+
+app.get("/", async (req, res) => {
+  //Write your code here.
+  const result = await db.query('Select country_code from visited_countries');
+  console.log(result.rows);
+  // result will store data in Javascript object format, with key and it's value. In below format.
+  //[
+  //  { country_code: 'FR' },
+  //  { country_code: 'GB' },
+  //  { country_code: 'US' }
+  //]
+  let countries = [];
+  result.rows.forEach(country => {
+    countries.push(country.country_code);  // In countries array we will store data in this format  - ['FR', 'GB', 'US']
+  });
+  res.render("index.ejs", { countries: countries, total: countries.length});
+  db.end();
+});
+
+
