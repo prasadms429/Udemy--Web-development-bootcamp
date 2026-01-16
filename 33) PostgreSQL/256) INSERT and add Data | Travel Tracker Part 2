@@ -2,4 +2,19 @@
 INSERT INTO world_food (country,rice_production,wheat_production)  
 VALUES ('Italy',1.46,7.3);
 
-5.00 min
+// Insert query in PostgreSQL. It will be in the format of pg query(SQL, Values). We pass parameter inside query.
+// $1, $2, $3 will be replaced with values during insertion
+db.query("INSERT INTO world_food
+(country, rice_production, wheat_roduction)
+VALUES ($1, $2, $3)",
+["Italy", 1.46, 7.3]);
+
+// Challenge - To highlight the country with color by typing country name
+create table countries (
+	id SERIAL PRIMARY KEY,
+	country_code CHAR(2),
+	country_name VARCHAR(100)
+);
+
+
+
