@@ -15,6 +15,6 @@ create table countries (
 	country_code CHAR(2),
 	country_name VARCHAR(100)
 );
-
+12.30 min
 
 
