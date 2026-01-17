@@ -5,7 +5,7 @@ VALUES ('Italy',1.46,7.3);
 // Insert query in PostgreSQL. It will be in the format of pg query(SQL, Values). We pass parameter inside query.
 // $1, $2, $3 will be replaced with values during insertion
 db.query("INSERT INTO world_food
-(country, rice_production, wheat_roduction)
+(country, rice_production, wheat_production)
 VALUES ($1, $2, $3)",
 ["Italy", 1.46, 7.3]);
 
