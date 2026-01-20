@@ -18,7 +18,7 @@ app.get("/", async (req, res) => {
 app.post("/add", async (req, res) => {
   const input = req.body["country"];
 
-// To add country name without restriction of case senistivity and Select country with partially given country name.
+// To add country name without restriction of case senistivity and Select country with partially entered country name.
   try{
     const result = await db.query("Select country_code from countries where LOWER(country_name) like '%' || $1 || '%';",
     [input.toLowerCase()]   
