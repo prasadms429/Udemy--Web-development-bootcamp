@@ -1,0 +1,40 @@
+// To handle error inside try catch block.
+async function checkVisited(){
+  const result = await db.query('Select country_code from visited_countries');
+
+  let countries = [];
+  result.rows.forEach(country => {
+    countries.push(country.country_code);
+  });
+  return countries;
+}
+
+app.get("/", async (req, res) => {
+  //Write your code here.
+  const countries = await checkVisited();
+  res.render("index.ejs", { countries: countries, total: countries.length});
+});
+
+app.post("/add", async (req, res) => {
+  const input = req.body["country"];
+
+  try{
+    const result = await db.query('Select country_code from countries where country_name = $1',
+    [input]
+    );
+
+    if(result.rows.length === 0){
+      const countries = await checkVisited();
+      return res.render("index.ejs", {countries: countries, total: countries.length, error:"Country does not exist, try again"});
+    }
+
+    const countryCode = result.rows[0].country_code;
+    await db.query('INSERT INTO visited_countries (country_code) VALUES ($1)',
+    [countryCode]
+    );
+    return res.redirect("/");
+  }catch(err){
+   const countries = await checkVisited();
+   return res.render("index.ejs", {countries: countries, total: countries.length, error:"Country has been already added, try again"});
+  }
+});
