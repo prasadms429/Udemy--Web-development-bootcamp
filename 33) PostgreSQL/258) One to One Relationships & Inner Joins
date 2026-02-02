@@ -1,0 +1,15 @@
+Relationship types -
+One to One, One to Many and Many to Many.
+REFERENCES is keyword used to indicate foriegn key.
+
+CREATE TABLE student (
+  id SERIAL PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT
+);
+
+CREATE TABLE contact_detail (
+  id INTEGER REFERENCES student(id) UNIQUE,  // student id must be unique. There should not be any two id's in contact_detail table for the same record in student table.
+  tel TEXT,
+  address TEXT
+);
