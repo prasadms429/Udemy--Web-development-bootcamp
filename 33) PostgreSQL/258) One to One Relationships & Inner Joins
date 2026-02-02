@@ -13,3 +13,4 @@ CREATE TABLE contact_detail (
   tel TEXT,
   address TEXT
 );
+05.00 min
