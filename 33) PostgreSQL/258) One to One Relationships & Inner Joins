@@ -8,6 +8,7 @@ CREATE TABLE student (
   last_name TEXT
 );
 
+-- One to One --
 CREATE TABLE contact_detail (
   id INTEGER REFERENCES student(id) UNIQUE,  // student id must be unique. There should not be any two id's in contact_detail table for the same record in student table.
   tel TEXT,
