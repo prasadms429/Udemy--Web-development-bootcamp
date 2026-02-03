@@ -15,5 +15,7 @@ CREATE TABLE contact_detail (
   address TEXT
 );
 
+// We use -- to add comment while writing sql code
+
 // Use draw.io to make flow diagram
 
