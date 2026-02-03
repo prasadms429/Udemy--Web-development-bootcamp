@@ -18,6 +18,7 @@ CREATE TABLE contact_detail (
 // We use -- to add comment while writing sql code
 
 // Use draw.io to make flow diagram
+// Primary key id in student table and Foreign key id in contact_detail table are linked together by one to one relationship.
 
 -- Data --
 INSERT INTO student (first_name, last_name)
@@ -25,3 +26,9 @@ VALUES ('Prasad', 'M S');
 
 INSERT INTO contact_detail (id, tel, address)
 VALUES (1, '+123456789', 'abc');
+
+// INNER JOIN - This will display all the data from two tables which has one to one relationship
+SELECT *
+FROM student
+JOIN contact_detail
+ON student.id = contact_detail.id;
