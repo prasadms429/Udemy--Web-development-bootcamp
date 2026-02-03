@@ -19,3 +19,9 @@ CREATE TABLE contact_detail (
 
 // Use draw.io to make flow diagram
 
+-- Data --
+INSERT INTO student (first_name, last_name)
+VALUES ('Prasad', 'M S');
+
+INSERT INTO contact_detail (id, tel, address)
+VALUES (1, '+123456789', 'abc');
