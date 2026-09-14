@@ -5,3 +5,5 @@ CREATE TABLE homework_submission (
 	mark INTEGER,
 	student_id INTEGER REFERENCES student(id)  // student_id is foriegn key column of this table, reference id column of student table.
 );
+
+6.30 min
