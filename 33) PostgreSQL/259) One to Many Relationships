@@ -1,0 +1,7 @@
+Below table represents One to Many relationship -
+One student can make multiple home work submission, based on that criteria we created below table.
+CREATE TABLE homework_submission (
+	id SERIAL PRIMARY KEY,
+	mark INTEGER,
+	student_id INTEGER REFERENCES student(id)  // student_id is foriegn key column of this table, reference id column of student table.
+);
