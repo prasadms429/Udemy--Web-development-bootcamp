@@ -6,4 +6,7 @@ CREATE TABLE homework_submission (
 	student_id INTEGER REFERENCES student(id)  // student_id is foriegn key column of this table, reference id column of student table.
 );
 
-6.30 min
+INSERT INTO homework_submission (mark, student_id)
+VALUES (98,1),(87,1),(88,1);
+
+9.30 min
