@@ -21,3 +21,16 @@ VALUES ('English Literature'), ('Maths'), ('Physics');
 
 INSERT INTO enrollment (student_id, class_id) VALUES (1,1), (1,2);
 INSERT INTO enrollment (student_id, class_id) VALUES (2,2), (2,3);
+
+// We can select columns of different table which are having Many to Many relations, using JOIN query.
+SELECT *
+FROM enrollment
+JOIN student ON student.id = enrollment.student_id
+JOIN class ON class.id = enrollment.class_id;
+
+// Aliases using the AS keyword
+// id column may present in different table, we can display column name with different name for particular column using AS keyword.
+SELECT s.id AS stud, first_name, last_name, title
+FROM enrollment e
+JOIN student s ON s.id = e.student_id
+JOIN class c ON c.id = e.class_id;
