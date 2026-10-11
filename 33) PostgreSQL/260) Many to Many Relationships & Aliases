@@ -1,0 +1,23 @@
+// When there are two or more, one to many relations then it will form Many to Many relationships.
+
+CREATE TABLE class(
+	id SERIAL PRIMARY KEY,
+	title VARCHAR(45)
+);
+
+// The below table represent Many to many relations.
+// We can't have duplicate records (1, 2) for two times, so we included primary key for student_id and class_id.
+CREATE TABLE enrollment(
+	student_id INTEGER REFERENCES student(id),
+	class_id INTEGER REFERENCES class(id),
+	PRIMARY KEY (student_id, class_id)
+);
+
+INSERT INTO student (first_name, last_name)
+VALUES ('Sannith', 'B S');
+
+INSERT INTO class (title)
+VALUES ('English Literature'), ('Maths'), ('Physics');
+
+INSERT INTO enrollment (student_id, class_id) VALUES (1,1), (1,2);
+INSERT INTO enrollment (student_id, class_id) VALUES (2,2), (2,3);
